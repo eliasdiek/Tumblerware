@@ -1,0 +1,37 @@
+<div class="product_below_section_sixth">
+
+  {% if section.settings.title != blank %}
+  <div class="feature-row__text_in review_section_new">
+    <h2 class="h2">{{ section.settings.title }}</h2>
+    {% if section.settings.subtitle != blank %}
+      <div class="rte-setting featured-row__subtext">
+        <p>{{ section.settings.subtitle }}</p>
+      </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div id="stamped-main-widget" class="stamped-main-widget stamped-style-borderless" data-widget-style="standard" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: "large" |replace: " ? ", " % 3F" | replace: "& "," % 26"}}" data-description="{{ product.description | escape }}"> {{ product.metafields.stamped.reviews }} </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Review title",
+	"class": "review_title",
+    "settings": [
+	  {
+        "type": "text",
+        "id": "title",
+        "label": "Add Heading",
+        "default": "In Their Words"
+      },
+	  {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Add Sub Heading",
+        "default": "Check out what other sharp knife lovers have to say."
+      }
+	]
+	
+  }
+{% endschema %}

@@ -1,0 +1,81 @@
+{% if section.blocks.size > 0 %}
+<div class="wrapper">
+  <div class="page-width">
+    <section class="logo_slider_new">
+      {% if section.settings.title != blank %}
+        <div class="section-header text-center logo_title_new">
+          <h2 class="h1 section-header__title">{{ section.settings.title }}</h2>
+        </div>
+      {% endif %}
+      <div class="logo_lists_main_new">
+        {% for block in section.blocks %}
+          {% if block.settings.logo != blank %}
+            <div class="logo_lists_new">
+              <img src="{{ block.settings.logo | img_url: 'master' }}" alt="{{ block.settings.logo.alt }}" />
+            </div>
+          {% endif %}
+
+          {% if block.settings.logo == blank and block.settings.logo_text != blank %}
+          <div class="logo_lists_new">
+            <h3>{{ block.settings.logo_text }}</h3>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Logo List Slider",
+	"class": "logo_list_slider",
+    "settings": [
+	  {
+      "type": "text",
+      "id": "title",
+      "label": "Add Heading",
+      "default": "IN THE PRESS"
+    }
+	],
+	"blocks": [
+      {
+        "type": "logo_list",
+        "name": "Logo List",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "logo_text",
+            "label": "Logo Text"
+          }
+        ]
+      }
+    ],
+	"presets": [
+      {
+        "name": "Logo List Slider",
+        "category": "Image",
+		"blocks": [
+          {
+            "type": "logo_list"
+          },
+		  {
+            "type": "logo_list"
+          },
+		  {
+            "type": "logo_list"
+          },
+		  {
+            "type": "logo_list"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

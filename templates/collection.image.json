@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "banner": {
+      "type": "collection-template-banner",
+      "blocks": {
+        "4ee4dad1-d070-4531-be05-9a1e8698024e": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "frontpage",
+            "deskimage": "shopify:\/\/shop_images\/JuneCup_All_Products_Collection.jpg",
+            "mobimage": "shopify:\/\/shop_images\/June_Cup_Collection_Banner_All_Products_Mobile_629855a1-7c86-46fb-840f-31f7b22fec7c.jpg",
+            "text": "",
+            "text_color": "#262626"
+          }
+        },
+        "132fa6f5-6fb5-47bd-81d8-a90b4eb2051e": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "menstrual-cups",
+            "deskimage": "shopify:\/\/shop_images\/June_Cup_Banner.jpg",
+            "mobimage": "shopify:\/\/shop_images\/June_Cup_Menstrual_Cup_Banner.jpg",
+            "text": "",
+            "text_color": "#262626"
+          }
+        },
+        "84082d83-71e5-4814-beb4-4e6e9c9fa10e": {
+          "type": "collection_name",
+          "disabled": true,
+          "settings": {
+            "collection": "aftercare",
+            "deskimage": "shopify:\/\/shop_images\/After_care.jpg",
+            "text": "",
+            "text_color": "#262626"
+          }
+        },
+        "8f62269c-b7e9-45d1-9016-d0b869c6caa5": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "earth-day-collection",
+            "deskimage": "shopify:\/\/shop_images\/earth-day-desktop.jpg",
+            "mobimage": "shopify:\/\/shop_images\/earth-day.jpg",
+            "text": "",
+            "text_color": "#262626"
+          }
+        },
+        "078683e5-efc8-400d-a938-75d8da94a967": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "happy-birthday",
+            "deskimage": "shopify:\/\/shop_images\/June_Milkbar_desktop_banner_46e1c6c3-2b59-4141-9c68-efba585d4da4.jpg",
+            "mobimage": "shopify:\/\/shop_images\/June_Milkbar_mobile_banner_ee31a4ce-c03c-4aeb-8320-a1bf007692e4.jpg",
+            "text": "Have Your Cake & Eat It Too",
+            "text_color": "#262626"
+          }
+        },
+        "00193b20-29e0-4bdd-bf96-462c51d89023": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "period-underwear",
+            "deskimage": "shopify:\/\/shop_images\/Period_Undies.jpg",
+            "mobimage": "shopify:\/\/shop_images\/June_Cup_Period_Underwear_Mobile_Banner.jpg",
+            "text": "",
+            "text_color": "#262626"
+          }
+        },
+        "eeb0088b-b270-4aa0-b1b9-de883fc2fee5": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "aftercare",
+            "deskimage": "shopify:\/\/shop_images\/After_care_f39f019b-e438-4137-ad62-4dee34a07431.jpg",
+            "mobimage": "shopify:\/\/shop_images\/June_Cup_Aftercare_Mobile_Banner.jpg",
+            "text": "",
+            "text_color": "#262626"
+          }
+        },
+        "46d070db-56cb-45ed-ab6c-4186adc301d7": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "cup-wash-bundles",
+            "deskimage": "shopify:\/\/shop_images\/Aftercare_collection.jpg",
+            "text": "Heading",
+            "text_color": "#262626"
+          }
+        },
+        "43045587-cb79-4307-b39a-65525f73fbc2": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "period-packs",
+            "deskimage": "shopify:\/\/shop_images\/Aftercare_collection_c8e5454d-a90c-4e11-8640-9051b509f80e.jpg",
+            "mobimage": "shopify:\/\/shop_images\/June_Cup_Bundles_Mobile_Banner.jpg",
+            "text": "",
+            "text_color": "#262626"
+          }
+        },
+        "7e880b7c-7b8e-4ee0-924e-379512f6d31c": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "menstrual-discs",
+            "deskimage": "shopify:\/\/shop_images\/June_Disc_Collection.jpg",
+            "mobimage": "shopify:\/\/shop_images\/JuneCup_All_Products_Collection_b6d6d6bc-6ddb-4be1-98bf-a5a10d728174.jpg",
+            "text": "",
+            "text_color": "#262626"
+          }
+        }
+      },
+      "block_order": [
+        "4ee4dad1-d070-4531-be05-9a1e8698024e",
+        "132fa6f5-6fb5-47bd-81d8-a90b4eb2051e",
+        "84082d83-71e5-4814-beb4-4e6e9c9fa10e",
+        "8f62269c-b7e9-45d1-9016-d0b869c6caa5",
+        "078683e5-efc8-400d-a938-75d8da94a967",
+        "00193b20-29e0-4bdd-bf96-462c51d89023",
+        "eeb0088b-b270-4aa0-b1b9-de883fc2fee5",
+        "46d070db-56cb-45ed-ab6c-4186adc301d7",
+        "43045587-cb79-4307-b39a-65525f73fbc2",
+        "7e880b7c-7b8e-4ee0-924e-379512f6d31c"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "collection-image-template",
+      "settings": {
+        "collection_products_grid": "grid",
+        "collection_tags_enable": false,
+        "product_vendor_enable": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main"
+  ]
+}

@@ -1,0 +1,130 @@
+{% if section.blocks.size > 0 %}
+  <div class="wrapper">
+    <div class="page-width">
+      {% if section.settings.title != blank %}
+        <div class="our_product_title_new">{{ section.settings.title }}</div>
+      {% endif %}
+      <div class="our_product_details_new">
+        <div class="slider slider-nav-new">
+          {% for block in section.blocks %}
+          	{% if block.settings.text != blank %}
+              <div{% if forloop.first %} class="active"{% endif %}>
+                <div class="product_name_new">{{ block.settings.text }}</div>
+              </div>
+          	{% endif %}
+          {% endfor %}
+        </div>
+        <div class="slider slider-for-new">
+          {% for block in section.blocks %}
+          	{% if block.settings.infotext != blank or block.settings.image != blank %}
+          	  <div id="slide_{{ block.id }}">
+                <div class="product_slider_new {% if block.settings.image_align == true %} product_slider_reverse_new {% endif %}">
+                  {% if block.settings.infotext != blank %}
+                    <div class="product_slider_left_new">
+                      <div class="product_slider_left_in_new">
+                      	{{ block.settings.infotext }}
+                        
+                        {% if block.settings.Button_text  != blank %}
+                        <div class="product_slider_btn_new">
+                          <a href="{{ block.settings.Button_link }}" class="btn btn_secondary">{{ block.settings.Button_text }}</a>
+                        </div>
+                        <style>
+                        	#slide_{{ block.id }} .btn_secondary{ background:#fff; border-color:{{ block.settings.button_color }}; color:{{ block.settings.button_color }}; }
+                            #slide_{{ block.id }} .btn_secondary:hover{ background:#fff; border-color:#676767; color:#676767; }
+                        </style>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% if block.settings.image != blank %}
+                    <div class="product_slider_right_new">
+                      <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}" />
+                    </div>
+                  {% endif %}
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+          	{% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  .our_product{ background-color: {{ section.settings.background_color }}; margin-top:0px !important; }
+</style>
+
+{% schema %}
+  {
+    "name": "Our Product",
+	"class": "our_product",
+    "settings": [
+	  {
+        "type": "text",
+        "id": "title",
+        "label": "Add Main Heading",
+        "default": "Our Products"
+      },
+	  {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#fff"
+      }
+	],
+	"blocks": [
+      {
+        "type": "our_product",
+        "name": "Our Product",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Add Heading",
+            "default": "Heading"
+          },
+		  {
+            "type": "textarea",
+            "id": "infotext",
+            "label": "Add Information",
+            "default": "Everything you need for a healthier period with comfy products you can wash and wear for years."
+          },
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Add Slide Image"
+          },
+	 	  {
+            "type": "checkbox",
+            "id": "image_align",
+            "label": "Image Right align"
+          },
+		  {
+            "type": "text",
+            "id": "Button_text",
+            "label": "Button Text"
+          },
+		  {
+            "type": "url",
+            "id": "Button_link",
+            "label": "Button Url"
+          },
+		  {
+            "type": "color",
+            "id": "button_color",
+            "label": "Button color",
+            "default": "#262626"
+          }
+        ]
+      }
+    ],
+	"presets": [
+      {
+        "name": "Our Product",
+        "category": "Product"
+      }
+    ]
+  }
+{% endschema %}

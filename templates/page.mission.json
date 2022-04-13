@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-template",
+      "settings": {}
+    },
+    "162974674073d6569f": {
+      "type": "text-with-button-alt",
+      "settings": {
+        "heading": "Make the Switch",
+        "body": "<p>Better alternatives to pads & tampons starting at $6.<\/p>",
+        "button_link": "shopify:\/\/collections\/frontpage",
+        "button_text": "Explore Your Options",
+        "bg_color": "#f2eeec",
+        "txt_color": "#262626"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "162974674073d6569f"
+  ]
+}

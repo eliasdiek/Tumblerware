@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "full-width-page-template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

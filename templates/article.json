@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "settings": {
+        "social_sharing_blog": true,
+        "show_blocks": false,
+        "content_section_bg": "",
+        "bottom_section_bg": "",
+        "enable_comment": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="{{ shop.locale }}">
+  <head>
+    
+     <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"56341751"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+    
+    
+    
+	<script>
+		!function (w, d, t) {
+		  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+		
+		  ttq.load('C3J3IPPM4B6L4J2ECDSG');
+		  ttq.page();
+		}(window, document, 'ttq');
+	</script>
+	
+    
+    {% include 'shop-sheriff-amp' %}
+
+    {% comment %}
+    <!-- Google Tag Manager -->
+<!--     <script type="lazyload2">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NBGZDH4');</script> -->
+    <!-- End Google Tag Manager -->
+      {% endcomment %}
+<!--       <meta name="p:domain_verify" content="b8084445132658ce6bf0dcc4111e6e00"/> -->
+
+    <script type="lazyload2">
+    EF.click({
+        offer_id: EF.urlParameter('oid'),
+        affiliate_id: EF.urlParameter('affid'),
+        sub1: EF.urlParameter('sub1'),
+        sub2: EF.urlParameter('sub2'),
+        sub3: EF.urlParameter('sub3'),
+        sub4: EF.urlParameter('sub4'),
+        sub5: EF.urlParameter('sub5'),
+        uid: EF.urlParameter('uid'),
+        transaction_id: EF.urlParameter('utm_term'),
+
+    });
+    </script>
+
+    <!-- Basic page needs ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    {% if settings.favicon %}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png" />
+    {% endif %}
+
+    <!-- Title and description ================================================== -->
+    <title>
+    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+
+    {% if page_description %}
+    <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    <!-- Helpers ================================================== -->
+    {% include 'social-meta-tags' %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="{{ settings.color_primary }}">
+
+    <!-- CSS ================================================== -->
+    {% include 'timber-css' %}
+    {% include 'themes-css' %}
+    <link rel="stylesheet" data-href="{{ 'timber.css' | asset_url }}">
+    <link rel="stylesheet" data-href="{{ 'theme.css' | asset_url }}">
+    
+    {% if template == 'page.about' or template == 'page.how-to' or template == 'page.careers' or template == 'page.reviews' %}
+    {% include 'page-css' %}
+    <link rel="stylesheet" data-href="{{ 'page.css' | asset_url }}">
+    {% endif %}
+  
+    <!-- Sections ================================================== -->
+    <script>
+      window.theme = window.theme || {};
+      theme.strings = {
+        zoomClose: {{ "products.zoom.close" | t | json }},
+        zoomPrev: {{ "products.zoom.prev" | t | json }},
+        zoomNext: {{ "products.zoom.next" | t | json }},
+        moneyFormat: {{ shop.money_format | json }},
+        addressError: {{ 'home_page.map.address_error' | t | json }},
+        addressNoResults: {{ 'home_page.map.address_no_results' | t | json }},
+        addressQueryLimit: {{ 'home_page.map.address_query_limit_html' | t | json }},
+        authError: {{ 'home_page.map.auth_error_html' | t | json }},
+        cartEmpty: {{ 'cart.general.empty' | t | json }},
+        cartCookie: {{ 'cart.general.cookies_required' | t | json }},
+        cartSavings: {{ 'cart.general.savings_html' | t: savings: '[savings]' | json }}
+      };
+      theme.settings = {
+        cartType: {{ settings.cart_type | json }},
+        gridType: {{ settings.collection_products_grid | json }}
+      };
+    </script>
+
+    <!-- {{ 'jquery-2.2.3.min.js' | asset_url | script_tag }} -->
+    {% include 'jquery-min' %}
+
+    <script src="{{ 'lazysizes.min.js' | asset_url }}" defer="defer"></script>
+
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+
+    <!-- Header hook for plugins ================================================== -->
+
+    {%- if request.host == "thejunecup.myshopify.com" or template contains 'cart' or template contains 'checkout' -%}
+      {{ content_for_header }}
+    {%- else -%}
+      {% capture content_for_header2 %}
+        {{ content_for_header }}
+      {% endcapture %}
+      {{ content_for_header2 | replace: ' defer="defer" ', ' type="lazyload2" ' | replace: " src=", " data-src=" | replace: "window.addEventListener('load', asyncLoad, false);", "window.addEventListener('wnw_load', asyncLoad, false);" | replace: "DOMContentLoaded", "" }}
+    {%- endif -%}
+
+    
+    <script src="{{ 'modernizr.min.js' | asset_url }}" defer></script>
+
+    {% comment %}
+      If you store has customer accounts disabled, you can remove the following JS file
+    {% endcomment %}
+    {% if template.directory == 'customers' %}
+      {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+    {% endif %}          
+    
+    {% include 'qikify-navigator' %}
+  
+	{% comment %}
+    <!-- Global site tag (gtag.js) - Google AdWords: 623006741 -->
+    <script type="lazyload2" data-src="https://www.googletagmanager.com/gtag/js?id=AW-623006741"></script>
+    <script type="lazyload2">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-623006741');
+    </script>
+      {% endcomment %}
+
+    {% render 'shogun-head' %}
+    
+    <!--  -->
+    {% include 'qikify-smartmenu' %}
+  
+  {% include 'friendbuy' %}
+
+</head>
+
+    {% comment %}
+      Add the page template as a class for easy page or template specific styling.
+    {% endcomment %}
+  <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}">
+  
+    {% section 'header' %}
+    
+    <style>
+      .tmenu_disabled {
+        display: block !important;
+    	}
+    </style>
+    {% comment %}
+    <!-- Google Tag Manager (noscript) -->
+<!--       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBGZDH4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <!-- End Google Tag Manager (noscript) -->
+	{% endcomment %}
+    <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-footer">
+      <div class="drawer__fixed-header">
+        <div class="drawer__header">
+          <div class="drawer__title">{{ 'cart.general.title' | t }}</div>
+          <div class="drawer__close">
+            <button type="button" class="icon-fallback-text drawer__close-button js-drawer-close">
+              <span class="icon icon-x" aria-hidden="true"></span>
+              <span class="fallback-text">{{ 'cart.general.close_cart' | t }}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="drawer__inner">
+        <div id="CartContainer" class="drawer__cart"></div>
+      </div>
+    </div>
+
+    <div id="PageContainer" class="page-container {{template}}__page">
+
+      <main class="main-content" role="main">
+        {% unless template.name == "index" or template == "collection" or template == "collection.image" or template == "collection.rearrangeable" or template == "product" or template == "page.reviews" or template == "page.about" or template == "page.how-to" or template == "page.careers" or template == '404' or page.url contains "pages" or canonical_url contains "account" %}
+          <div class="wrapper">
+        {% endunless %}
+            
+          {{ content_for_layout }}
+            
+        {% unless template.name == "index" or template == "collection" or template == "collection.image" or template == "collection.rearrangeable" or template == "product" or template == "page.reviews" or template == "page.about" or template == "page.how-to" or template == "page.careers" or template == '404' or page.url contains "pages" or canonical_url contains "account" %}
+          </div>
+        {% endunless %}
+      </main>
+
+      {% section 'footer' %}
+    </div>
+
+    {% comment %}
+      Template-specific js
+    {% endcomment %}
+    <script>
+      {% if resetPassword %}
+        $(function() {
+          timber.resetPasswordSuccess();
+        });
+      {% endif %}
+    </script>
+
+    {% comment %}
+      Ajaxify your cart with this plugin.
+      Documentation:
+        - http://shopify.com/timber#ajax-cart
+    {% endcomment %}
+    {% if settings.cart_type == 'drawer' %}
+      {% include 'ajax-cart-template' %}
+    {% endif %}
+
+    {% if template.name == 'product' or template.name == 'index' %}
+      <script>
+        // Override default values of shop.strings for each template.
+        // Alternate product templates can change values of
+        // add to cart button, sold out, and unavailable states here.
+        theme.productStrings = {
+          addToCart: {{ 'products.product.add_to_cart' | t | json }},
+          soldOut: {{ 'products.product.sold_out' | t | json }},
+          unavailable: {{ 'products.product.unavailable' | t | json }}
+        }
+      </script>
+    {% endif %}
+
+    <div id="SearchModal" class="mfp-hide">
+      {% include 'search-bar', search_btn_style: 'btn', search_bar_location: 'search-bar--modal' %}
+    </div>
+    <ul hidden>
+      <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
+    </ul>
+    {% include 'smile-initializer' %}
+
+    <script type="lazyload2" data-src="{{ 'booster-page-speed-optimizer.js' | asset_url }}"></script>
+   
+    {% render 'afterpay' %}
+
+    {% render 'transit-modal' %}
+
+    {% render 'donate-modal' %}
+
+    <script type="lazyload2" data-src="https://gatsby-statics.gatsby.tech/june/script.min.js"></script>
+    <script type="lazyload2">
+      window.addEventListener("klaviyoForms", function(e) {
+        if (e.detail.type == 'submit') {
+          gatsbyKlaviyoIntegration(btoa('sophia@thejunecup.com'),e.detail.metaData["$email"],e.detail.metaData["instausername"]);
+        }
+      });
+    </script>
+
+    {% unless all_products[settings.transit_product] == empty %}
+      <script type="application/json" id="TransitProductJson">
+        {{ all_products[settings.transit_product] | json }}
+      </script>
+    {% endunless %}
+
+    {% unless all_products[settings.donate_product] == empty %}
+      <script type="application/json" id="AdditionalProductJson">
+        {{ all_products[settings.donate_product] | json }}
+      </script>
+    {% endunless %}
+
+
+    {{ 'wnw-optimization.js' | asset_url | script_tag }}
+  
+
+
+{% render 'oneclickupsellapp-theme', oneclickupsellapp: oneclickupsellapp %}
+{% assign oneclickupsellapp = true %}
+
+<script> function myInit(){ StampedFn.init({ apiKey: 'pubkey-nTa382UGp9uPqer0wmSLnKO04gI250', storeUrl: '108418' }); } </script>
+<script async onload="myInit()" type="text/javascript" src="https://cdn-stamped-io.azureedge.net/files/widget.min.js"> </script>
+<!-- <script>
+  $(".single-option-radio label").on('click',function(){
+	var shori = $(this).find('.oo_price span').html().split(" ")[0];
+    console.log(shori)
+    $("rc-option__text").html("Subscribe & Save "+shori+"/Knife ");
+  });
+</script> -->
+</body>
+</html>

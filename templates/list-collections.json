@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "list-collections-template",
+      "blocks": {
+        "1576313047832": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1576313047832"
+      ],
+      "settings": {
+        "display_type": "all",
+        "sort": "alphabetical"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

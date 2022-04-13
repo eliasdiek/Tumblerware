@@ -1,0 +1,108 @@
+<style>
+    .about-hero-wrapper {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #303F56;
+    }
+    .about-hero-wrapper h1.page-title {
+        font-size: 1.875rem;
+        line-height: 45px;
+        text-align: center;
+        color: #fff;
+    }
+    .index__faq-section:last-child {
+        padding-bottom: 50px;
+    }
+    {% if section.settings.bg_color != blank %}
+    .index__faq-section {
+        background-color: {{ section.settings.bg_color }};
+    }
+    {% endif %}
+</style>
+
+<div class="grid">
+    <div class="grid__item">
+        <div class="grid">
+            <div class="grid__item large--five-sixths push--large--one-twelfth">
+            
+                {% unless section.settings.section_header == blank %}
+                <div class="section_header text-left">
+                    <h3>{{ section.settings.section_header }}</h3>
+                </div>
+                {% endunless %}
+            
+                <div class="grid">
+                <div class="grid__item large--four-fifths push--large--one-tenth">
+                    <div class="rte rte--nomargin rte--indented-images">
+                    <div class="faq-set">
+                        {% for block in section.blocks %}
+                        <div class="faq-block {% if forloop.last %}last{% endif %}">
+                            <h5 class="faq-question">
+                                <a href="#" class="chevron up">{{ block.settings.title }}</a>
+                            </h5>
+                            <div class="faq-answer">
+                                <div class="faq-answer-wrapper">
+                                    <p>{{ block.settings.description }}</p>
+                                </div>
+                            </div>
+                        </div>              
+                        {% endfor %}           
+                    </div>  
+                    </div>
+                </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+	"name": "FAQs",
+    "class": "index__faq-section",
+	"max_blocks": 150,
+	"settings": [
+        {
+            "type": "text",
+            "id": "section_header",
+            "label": "Section header",
+            "default": "Faq"
+        },
+        {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background color"
+        }
+	],
+	"blocks" : [
+		{
+			"type": "text",
+			"name": "FAQ",
+			"settings": [
+				{
+					"type": "text",
+					"id": "title",
+					"default": "Question",
+					"label": "Question"
+				},
+				{
+					"type": "textarea",
+					"id": "description",
+					"default": "Answer goes here...",
+					"label": "Text"
+				}
+			]
+		}
+    ],
+    "presets": [
+    {
+      "name": "Faqs",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}
+  

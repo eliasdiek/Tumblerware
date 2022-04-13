@@ -1,0 +1,89 @@
+{% if section.blocks.size > 0 %}
+  {% assign current_url = collection.url %}
+  <div class="collection_temp_banner_new">
+    {% for block in section.blocks %}
+    
+      {% capture coll %}{{ block.settings.collection }}{% endcapture %} 	  
+      {% assign collection_cat = collections[coll] %}
+    
+      {% if current_url contains collection_cat.handle %}
+        {% if block.settings.deskimage != blank or block.settings.mobimage != blank or block.settings.text != blank %}
+          <style>
+            #collection_banner--{{block.id}} .collection_temp_banner_in_texts {
+              color: {{ block.settings.text_color }} !important;
+            }
+          </style>
+          <div class="collection_temp_banner_inner" id="collection_banner--{{block.id}}">
+            {% if block.settings.deskimage != blank or block.settings.mobimage != blank %}
+              <div class="collection_temp_banner_image" style="background:url({{ block.settings.deskimage | img_url: 'master' }}) no-repeat center center;  background-size:cover !important;">
+                <div class="wrapper">
+                  <div class="page-width">
+                    <div class="collection_temp_banner_in_image">
+                      {% if block.settings.text != blank %}
+                        <div class="collection_temp_banner_texts">
+                          <div class="collection_temp_banner_in_texts">
+                              {{ block.settings.text }}
+                          </div>
+                        </div>
+                      {% endif %}
+                      <style>
+                        @media(min-width:0px) and (max-width:767px){
+                          .collection_temp_banner_image{ background:url({{ block.settings.mobimage | img_url: 'master' }}) no-repeat center center !important; background-size:cover !important; }
+                        }
+                      </style>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Collection Temp Banner",
+	"class": "collection_temp_banner",
+    "settings": [
+
+	],
+	"blocks": [
+      {
+        "type": "collection_name",
+        "name": "Collection Name",
+        "settings": [
+		      {
+            "type": "collection",
+            "id": "collection",
+            "label": "Select Collection"
+          },
+          {
+            "type": "image_picker",
+            "id": "deskimage",
+            "label": "Add Desktop Image"
+          },
+		      {
+            "type": "image_picker",
+            "id": "mobimage",
+            "label": "Add Mobile Image"
+          },
+		      {
+            "type": "textarea",
+            "id": "text",
+            "label": "Add Banner Texts",
+			      "default": "Heading"
+          },
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text color",
+            "default": "#262626"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

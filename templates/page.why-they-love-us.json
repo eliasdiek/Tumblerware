@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "16294103431f66b780": {
+      "type": "text-with-button-alt",
+      "settings": {
+        "heading": "Take It From Them",
+        "body": "<p>Discover why 350K+ menstruators have switched to June.<\/p>",
+        "button_link": "",
+        "button_text": "",
+        "bg_color": "#f2eeec",
+        "txt_color": "#262626"
+      }
+    },
+    "main": {
+      "type": "why_they_love-page-template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "16294103431f66b780",
+    "main"
+  ]
+}

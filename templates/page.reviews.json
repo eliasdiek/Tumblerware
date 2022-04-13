@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "reviews-hero": {
+      "type": "reviews-hero",
+      "settings": {
+        "heading": "Take It From Them",
+        "description": "<p>Discover why hundreds of thousands of menstruators have switched to June.<\/p>",
+        "bg_color": "#f2eeec",
+        "padding_size": "small"
+      }
+    },
+    "162941022550010ab9": {
+      "type": "text-with-button-alt",
+      "disabled": true,
+      "settings": {
+        "heading": "A short sentence describing what someone will receive by heading",
+        "body": "<p>A short sentence describing what someone will receive by body text<\/p>",
+        "button_link": "",
+        "button_text": "",
+        "bg_color": "",
+        "txt_color": ""
+      }
+    },
+    "video-testimonials": {
+      "type": "video-testimonials",
+      "blocks": {
+        "35115db1-be12-4295-a902-8b38b8e6c95a": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/kGYxj7Wv2vU"
+          }
+        },
+        "848cb318-6e28-4c12-8d42-dcf615102209": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/yVVMAIZa0gQ"
+          }
+        },
+        "9c9b04dd-7977-4db3-8c85-174f31b1ca71": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/BgA3VDNjQtM"
+          }
+        },
+        "6dae680d-a64e-4a53-85d7-38067cfdaa0d": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/p2LCEe0PCiA"
+          }
+        },
+        "dce365c2-f956-4368-8227-9424c969e94e": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/CeOZzRRNqRM"
+          }
+        },
+        "4da7354f-ea96-4d24-a9b4-c9c71d5fce2d": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/0KWrjmwcDJQ"
+          }
+        },
+        "7ce8af22-02c3-4c51-992c-90956e4c72c2": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/7_pYh_2ES_I"
+          }
+        },
+        "a9497b8c-e28a-4323-8df4-d56801ac8d45": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/9YML_UC8e4E"
+          }
+        },
+        "7b374945-068a-4c01-b7ac-5f9378e56738": {
+          "type": "Video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/embed\/TLWrzj4b_2g"
+          }
+        }
+      },
+      "block_order": [
+        "35115db1-be12-4295-a902-8b38b8e6c95a",
+        "848cb318-6e28-4c12-8d42-dcf615102209",
+        "9c9b04dd-7977-4db3-8c85-174f31b1ca71",
+        "6dae680d-a64e-4a53-85d7-38067cfdaa0d",
+        "dce365c2-f956-4368-8227-9424c969e94e",
+        "4da7354f-ea96-4d24-a9b4-c9c71d5fce2d",
+        "7ce8af22-02c3-4c51-992c-90956e4c72c2",
+        "a9497b8c-e28a-4323-8df4-d56801ac8d45",
+        "7b374945-068a-4c01-b7ac-5f9378e56738"
+      ],
+      "settings": {
+        "bg_color": ""
+      }
+    }
+  },
+  "order": [
+    "reviews-hero",
+    "162941022550010ab9",
+    "video-testimonials"
+  ]
+}

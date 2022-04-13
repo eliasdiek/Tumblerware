@@ -1,0 +1,51 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-template",
+      "settings": {
+        "cust_t": "Select #  knives :",
+        "eq": "ea.",
+        "zoom_enable": false,
+        "social_sharing_products": false,
+        "product_vendor_enable": false,
+        "image_layout": "stacked",
+        "quantity_enabled": false,
+        "product_selector": "radio",
+        "enable_payment_button": false,
+        "add_to_cart_button_size": "small"
+      }
+    },
+    "product-below-sections": {
+      "type": "product-below-sections",
+      "settings": {}
+    },
+    "faq-title": {
+      "type": "faq-title",
+      "settings": {
+        "title": "Got more questions? See our FAQs",
+        "title_url": "shopify:\/\/pages\/faq"
+      }
+    },
+    "review-title": {
+      "type": "review-title",
+      "settings": {
+        "title": "Why people love it",
+        "subtitle": "Check out why other customers love The Knife Club."
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": false,
+        "heading": "You may also like"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-below-sections",
+    "faq-title",
+    "review-title",
+    "product-recommendations"
+  ]
+}

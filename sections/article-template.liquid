@@ -1,0 +1,295 @@
+<!-- /templates/article.liquid -->
+{% assign number_of_comments = article.comments_count %}
+
+{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count | plus: 1 %}
+{% endif %}
+
+<noscript>
+  {{ article.image | img_url: '2048x2048' | img_tag: article.title | escape }}
+</noscript>
+
+{% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+<img class="article-image lazyload {{ img_id_class }}"
+  src="{{ article.image | img_url: '300x300' }}"
+  data-src="{{ img_url }}"
+  data-widths="[180, 360, 590, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+  data-aspectratio="{{ article.image.aspect_ratio }}"
+  data-sizes="auto"
+  alt="{{ article.image.alt | escape }}"
+  style="width: 100%;"
+/>
+
+<div class="article-page-wrapper" {% if section.settings.content_section_bg != blank %}style="background-color: {{section.settings.content_section_bg}}"{% endif %}>
+  <article class="" itemscope itemtype="http://schema.org/Article">
+
+    <header class="section-header text-center">
+      <h1 class="article-title">{{ article.title }}</h1>
+      <div class="meta-data">
+        <ul class="blog-meta-list">
+          <li class="meta-item">{{ article.published_at | date: format: 'date' }}</li>
+          <li>|</li>
+          <li class="meta-item">{{ article.comments_count }} Comment</li>
+          <li>|</li>
+          <li class="meta-item">{{ article.author }}</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="article-body">
+      <div class="article-body-wrapper">
+
+        <div class="rte--indented-images" itemprop="articleBody">
+          {{ article.content }}
+        </div>
+
+        {% if section.settings.social_sharing_blog %}
+          {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+        {% endif %}
+
+        {% if blog.comments_enabled? %}
+
+          {% if number_of_comments > 0 %}
+            <hr class="hr--large">
+            <h2 class="h3 text-center">{{ 'blogs.comments.with_count' | t: count: number_of_comments }}</h2>
+            <hr class="hr--small hr--clear">
+          {% endif %}
+
+          {% paginate article.comments by 5 %}
+            {% comment %}
+              #comments is required, it is used as an anchor link by Shopify.
+            {% endcomment %}
+            {% if section.settings.enable_comment %}
+            <div id="comments">
+
+              {% if comment and comment.created_at %}
+                <p class="note form-success">
+                  {% if blog.moderated? %}
+                    {{ 'blogs.comments.success_moderated' | t }}
+                  {% else %}
+                    {{ 'blogs.comments.success' | t }}
+                  {% endif %}
+                </p>
+              {% endif %}
+
+              {% if number_of_comments > 0 %}
+                <ul class="no-bullets">
+                  {% comment %}
+                    If a comment was just submitted with no blank field, show it.
+                  {% endcomment %}
+                  {% if comment and comment.created_at %}
+                    <li id="{{ comment.id }}" class="comment first{% if article.comments_count == 0 %} last{% endif %}">
+                      {% include 'comment' %}
+                    </li>
+                  {% endif %}
+
+                  {% comment %}
+                    Showing the rest of the comments.
+                  {% endcomment %}
+                  {% for comment in article.comments %}
+                    <li id="{{ comment.id }}" class="comment{% unless number_of_comments > article.comments_count %}{% if forloop.first %} first{% endif %}{% endunless %}{% if forloop.last %} last {% endif %}">
+                      {% include 'comment' %}
+                    </li>
+
+                    {% unless forloop.last %}
+                      <li><hr class="hr--clear"></li>
+                    {% endunless %}
+                  {% endfor %}
+                </ul>
+
+                {% if paginate.pages > 1 %}
+                  {% include 'pagination' %}
+                {% endif %}
+
+              {% endif %}
+
+              <hr class="hr--large">
+
+              <h2 class="h3 text-center">{{ 'blogs.comments.title' | t }}</h2>
+              <hr class="hr--small hr--clear">
+
+              <div class="form-vertical">
+                {% form 'new_comment', article %}
+
+                  {{ form.errors | default_errors }}
+
+                  <div class="grid grid--small">
+                    <div class="grid__item large--one-half">
+                      <label for="CommentAuthor" class="hidden-label">{{ 'blogs.comments.name' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'author' %} error{% endif %}" type="text" name="comment[author]" placeholder="{{ 'blogs.comments.name' | t }}" id="CommentAuthor" value="{{ form.author }}" autocapitalize="words">
+                    </div>
+                    <div class="grid__item large--one-half">
+                      <label for="CommentEmail" class="hidden-label">{{ 'blogs.comments.email' | t }}</label>
+                      <input class="input-full{% if form.errors contains 'email' %} error{% endif %}" type="email" name="comment[email]" placeholder="{{ 'blogs.comments.email' | t }}" id="CommentEmail" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+                    </div>
+                  </div>
+
+                  <label for="CommentBody" class="hidden-label">{{ 'blogs.comments.message' | t }}</label>
+                  <textarea class="input-full{% if form.errors contains 'body' %} error{% endif %}" name="comment[body]" id="CommentBody" placeholder="{{ 'blogs.comments.message' | t }}">{{ form.body }}</textarea>
+
+                  <hr class="hr--small hr--clear">
+                  <div class="text-center">
+                    {% if blog.moderated? %}
+                      <p>{{ 'blogs.comments.moderated' | t }}</p>
+                    {% endif %}
+
+                    <input type="submit" class="btn" value="{{ 'blogs.comments.post' | t }}">
+                  </div>
+
+                {% endform %}
+              </div>
+
+            </div>
+            {% endif %}
+          {% endpaginate %}
+        {% endif %}
+
+      </div>
+    </div>
+
+  </article>
+</div>
+
+{% if section.settings.show_blocks %}
+<div class="page-bottom-section" {% if section.settings.bottom_section_bg != blank %}style="background-color: {{section.settings.bottom_section_bg}}"{% endif %}>
+  <div class="page-bottom-section--wrapper">
+    <div class="grid">
+      {%- for block in section.blocks -%}
+        <div class="grid__item small--one-whole medium--one-third large--one-third">
+          <div class="block-item">
+            <a href="{{ block.settings.link }}" target="_self">
+              <figure class="image-card">
+                <div class="card-image-wrapper">
+                  <img src="{{ block.settings.image | img_url: '394x' }}" class=" ls-is-cached lazyloaded" alt="">
+                </div>
+                <figcaption>
+                    <div class="card-overlay-content">
+                        <h2>{{ block.settings.heading }}</h2>
+                    </div>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="sub-heading">
+            <h3><a href="{{ block.settings.link }}" target="_self">{{ block.settings.sub_heading }}</a></h3>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- <div class="text-center">
+  <a href="{{ blog.url }}" class="return-link">&larr; {{ 'blogs.article.back_to_blog' | t: title: blog.title }}</a>
+</div> -->
+
+
+
+{% schema %}
+{
+  "name": {
+    "da": "Artikelsider",
+    "de": "Artikelseiten",
+    "en": "Article pages",
+    "es": "Páginas del artículo",
+    "fi": "Artikkelisivut",
+    "fr": "Pages d'articles",
+    "hi": "लेख पेज",
+    "it": "Pagine articoli",
+    "ja": "記事ページ",
+    "ko": "문서 페이지",
+    "ms": "Halaman artikel",
+    "nb": "Artikkelsider",
+    "nl": "Artikelpagina's",
+    "pt-BR": "Páginas do artigo",
+    "pt-PT": "Páginas de artigo",
+    "sv": "Artikelsidor",
+    "th": "หน้าบทความ",
+    "zh-CN": "文章页面",
+    "zh-TW": "文章頁面"
+  },
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "social_sharing_blog",
+      "label": {
+        "da": "Vis knapper til deling på sociale medier",
+        "de": "Social-Sharing-Schaltflächen anzeigen",
+        "en": "Show social sharing buttons",
+        "es": "Mostrar botones para compartir en redes sociales",
+        "fi": "Näytä sosiaalisen median jakamispainikkeet",
+        "fr": "Afficher les boutons de partage social",
+        "hi": "सोशल शेयरिंग बटन दिखाएं",
+        "it": "Mostra i pulsanti per la condivisione sui social",
+        "ja": "ソーシャル共有ボタンを表示する",
+        "ko": "소셜 공유 버튼 표시",
+        "ms": "Tunjukkan butang perkongsian sosial",
+        "nb": "Vis knapper for deling på sosiale medier",
+        "nl": "Knoppen voor sociaal delen weergeven",
+        "pt-BR": "Exibir botões de compartilhamento em redes sociais",
+        "pt-PT": "Mostrar botões de partilha nas redes sociais",
+        "sv": "Visa knappar för delning i sociala medier",
+        "th": "แสดงปุ่มสำหรับแชร์ลงโซเชียล",
+        "zh-CN": "显示社交分享按钮",
+        "zh-TW": "顯示社群分享按鈕"
+      },
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_blocks",
+      "label": "Show bottom blocks",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "content_section_bg",
+      "label": "Content section background"
+    },
+    {
+      "type": "color",
+      "id": "bottom_section_bg",
+      "label": "Bottom section background"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_comment",
+      "label": "Enable comment",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Default text"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "label": "Sub Heading",
+          "default": "Default text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

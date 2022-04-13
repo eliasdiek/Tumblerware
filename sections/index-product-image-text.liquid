@@ -1,0 +1,107 @@
+<div class="wrapper">
+  <div class="page-width feature-row">
+    <div class="product_image_with_text_new">
+      {% if section.settings.image != blank %}
+        <div class="index_product_left_new">
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}"/>
+        </div>
+      {% endif %}
+      {% if section.settings.text1 != blank or section.settings.text2 != blank or section.settings.text3 != blank or section.settings.btntext1 != blank or section.settings.btntext2 != blank %}
+        <div class="index_product_right_new">
+          {% if section.settings.text1 != blank %}
+            <div class="product_text1_new">
+              {{ section.settings.text1 }}
+            </div>
+          {% endif %}
+          {% if section.settings.text2 != blank %}
+            <div class="product_text2_new">
+              {{ section.settings.text2 }}
+            </div>
+          {% endif %}
+          {% if section.settings.text3 != blank %}
+            <div class="product_desc_new">
+              {{ section.settings.text3 }}
+            </div>
+          {% endif %}
+          {% if section.settings.btntext1 != blank %}
+            <div class="product_shop_new">
+              <a class="btn" href="{{ section.settings.btnlink1 }}">
+                {{ section.settings.btntext1 }}
+              </a>
+            </div>
+          {% endif %}
+          {% if section.settings.btntext2 != blank %}
+            <div class="product_link_new">
+              <a href="{{ section.settings.btnlink2 }}">
+                {{ section.settings.btntext2 }}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>  
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Product Image With Text",
+	"class": "product_image_with_text",
+    "settings": [
+	  {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Add Left Image"
+      },
+	  {
+        "type": "text",
+        "id": "text1",
+        "label": "Add Main Heading",
+        "default": "Bundle & Save"
+      },
+	  {
+        "type": "text",
+        "id": "text2",
+        "label": "Add Heading",
+        "default": "Transform your flow<br>with our Period<br>Starter Kit"
+      },
+	  {
+        "type": "richtext",
+        "id": "text3",
+        "label": "Add Information",
+        "default": "<p>Everything you need for a healthier period with comfy products you can wash and wear for years.</p>"
+      },
+	  {
+        "type": "text",
+        "id": "btntext1",
+        "label": "Add Button Label",
+        "default": "<span>SHOP</span>|<span>$29</span>"
+      },
+	  {
+        "type": "url",
+        "id": "btnlink1",
+        "label": "Add Button Link",
+        "default": "/"
+      },
+	  {
+        "type": "text",
+        "id": "btntext2",
+        "label": "Add Text Label",
+        "default": "SHOP ALL PERIOD  KITS"
+      },
+	  {
+        "type": "url",
+        "id": "btnlink2",
+        "label": "Add Text Link",
+        "default": "/"
+      }
+	],
+	"presets": [
+      {
+        "name": "Product Image With Text",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

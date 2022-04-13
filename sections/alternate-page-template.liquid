@@ -1,0 +1,169 @@
+<!-- /templates/article.liquid -->
+{% if section.settings.video != blank %}
+<div class="article__featured-video-wrapper">
+  <video id="Mp4Video" src="{{section.settings.video}}" loop="" muted="" playsinline="" autoplay=""></video>
+</div>
+{% else if section.settings.image != blank %}
+<div class="article__featured-image-wrapper" style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100}}%;">
+  {% assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+  <img class="article__featured-image lazyload"
+       src="{{ section.settings.image | img_url: '300x300' }}"
+       data-src="{{ img_url }}"
+       data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+       data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+       data-sizes="auto"
+       alt="{{ page.title | escape }}">
+</div>
+{% endif %}
+{% if section.settings.mobile_image != blank %}
+<div class="article__featured-image-wrapper mobile" style="padding-top:{{ 1 | divided_by: section.settings.mobile_image.aspect_ratio | times: 100}}%;">
+  {% assign img_url = section.settings.mobile_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+  <img class="article__featured-image lazyload"
+       src="{{ section.settings.mobile_image | img_url: '300x300' }}"
+       data-src="{{ img_url }}"
+       data-widths="[360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+       data-aspectratio="{{ section.settings.mobile_image.aspect_ratio }}"
+       data-sizes="auto"
+       alt="{{ page.title | escape }}">
+</div>
+{% endif %}
+
+<div class="article-page-wrapper" {% if section.settings.content_section_bg != blank %}style="background-color: {{section.settings.content_section_bg}}"{% endif %}>
+  <article class="">
+
+    <header class="section-header text-center">
+      <h1 class="article-title">{{ page.title }}</h1>
+    </header>
+
+    <div class="article-body">
+      <div class="article-body-wrapper">
+
+        <div class="rte--indented-images">
+          {{ page.content }}
+        </div>
+
+      </div>
+    </div>
+
+  </article>
+</div>
+
+{% if section.settings.show_blocks %}
+<div class="page-bottom-section" {% if section.settings.bottom_section_bg != blank %}style="background-color: {{section.settings.bottom_section_bg}}"{% endif %}>
+  <div class="page-bottom-section--wrapper">
+    <div class="grid">
+      {%- for block in section.blocks -%}
+        <div class="grid__item small--one-whole medium--one-third large--one-third">
+          <div class="block-item">
+            <a href="{{ block.settings.link }}" target="_self">
+              <figure class="image-card">
+                <div class="card-image-wrapper">
+                  <img src="{{ block.settings.image | img_url: '394x' }}" class=" ls-is-cached lazyloaded" alt="">
+                </div>
+                <figcaption>
+                    <div class="card-overlay-content">
+                        <h2>{{ block.settings.heading }}</h2>
+                    </div>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="sub-heading">
+            <h3><a href="{{ block.settings.link }}" target="_self">{{ block.settings.sub_heading }}</a></h3>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": {
+    "da": "Artikelsider",
+    "de": "Artikelseiten",
+    "en": "Alternate pages",
+    "es": "Páginas del artículo",
+    "fi": "Artikkelisivut",
+    "fr": "Pages d'articles",
+    "hi": "लेख पेज",
+    "it": "Pagine articoli",
+    "ja": "記事ページ",
+    "ko": "문서 페이지",
+    "ms": "Halaman artikel",
+    "nb": "Artikkelsider",
+    "nl": "Artikelpagina's",
+    "pt-BR": "Páginas do artigo",
+    "pt-PT": "Páginas de artigo",
+    "sv": "Artikelsidor",
+    "th": "หน้าบทความ",
+    "zh-CN": "文章页面",
+    "zh-TW": "文章頁面"
+  },
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Featured Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Featured Image for mobile"
+    },
+    {
+        "type": "url",
+        "id": "video",
+        "label": "Featured Video"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_blocks",
+      "label": "Show bottom blocks",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "content_section_bg",
+      "label": "Content section background"
+    },
+    {
+      "type": "color",
+      "id": "bottom_section_bg",
+      "label": "Bottom section background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "block",
+      "name": "Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Default text"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "label": "Sub Heading",
+          "default": "Default text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

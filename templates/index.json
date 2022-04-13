@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "1584351683156": {
+      "type": "text-button",
+      "disabled": true,
+      "blocks": {
+        "1584765879672": {
+          "type": "slide",
+          "settings": {
+            "message_text": "To help offset impact of COVID-19 all products sold at cost",
+            "button_text": "test",
+            "button_link": "shopify:\/\/blogs\/news\/menstrual-cups-are-now-eligible-for-fsa-hsa-hra"
+          }
+        }
+      },
+      "block_order": [
+        "1584765879672"
+      ],
+      "settings": {
+        "visibility": "both",
+        "color_bg": "#122b6c",
+        "color_text": "#ffffff"
+      }
+    },
+    "16150487994661eec4": {
+      "type": "slideshow",
+      "blocks": {
+        "261ae18e-39bd-4aab-9966-90345ad2aba4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-11_at_10.36.05_AM.png",
+            "mobile_image": "shopify:\/\/shop_images\/Homepage-mobile.jpg",
+            "image_position": "center center",
+            "image_overlay": true,
+            "image_overlay_opacity": 21,
+            "text_alignment": "left_middle",
+            "text_alignment_mobile": "top_center",
+            "slide_heading": "A RAZOR SHARP<br>KNIFE WITHOUT<br>THE EFFORT",
+            "slide_subheading": "Introducing the most advanced yet intuitive knife sharpener.",
+            "button_label": "TRY IT",
+            "button_link": "shopify:\/\/products\/knife-sharpening",
+            "slide_text_color": "#ffffff",
+            "slide_button_label_color": "#1c1d1d",
+            "slide_button_background_color": "#e5e1dd"
+          }
+        }
+      },
+      "block_order": [
+        "261ae18e-39bd-4aab-9966-90345ad2aba4"
+      ],
+      "settings": {
+        "home_hero_height": "full",
+        "hero_home_auto": false,
+        "home_hero_auto_speed": 5
+      }
+    },
+    "16291317706bd32811": {
+      "type": "text-with-button-alt",
+      "settings": {
+        "heading": "Don't think you have  have to be a knifesmith to sharpen your knives",
+        "body": "",
+        "button_link": "",
+        "button_text": "",
+        "bg_color": "#ffffff",
+        "txt_color": "#1c1d1d"
+      }
+    },
+    "1614421552feb24b5b": {
+      "type": "index-product-image-text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-11_at_10.44.54_AM.png",
+        "text1": "",
+        "text2": "The Smarter Way To Sharpen",
+        "text3": "<p>Stop the hassle and enjoy the pleasure of cutting with razor sharp knives. Tumbler makes it easy for anyone to sharpen their knives and maintain a razor sharp edge.<\/p>",
+        "btntext1": "Shop Now",
+        "btnlink1": "shopify:\/\/collections\/frontpage",
+        "btntext2": "",
+        "btnlink2": ""
+      }
+    },
+    "1649699474ee23dcf3": {
+      "type": "text-with-image-companions",
+      "blocks": {
+        "0df27ebb-df54-48ec-9608-989ea01c119a": {
+          "type": "Text",
+          "settings": {
+            "heading": "Love it or your money back",
+            "description": "<p>Don’t like Tumbler for any reason? Send it back for a full refund. That’s our satisfaction guarantee.<\/p>",
+            "bg_color": "#e2d9d5",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-11_at_10.52.46_AM.png",
+            "img_position": "left",
+            "img_position_mobile": "top"
+          }
+        }
+      },
+      "block_order": [
+        "0df27ebb-df54-48ec-9608-989ea01c119a"
+      ],
+      "settings": {}
+    },
+    "16496988610137bb21": {
+      "type": "faqs",
+      "disabled": true,
+      "settings": {
+        "section_header": "Faq",
+        "bg_color": ""
+      }
+    }
+  },
+  "order": [
+    "1584351683156",
+    "16150487994661eec4",
+    "16291317706bd32811",
+    "1614421552feb24b5b",
+    "1649699474ee23dcf3",
+    "16496988610137bb21"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "shogun-landing-page-template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

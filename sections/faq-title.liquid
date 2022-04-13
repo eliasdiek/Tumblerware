@@ -1,0 +1,25 @@
+{% if section.settings.title != blank %}
+<div class="feature-row__text_in faq_section_new">
+  <h3 class="h2"><a href="{{ section.settings.title_url }}">{{ section.settings.title }}</a></h3>
+</div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Faq title",
+    "class": "faq_title",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Add Heading",
+        "default": "Get more quiestions? Check out our FAQ"
+      },
+      {
+        "type": "url",
+        "id": "title_url",
+        "label": "Add Link"
+      }
+    ]
+  }
+{% endschema %}

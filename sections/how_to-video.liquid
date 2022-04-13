@@ -1,0 +1,36 @@
+<style>
+    .index-video-section {
+        background-color: {{ section.settings.bg_color }};
+    }
+</style>
+
+<div class="page-video-wrapper">
+    <iframe width="560" height="315" src="{{ section.settings.video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+  
+{% schema %}
+{
+"name": "How to video",
+"class": "index-video-section",
+"settings": [
+    {
+        "type": "text",
+        "id": "video_url",
+        "label": "Video URL",
+        "default": "https://www.youtube.com/embed/FcLNC43yFs4"
+    },
+    {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+    }
+],
+"presets": [
+    {
+        "name": "How to video",
+        "category": "Video"
+    }
+]
+}
+{% endschema %}
+  

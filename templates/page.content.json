@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "content-page-template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

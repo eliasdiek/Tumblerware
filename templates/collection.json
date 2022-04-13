@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-template",
+      "settings": {
+        "collection_products_grid": "grid",
+        "collection_sort_enable": false,
+        "collection_tags_enable": false,
+        "product_vendor_enable": false,
+        "aftercare_heading": "Aftercare",
+        "underwear_heading": "Period Underwear",
+        "period_packs_heading": "Period Packs",
+        "menstrual_cup_heading": "Menstrual Cups",
+        "kits_heading": "Kits"
+      }
+    },
+    "banner": {
+      "type": "collection-template-banner",
+      "blocks": {
+        "4ee4dad1-d070-4531-be05-9a1e8698024e": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "frontpage",
+            "deskimage": "shopify:\/\/shop_images\/June_Cup_Collection_Banner_All_Products_Desktop_2cce099b-a3f5-4f80-a37e-e827c70d7163.jpg",
+            "mobimage": "shopify:\/\/shop_images\/June_Cup_Collection_Banner_All_Products_Mobile_629855a1-7c86-46fb-840f-31f7b22fec7c.jpg",
+            "text": "Our line of smarter<br>\nmenstrual care"
+          }
+        },
+        "8f62269c-b7e9-45d1-9016-d0b869c6caa5": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "earth-day-collection",
+            "deskimage": "shopify:\/\/shop_images\/earth-day-desktop.jpg",
+            "mobimage": "shopify:\/\/shop_images\/earth-day.jpg",
+            "text": ""
+          }
+        },
+        "078683e5-efc8-400d-a938-75d8da94a967": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "happy-birthday",
+            "deskimage": "shopify:\/\/shop_images\/June_Milkbar_desktop_banner_46e1c6c3-2b59-4141-9c68-efba585d4da4.jpg",
+            "mobimage": "shopify:\/\/shop_images\/June_Milkbar_mobile_banner_ee31a4ce-c03c-4aeb-8320-a1bf007692e4.jpg",
+            "text": "Have Your Cake & Eat It Too"
+          }
+        }
+      },
+      "block_order": [
+        "4ee4dad1-d070-4531-be05-9a1e8698024e",
+        "8f62269c-b7e9-45d1-9016-d0b869c6caa5",
+        "078683e5-efc8-400d-a938-75d8da94a967"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "banner",
+    "main"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "student-discount-page-template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

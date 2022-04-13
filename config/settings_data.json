@@ -1,0 +1,1274 @@
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_headings": "#51453f",
+    "color_body_text": "#111111",
+    "color_borders": "#ffffff",
+    "color_button_text": "#ffffff",
+    "color_primary": "#ff6000",
+    "color_secondary": "#243269",
+    "color_product_background": "#ffffff",
+    "color_sale_tag": "#111111",
+    "color_input": "#f6f6f6",
+    "color_newsletter": "#111111",
+    "color_drawer_background": "#1c1d1d",
+    "color_drawer_text": "#ffffff",
+    "color_drawer_border": "#111111",
+    "color_drawer_button": "#ff6000",
+    "color_drawer_button_text": "#ffffff",
+    "type_header_family": "georgia_pro_n4",
+    "type_header_base_size": "30px",
+    "type_header_border_thickness": "1px",
+    "type_accent_family": "open_sans_n6",
+    "type_accent_transform": false,
+    "type_accent_spacing": true,
+    "type_accent_subheadings": true,
+    "type_base_family": "open_sans_n3",
+    "type_base_size": "17px",
+    "type_base_italize_titles": false,
+    "cart_type": "page",
+    "cart_notes_enable": false,
+    "transit_product": "transit-shipping-protection",
+    "set_transit_optout": false,
+    "donate_product": "",
+    "set_donate_optout": false,
+    "donate_text_in_cart": "",
+    "donate_info_page": "",
+    "show_afterpay_btn": true,
+    "share_image": "shopify:\/\/shop_images\/June_Cup_Period_Underwear_Facebook_d90a1425-25e3-487b-a134-0f718c6816f5.jpg",
+    "social_facebook_link": "",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_snapchat_link": "",
+    "social_google_plus_link": "",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "favicon": "shopify:\/\/shop_images\/Icon_Orange.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/June-Watermark-Blue_eb4d8634-1fc6-428c-a9d5-b77f336b6301.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#f2eeec",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Open Sans",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#111111",
+    "checkout_button_color": "#ff5222",
+    "checkout_error_color": "#ff4136",
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#a26b25",
+    "checkout_use_header_image": false,
+    "collection_products_grid": "collage",
+    "customer_layout": "customer_area",
+    "favicon_enable": false,
+    "product_vendor_enable": false,
+    "social_sharing_style": "clean",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "sticky_header": false,
+          "logo": "shopify:\/\/shop_images\/Icon_Orange.png",
+          "logo_max_width": "45",
+          "search": "none",
+          "main_menu_link_list": "main-menu",
+          "drawer_bottom_link_list": "",
+          "drawer_search_enable": false,
+          "show_announcement": false,
+          "home_page_only": false,
+          "text": "Free knife sharpening with a referral of a friend.",
+          "link": "",
+          "color_bg": "#243269",
+          "color_text": "#ffffff"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1573080026765": {
+            "type": "slide",
+            "settings": {
+              "image": "",
+              "mobile_image": "",
+              "image_position": "center center",
+              "image_overlay": false,
+              "image_overlay_opacity": 50,
+              "text_alignment": "center",
+              "text_alignment_mobile": "top_center",
+              "slide_heading": "DON'T SETTLE FOR ORDINARY",
+              "slide_subheading": "",
+              "button_label": "Shop",
+              "button_link": "shopify:\/\/collections\/all-products",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#000000",
+              "slide_button_background_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1573080026765"
+        ],
+        "settings": {
+          "home_hero_height": "full",
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 5
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Logo_horizontal_white.png",
+          "helps_link_list": "",
+          "pages_link_list": "",
+          "shop_link_list": "",
+          "bottom_leagal_list": "footer",
+          "bottom_link_list": "",
+          "show_payment_icons": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "collection_products_grid": "grid",
+          "collection_sort_enable": false,
+          "collection_tags_enable": false,
+          "product_vendor_enable": false,
+          "aftercare_heading": "Aftercare",
+          "underwear_heading": "Period Underwear",
+          "period_packs_heading": "Period Packs",
+          "menstrual_cup_heading": "Menstrual Cups",
+          "kits_heading": "Kits"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "zoom_enable": false,
+          "social_sharing_products": false,
+          "product_vendor_enable": false,
+          "image_layout": "thumbnails",
+          "quantity_enabled": false,
+          "product_selector": "radio",
+          "enable_payment_button": false,
+          "add_to_cart_button_size": "large"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "heading": "You may also like"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "blocks": {
+          "1576313047832": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "1576313047832"
+        ],
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical"
+        }
+      },
+      "1584351683156": {
+        "type": "text-button",
+        "disabled": true,
+        "blocks": {
+          "1584765879672": {
+            "type": "slide",
+            "settings": {
+              "message_text": "To help offset impact of COVID-19 all products sold at cost",
+              "button_text": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1584765879672"
+        ],
+        "settings": {
+          "visibility": "both",
+          "color_bg": "#122b6c",
+          "color_text": "#ffffff"
+        }
+      },
+      "1593800078248": {
+        "type": "slideshow-video",
+        "disabled": true,
+        "blocks": {
+          "b8309bb4-fe12-4585-b4fc-33b6ba2c803f": {
+            "type": "slide",
+            "settings": {
+              "hide_slide": false,
+              "image_position": "center center"
+            }
+          },
+          "1594179503686": {
+            "type": "slide",
+            "settings": {
+              "hide_slide": true,
+              "image_position": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "b8309bb4-fe12-4585-b4fc-33b6ba2c803f",
+          "1594179503686"
+        ],
+        "settings": {
+          "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0051\/9428\/5091\/files\/JUNE___How_To_Use_A_Menstrual_Cup.mp4?v=1593807296",
+          "show_video_desktop": false,
+          "home_hero_height": "adapt",
+          "hero_arrows": false,
+          "hero_dots": true,
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 3,
+          "image_overlay": false,
+          "image_overlay_opacity": 0,
+          "text_alignment": "left_middle",
+          "text_alignment_mobile": "top_center",
+          "slide_heading": "Welcome to a <br>smarter period",
+          "slide_heading_mobile": "Welcome to a <br>smarter period",
+          "slide_subheading": "Research-backed products for a healthier, comfier period.",
+          "slide_subheading_mobile": "Research-backed products for a healthier, comfier period.",
+          "button_label": "Shop now",
+          "button_link": "shopify:\/\/products\/the-june-menstrual-cup-original",
+          "slide_text_color": "#262626",
+          "slide_text_color_mobile": "#262626",
+          "slide_button_label_color": "#ffffff",
+          "slide_button_label_color_mobile": "#ffffff",
+          "slide_button_background_color": "#243269",
+          "slide_button_background_color_mobile": "#243269"
+        }
+      },
+      "alternate-page-template": {
+        "type": "alternate-page-template",
+        "blocks": {
+          "1594929519925": {
+            "type": "block",
+            "settings": {
+              "heading": "Default text",
+              "sub_heading": "Default text"
+            }
+          }
+        },
+        "block_order": [
+          "1594929519925"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/June_Cup_Woman_Searching_Internet.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/June_Cup_Woman_Searching_Internet_Mobile.jpg",
+          "show_blocks": false,
+          "content_section_bg": "",
+          "bottom_section_bg": ""
+        }
+      },
+      "161440519457ab0d11": {
+        "type": "index-texts-slider",
+        "blocks": {
+          "161440519457ab0d11-0": {
+            "type": "lander",
+            "settings": {
+              "title": "Healthier and comfier period"
+            }
+          },
+          "161440519457ab0d11-1": {
+            "type": "lander",
+            "settings": {
+              "title": "Research-backed"
+            }
+          },
+          "2f93a408-5a79-4aec-93e4-f556db1eeeb6": {
+            "type": "lander",
+            "settings": {
+              "title": "Healthier and comfier period"
+            }
+          },
+          "3203c4da-9f28-406c-8e7a-417c682173e5": {
+            "type": "lander",
+            "settings": {
+              "title": "Research-backed"
+            }
+          },
+          "58d36b12-f750-4d1f-ad12-3cf7eb8555c9": {
+            "type": "lander",
+            "settings": {
+              "title": "Healthier and comfier period"
+            }
+          },
+          "e2b07776-247d-4fc3-955e-845f85bbd571": {
+            "type": "lander",
+            "settings": {
+              "title": "Research-backed"
+            }
+          },
+          "c9574d67-6852-440f-86ab-6546b62a0f71": {
+            "type": "lander",
+            "settings": {
+              "title": "Healthier and comfier period"
+            }
+          },
+          "b1eb842a-4554-4468-87c4-ccc4eb53a1cc": {
+            "type": "lander",
+            "settings": {
+              "title": "Research-backed"
+            }
+          },
+          "6cb4c498-6409-4c2b-9ea3-673bcf98cfec": {
+            "type": "lander",
+            "settings": {
+              "title": "Healthier and comfier period"
+            }
+          },
+          "4242c1e2-8f21-48c9-87f2-a82d35cd5e64": {
+            "type": "lander",
+            "settings": {
+              "title": "Research-backed"
+            }
+          },
+          "ff2eb71c-0d96-4921-9928-9b8935918b8b": {
+            "type": "lander",
+            "settings": {
+              "title": "Healthier and comfier period"
+            }
+          },
+          "592d942c-a5d5-489f-9524-72f08c8b16c0": {
+            "type": "lander",
+            "settings": {
+              "title": "Research-backed"
+            }
+          },
+          "88787b83-b414-43ef-b8bb-f39236cd7a8e": {
+            "type": "lander",
+            "settings": {
+              "title": "Healthier and comfier period"
+            }
+          },
+          "9131adf7-9469-41ea-bcc7-d0956cf6dc2a": {
+            "type": "lander",
+            "settings": {
+              "title": "Research-backed"
+            }
+          }
+        },
+        "block_order": [
+          "161440519457ab0d11-0",
+          "161440519457ab0d11-1",
+          "2f93a408-5a79-4aec-93e4-f556db1eeeb6",
+          "3203c4da-9f28-406c-8e7a-417c682173e5",
+          "58d36b12-f750-4d1f-ad12-3cf7eb8555c9",
+          "e2b07776-247d-4fc3-955e-845f85bbd571",
+          "c9574d67-6852-440f-86ab-6546b62a0f71",
+          "b1eb842a-4554-4468-87c4-ccc4eb53a1cc",
+          "6cb4c498-6409-4c2b-9ea3-673bcf98cfec",
+          "4242c1e2-8f21-48c9-87f2-a82d35cd5e64",
+          "ff2eb71c-0d96-4921-9928-9b8935918b8b",
+          "592d942c-a5d5-489f-9524-72f08c8b16c0",
+          "88787b83-b414-43ef-b8bb-f39236cd7a8e",
+          "9131adf7-9469-41ea-bcc7-d0956cf6dc2a"
+        ],
+        "settings": {}
+      },
+      "161440654286b50aee": {
+        "type": "featured-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/June_Cup_Menstrual_Cup_Branding_Model_Research.jpg",
+          "layout": "left",
+          "title": "We believe that<br>knowledge is power",
+          "text": "<p>We set out to make menstrual care essentials that are safer, comfier, and backed by health education—because smarter products lead to a healthier period. <\/p>",
+          "button_label": "Questions? Check out our FAQs",
+          "button_link": "shopify:\/\/pages\/faq",
+          "Button_text": "Make the switch",
+          "Button_link": "shopify:\/\/collections\/frontpage",
+          "button_color": "#262626"
+        }
+      },
+      "16144078680e6e5da8": {
+        "type": "index-logo-list",
+        "blocks": {
+          "a81e32e0-621b-4f7a-83a6-0ec053249e9c": {
+            "type": "logo_list",
+            "settings": {
+              "logo_text": "IN THE PRESS"
+            }
+          },
+          "16144078680e6e5da8-0": {
+            "type": "logo_list",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo_allure_3177af82-513e-49db-9b70-dc1c657ef077.png",
+              "logo_text": ""
+            }
+          },
+          "16144078680e6e5da8-1": {
+            "type": "logo_list",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo_vogue_40592ef2-be0e-4490-9919-c67617172530.png",
+              "logo_text": ""
+            }
+          },
+          "16144078680e6e5da8-2": {
+            "type": "logo_list",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo_cnn_b49ee66f-7542-46e6-87a5-a20f0e9c1f40.png",
+              "logo_text": ""
+            }
+          },
+          "16144078680e6e5da8-3": {
+            "type": "logo_list",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo_salty.png",
+              "logo_text": ""
+            }
+          },
+          "360997b0-2cd1-468d-a7ae-8ac288812dd0": {
+            "type": "logo_list",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/logo_fertllity_tribe.png",
+              "logo_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "a81e32e0-621b-4f7a-83a6-0ec053249e9c",
+          "16144078680e6e5da8-0",
+          "16144078680e6e5da8-1",
+          "16144078680e6e5da8-2",
+          "16144078680e6e5da8-3",
+          "360997b0-2cd1-468d-a7ae-8ac288812dd0"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1614421552feb24b5b": {
+        "type": "index-product-image-text",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/June_Cup_Complete_Period_Pack.png",
+          "text1": "Bundle & Save",
+          "text2": "Transform your flow<br>with our Period<br>Starter Packs",
+          "text3": "<p>Everything you need for a healthier period with comfy products you can wash and wear for years.<\/p>",
+          "btntext1": "Starts at $6",
+          "btnlink1": "shopify:\/\/collections\/frontpage",
+          "btntext2": "",
+          "btnlink2": ""
+        }
+      },
+      "1614590549e1f6370f": {
+        "type": "index-our-product",
+        "blocks": {
+          "cb3576d8-0fe1-4fc4-b89e-3dfdccb1f16f": {
+            "type": "our_product",
+            "settings": {
+              "text": "Period Cups",
+              "infotext": "<p>Our menstrual cup is a comfortable, easy-to-use alternative to pads and tampons that can be safely worn for up to 12 hours.<\/p>",
+              "image": "shopify:\/\/shop_images\/June_Cup_Original_Menstrual_Cup_Hands_Holding.jpg",
+              "image_align": false,
+              "Button_text": "Shop cups",
+              "Button_link": "shopify:\/\/collections\/menstrual-cups",
+              "button_color": "#262626"
+            }
+          },
+          "a3e5010b-3593-4977-8e36-6852ad692978": {
+            "type": "our_product",
+            "settings": {
+              "text": "Aftercare",
+              "infotext": "<p>A pH-balanced wash that’s specifically formulated to clean your June Cup without leaving behind residue that can disrupt vaginal balance.<\/p>",
+              "image": "shopify:\/\/shop_images\/June_Cup_Menstrual_Cup_Wash_Hand_Cleaning.jpg",
+              "image_align": false,
+              "Button_text": "Shop aftercare",
+              "Button_link": "shopify:\/\/collections\/aftercare",
+              "button_color": "#262626"
+            }
+          },
+          "f7560f2b-4693-4d76-a97e-13bf260bd792": {
+            "type": "our_product",
+            "settings": {
+              "text": "Underwear",
+              "infotext": "<p>Comfy mid-rise undies that absorb a light-medium flow or provide back-up on heavy flow days when paired with your June Cup.<\/p>",
+              "image": "shopify:\/\/shop_images\/June_Cup_Black_Period_Underwear_Models.jpg",
+              "image_align": false,
+              "Button_text": "Shop undies",
+              "Button_link": "shopify:\/\/collections\/period-underwear",
+              "button_color": "#262626"
+            }
+          },
+          "b56ad4a9-b1de-47a6-95b7-c02343c2b206": {
+            "type": "our_product",
+            "settings": {
+              "text": "Packs",
+              "infotext": "<p>The must-haves to revolutionize your monthly flow: a comfier, healthier alternative to pads and tampons that can be safely worn for up to 12 hours.<\/p>",
+              "image": "shopify:\/\/shop_images\/June_Cup_Essential_Period_Pack_Model_Display.jpg",
+              "image_align": false,
+              "Button_text": "Shop packs",
+              "Button_link": "shopify:\/\/collections\/period-packs",
+              "button_color": "#262626"
+            }
+          }
+        },
+        "block_order": [
+          "cb3576d8-0fe1-4fc4-b89e-3dfdccb1f16f",
+          "a3e5010b-3593-4977-8e36-6852ad692978",
+          "f7560f2b-4693-4d76-a97e-13bf260bd792",
+          "b56ad4a9-b1de-47a6-95b7-c02343c2b206"
+        ],
+        "settings": {
+          "title": "Our Products",
+          "background_color": "#ffffff"
+        }
+      },
+      "featured-content": {
+        "type": "featured-content",
+        "settings": {
+          "home_page_full_width": true,
+          "section_title": "A safe and comfortable period isn't a luxury, it's an essential.",
+          "text": "",
+          "text_size": "large",
+          "bg_color": "#f2eeec",
+          "txt_color": "#262626"
+        }
+      },
+      "collection-template-banner": {
+        "type": "collection-template-banner",
+        "blocks": {
+          "4ee4dad1-d070-4531-be05-9a1e8698024e": {
+            "type": "collection_name",
+            "settings": {
+              "collection": "frontpage",
+              "deskimage": "shopify:\/\/shop_images\/June_Cup_Collection_Banner_All_Products_Desktop_2cce099b-a3f5-4f80-a37e-e827c70d7163.jpg",
+              "mobimage": "shopify:\/\/shop_images\/June_Cup_Collection_Banner_All_Products_Mobile_629855a1-7c86-46fb-840f-31f7b22fec7c.jpg",
+              "text": "Our line of smarter<br>\nmenstrual care"
+            }
+          },
+          "8f62269c-b7e9-45d1-9016-d0b869c6caa5": {
+            "type": "collection_name",
+            "settings": {
+              "collection": "earth-day-collection",
+              "deskimage": "shopify:\/\/shop_images\/earth-day-desktop.jpg",
+              "mobimage": "shopify:\/\/shop_images\/earth-day.jpg",
+              "text": ""
+            }
+          },
+          "078683e5-efc8-400d-a938-75d8da94a967": {
+            "type": "collection_name",
+            "settings": {
+              "collection": "happy-birthday",
+              "deskimage": "shopify:\/\/shop_images\/June_Milkbar_desktop_banner_46e1c6c3-2b59-4141-9c68-efba585d4da4.jpg",
+              "mobimage": "shopify:\/\/shop_images\/June_Milkbar_mobile_banner_ee31a4ce-c03c-4aeb-8320-a1bf007692e4.jpg",
+              "text": "Have Your Cake & Eat It Too"
+            }
+          }
+        },
+        "block_order": [
+          "4ee4dad1-d070-4531-be05-9a1e8698024e",
+          "8f62269c-b7e9-45d1-9016-d0b869c6caa5",
+          "078683e5-efc8-400d-a938-75d8da94a967"
+        ],
+        "settings": {}
+      },
+      "1614982247d89846dc": {
+        "type": "featured-video",
+        "disabled": true,
+        "settings": {
+          "heading": "How do you celebrate yourself?",
+          "video_url": "https:\/\/www.youtube.com\/watch?v=DSbjxoJvxBU",
+          "subtext": "Lorem Ipsum"
+        }
+      },
+      "16150487994661eec4": {
+        "type": "slideshow",
+        "blocks": {
+          "261ae18e-39bd-4aab-9966-90345ad2aba4": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/June_Menstrual_Cup_Home.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/June_Menstrual_Cup_Home_Mobile_f79a59ef-f0fe-4e9b-8b5e-6624583f4280.jpg",
+              "image_position": "center center",
+              "image_overlay": true,
+              "image_overlay_opacity": 49,
+              "text_alignment": "left_middle",
+              "text_alignment_mobile": "top_center",
+              "slide_heading": "Make The Switch",
+              "slide_subheading": "Better menstrual care for just $6",
+              "button_label": "Get Started",
+              "button_link": "shopify:\/\/products\/the-june-menstrual-cup-original",
+              "slide_text_color": "#ffffff",
+              "slide_button_label_color": "#ffffff",
+              "slide_button_background_color": "#243269"
+            }
+          }
+        },
+        "block_order": [
+          "261ae18e-39bd-4aab-9966-90345ad2aba4"
+        ],
+        "settings": {
+          "home_hero_height": "full",
+          "hero_home_auto": false,
+          "home_hero_auto_speed": 5
+        }
+      },
+      "product-below-sections": {
+        "type": "product-below-sections",
+        "settings": {}
+      },
+      "faq-title": {
+        "type": "faq-title",
+        "settings": {
+          "title": "Got more questions? See our FAQs",
+          "title_url": "shopify:\/\/pages\/faq"
+        }
+      },
+      "review-title": {
+        "type": "review-title",
+        "settings": {
+          "title": "In Their Words",
+          "subtitle": "Check out what other menstruators have to say."
+        }
+      },
+      "product-template-new": {
+        "type": "product-template-new",
+        "settings": {
+          "zoom_enable": false,
+          "social_sharing_products": false,
+          "product_vendor_enable": false,
+          "image_layout": "stacked",
+          "quantity_enabled": false,
+          "product_selector": "radio",
+          "enable_payment_button": false,
+          "add_to_cart_button_size": "large"
+        }
+      },
+      "about-hero": {
+        "type": "about-hero",
+        "settings": {
+          "heading": "Smarter Products. Period.",
+          "description": "<p>The products you use every month should be backed by research. That&#x27;s why we dig into the details, create evidence-based products, and present you with the facts so that you can make informed choices for your body.<\/p>",
+          "bg_color": "#f2eeec",
+          "padding_size": "large"
+        }
+      },
+      "text-with-image-companions": {
+        "type": "text-with-image-companions",
+        "blocks": {
+          "7c8cd90f-bec6-4d71-8017-0f2cf522a1df": {
+            "type": "Text",
+            "settings": {
+              "heading": "Safer, Comfier Options",
+              "description": "<p>Pads and tampons just didn&#x27;t work for us. That&#x27;s why we set out to create something different. The results are everything we think period products should be—safer, more comfortable options that make it possible to actually forget you&#x27;re bleeding.<\/p>",
+              "bg_color": "",
+              "image": "shopify:\/\/shop_images\/June_Cup_Essential_Period_Pack_Model_Display_2e79ff1c-d1c2-4a06-990b-d413a0a9ea25.jpg",
+              "img_position": "right"
+            }
+          },
+          "317dd78d-ce0b-4c2b-bb87-f00e23e94e9d": {
+            "type": "Text",
+            "settings": {
+              "heading": "A Smarter Flow",
+              "description": "<p>We believe that having a safe and comfy period isn&#x27;t a luxury, it&#x27;s an essential. When we realized that most menstrual cups cost $30+, we saw an opportunity to do things differently—selling our cups at cost so that almost everyone can afford to buy one.<\/p>",
+              "bg_color": "",
+              "image": "shopify:\/\/shop_images\/June_Cup_Menstrual_Cup_Branding_Model_Research_fe04931b-7582-4434-afc4-b3cd990bb9f8.jpg",
+              "img_position": "left"
+            }
+          },
+          "3e96a4ab-c887-48be-bd94-a16e2ddc33bf": {
+            "type": "Text",
+            "settings": {
+              "heading": "Connect with JUNE",
+              "description": "<p>From the moment you get your first JUNE product, you become part of our <a href=\"https:\/\/www.facebook.com\/groups\/205122780829614\" title=\"https:\/\/www.facebook.com\/groups\/205122780829614\">community<\/a>: a place where thousands of menstruators come together, ask questions and to learn from each other. <a href=\"https:\/\/www.facebook.com\/groups\/205122780829614\" title=\"https:\/\/www.facebook.com\/groups\/205122780829614\"><strong>Join here<\/strong><\/a><\/p>",
+              "bg_color": "",
+              "image": "shopify:\/\/shop_images\/June_Cup_Community_Facebook.jpg",
+              "img_position": "right"
+            }
+          }
+        },
+        "block_order": [
+          "7c8cd90f-bec6-4d71-8017-0f2cf522a1df",
+          "317dd78d-ce0b-4c2b-bb87-f00e23e94e9d",
+          "3e96a4ab-c887-48be-bd94-a16e2ddc33bf"
+        ],
+        "settings": {}
+      },
+      "text-with-image-alt": {
+        "type": "text-with-image-alt",
+        "settings": {
+          "heading": "Built by a Woman Who Wanted Better for Her Body",
+          "description": "<p>I started JUNE because of my own struggle with irritation and discomfort. I spent hours researching what could be causing them, but nothing worked until I discovered that tampons might be triggering my problem.<\/p><p>When I switched to a menstrual cup, all my research finally paid off and my yeast infections ended. And that got me thinking: what could I do to help other menstruators make more informed choices for their bodies?<\/p><p>JUNE started with my personal search but has grown into something so much more thanks to you. Together, we're helping each other make the best choices for our bodies.<\/p><p>Hedi Rappard<\/p><p>CEO & Founder<\/p><p>Interested to join the team? See our <a href=\"\/pages\/careers\" title=\"Careers\"><strong>careers page<\/strong><\/a><\/p>",
+          "bg_color": "#f2eeec",
+          "image": "shopify:\/\/shop_images\/June_Menstrual_Cup_Founder_e8c771a8-4cef-46d2-bf40-25797c1786f1.jpg"
+        }
+      },
+      "how_to-hero": {
+        "type": "how_to-hero",
+        "settings": {
+          "heading": "The June Menstrual Cup",
+          "description": "<p>A leak-free option to catch your flow. Flexible silicone that can easily be inserted and worn for up to 12 hours. Empty it, wash it and wear it again. Watch the how-to video below.<\/p>",
+          "bg_color": "#f2eeec",
+          "padding_size": "large"
+        }
+      },
+      "how_to-video": {
+        "type": "how_to-video",
+        "settings": {
+          "video_url": "https:\/\/www.youtube.com\/embed\/FcLNC43yFs4",
+          "bg_color": ""
+        }
+      },
+      "our-products": {
+        "type": "our-products",
+        "settings": {
+          "heading": "Shop All",
+          "sub_heading": "A smarter period with comfier, healthier products.",
+          "collection": "frontpage",
+          "bg_color": "",
+          "collection_products_grid": "grid",
+          "collection_sort_enable": false,
+          "collection_tags_enable": false,
+          "product_vendor_enable": false
+        }
+      },
+      "reviews-hero": {
+        "type": "reviews-hero",
+        "settings": {
+          "heading": "Take It From Them",
+          "description": "<p>Discover why hundreds of thousands of menstruators have switched to June.<\/p>",
+          "bg_color": "#f2eeec",
+          "padding_size": "large"
+        }
+      },
+      "video-testimonials": {
+        "type": "video-testimonials",
+        "blocks": {
+          "35115db1-be12-4295-a902-8b38b8e6c95a": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/kGYxj7Wv2vU"
+            }
+          },
+          "848cb318-6e28-4c12-8d42-dcf615102209": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/yVVMAIZa0gQ"
+            }
+          },
+          "9c9b04dd-7977-4db3-8c85-174f31b1ca71": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/BgA3VDNjQtM"
+            }
+          },
+          "6dae680d-a64e-4a53-85d7-38067cfdaa0d": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/p2LCEe0PCiA"
+            }
+          },
+          "dce365c2-f956-4368-8227-9424c969e94e": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/CeOZzRRNqRM"
+            }
+          },
+          "4da7354f-ea96-4d24-a9b4-c9c71d5fce2d": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/0KWrjmwcDJQ"
+            }
+          },
+          "7ce8af22-02c3-4c51-992c-90956e4c72c2": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/7_pYh_2ES_I"
+            }
+          },
+          "a9497b8c-e28a-4323-8df4-d56801ac8d45": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/9YML_UC8e4E"
+            }
+          },
+          "7b374945-068a-4c01-b7ac-5f9378e56738": {
+            "type": "Video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/embed\/TLWrzj4b_2g"
+            }
+          }
+        },
+        "block_order": [
+          "35115db1-be12-4295-a902-8b38b8e6c95a",
+          "848cb318-6e28-4c12-8d42-dcf615102209",
+          "9c9b04dd-7977-4db3-8c85-174f31b1ca71",
+          "6dae680d-a64e-4a53-85d7-38067cfdaa0d",
+          "dce365c2-f956-4368-8227-9424c969e94e",
+          "4da7354f-ea96-4d24-a9b4-c9c71d5fce2d",
+          "7ce8af22-02c3-4c51-992c-90956e4c72c2",
+          "a9497b8c-e28a-4323-8df4-d56801ac8d45",
+          "7b374945-068a-4c01-b7ac-5f9378e56738"
+        ],
+        "settings": {
+          "bg_color": ""
+        }
+      },
+      "careers-hero": {
+        "type": "careers-hero",
+        "settings": {
+          "above_heading_text": "Join our team",
+          "heading": "Do Your Most Rewarding Work",
+          "description": "<p>Join our mission to help people make informed choices for their periods, their bodies, and their lives.<\/p>",
+          "link_text": "",
+          "link": "shopify:\/\/pages\/contact-us",
+          "bg_color": "#f2eeec",
+          "padding_size": "large"
+        }
+      },
+      "text-with-image-companions_careers": {
+        "type": "text-with-image-companions_careers",
+        "blocks": {
+          "82058a07-91f1-4943-b97b-3c6bf18adc90": {
+            "type": "Text",
+            "settings": {
+              "heading": "Why JUNE?",
+              "description": "<p>JUNE is a team of analytical thinkers, problem solvers, and cross examiners powered by the conviction that having a safe and comfy period isn&#x27;t a luxury, it&#x27;s an essential. We value a sense of urgency, bold decision-making, and unconventional ideas. We’re a small and passionate team that thinks deeply but moves quickly to develop thoughtful, mission-driven products and experiences. <\/p>",
+              "bg_color": "",
+              "image": "shopify:\/\/shop_images\/why_june.png",
+              "img_position": "left"
+            }
+          },
+          "f1049aff-e653-498e-8d01-8cfaeb9f0ff1": {
+            "type": "Text",
+            "settings": {
+              "heading": "Help People Live Healthier Lives",
+              "description": "<p>Rewarding work challenges us to grow every day while serving something bigger than ourselves. Driven by the belief that knowledge is power, health is personal and community is key, JUNE is on a mission to give people the information and products they need to make smarter choices for their bodies so they can confidently live their healthiest lives. <\/p>",
+              "bg_color": "",
+              "image": "shopify:\/\/shop_images\/healthier_lives.png",
+              "img_position": "right"
+            }
+          },
+          "9228d473-0002-47b2-ab47-acf50d8bffa5": {
+            "type": "Text",
+            "settings": {
+              "heading": "Period Care’s Next Frontier",
+              "description": "<p>So far, we&#x27;ve helped over 300,000 menstruators make the switch to smarter period products—which means we still have a long way to go. Over time, we’ve expanded the Original June Cup to include the June Mini, aftercare essentials, and period underwear. When it comes to innovating safer and more comfortable menstrual care options, we’re just getting started.<\/p>",
+              "bg_color": "",
+              "image": "shopify:\/\/shop_images\/June_Cup_Women_Bedroom.jpg",
+              "img_position": "left"
+            }
+          }
+        },
+        "block_order": [
+          "82058a07-91f1-4943-b97b-3c6bf18adc90",
+          "f1049aff-e653-498e-8d01-8cfaeb9f0ff1",
+          "9228d473-0002-47b2-ab47-acf50d8bffa5"
+        ],
+        "settings": {}
+      },
+      "text-with-button": {
+        "type": "text-with-button",
+        "settings": {
+          "heading": "Apply to Our Open Positions",
+          "sub_heading": "<p>Tell us who you are and why you’re a good fit for JUNE and why we should open up a role for you.<\/p>",
+          "button_link": "https:\/\/juneco.typeform.com\/to\/h9Ble4hU",
+          "button_text": "See open positions",
+          "bg_color": ""
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "social_sharing_blog": true,
+          "show_blocks": false,
+          "content_section_bg": "",
+          "bottom_section_bg": "",
+          "enable_comment": false
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
+          "bg_color": "#ffffff"
+        }
+      },
+      "newsletter-signup": {
+        "type": "newsletter-signup",
+        "settings": {
+          "heading": "Get Our Weekly Newsletter",
+          "sub_heading": "Sign up to get our blogpost delivered straight to your inbox",
+          "social_sharing_blog": true,
+          "show_blocks": true
+        }
+      },
+      "collection-template-rearrangeable": {
+        "type": "collection-template-rearrangeable",
+        "blocks": {
+          "c28a2a34-8213-4b15-b34f-12fa36f30727": {
+            "type": "collection_rearrangeable",
+            "settings": {
+              "collection": "menstrual-cups",
+              "title": "Menstrual Cups"
+            }
+          },
+          "235acd56-e931-485b-b56d-a9aa21d376ca": {
+            "type": "collection_rearrangeable",
+            "settings": {
+              "collection": "aftercare",
+              "title": "Aftercare"
+            }
+          },
+          "1c725c49-7741-4429-9d34-ad3960e7b94e": {
+            "type": "collection_rearrangeable",
+            "settings": {
+              "collection": "period-underwear",
+              "title": "Period Underwear"
+            }
+          },
+          "d6e1a1fd-5985-430d-8c09-ff3adb58cd03": {
+            "type": "collection_rearrangeable",
+            "settings": {
+              "collection": "period-packs",
+              "title": "Period Kits"
+            }
+          }
+        },
+        "block_order": [
+          "c28a2a34-8213-4b15-b34f-12fa36f30727",
+          "235acd56-e931-485b-b56d-a9aa21d376ca",
+          "1c725c49-7741-4429-9d34-ad3960e7b94e",
+          "d6e1a1fd-5985-430d-8c09-ff3adb58cd03"
+        ],
+        "settings": {
+          "collection_products_grid": "grid",
+          "collection_sort_enable": false,
+          "collection_tags_enable": false,
+          "product_vendor_enable": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1584351683156",
+      "16150487994661eec4",
+      "1593800078248",
+      "161440519457ab0d11",
+      "1614421552feb24b5b",
+      "1614590549e1f6370f",
+      "161440654286b50aee",
+      "16144078680e6e5da8",
+      "1614982247d89846dc"
+    ]
+  },
+  "presets": {
+    "Classic": {
+      "cart_type": "page",
+      "cart_notes_enable": false,
+      "checkout_accent_color": "#a26b25",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#000000",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "collection_products_grid": "collage",
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#222323",
+      "color_borders": "#1c1d1d",
+      "color_button_text": "#ffffff",
+      "color_drawer_background": "#1c1d1d",
+      "color_drawer_border": "#343535",
+      "color_drawer_button": "#a26b25",
+      "color_drawer_button_text": "#ffffff",
+      "color_drawer_text": "#ffffff",
+      "color_headings": "#222323",
+      "color_input": "#f6f6f6",
+      "color_newsletter": "#f6f6f6",
+      "color_primary": "#1c1d1d",
+      "color_product_background": "#f7f7f7",
+      "color_sale_tag": "#990000",
+      "color_secondary": "#a26b25",
+      "customer_layout": "customer_area",
+      "favicon_enable": false,
+      "product_vendor_enable": false,
+      "share_facebook": true,
+      "share_pinterest": true,
+      "share_twitter": true,
+      "social_sharing_style": "clean",
+      "type_accent_family": "montserrat_n6",
+      "type_accent_spacing": true,
+      "type_accent_transform": true,
+      "type_accent_subheadings": true,
+      "type_base_family": "arapey_n4",
+      "type_base_italize_titles": true,
+      "type_base_size": "16px",
+      "type_header_base_size": "30px",
+      "type_header_border_thickness": "1px",
+      "type_header_family": "old_standard_tt_n4",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_announcement": true,
+            "color_bg": "#1c1d1d",
+            "color_text": "#ffffff"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "slide",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "slide",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_featured_products": "frontpage"
+          }
+        },
+        "featured-content": {
+          "type": "featured-content",
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2"
+          ],
+          "settings": {}
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "featured-content",
+        "featured-collections",
+        "featured-products",
+        "newsletter"
+      ]
+    },
+    "Playful": {
+      "color_body_bg": "#ffffff",
+      "color_body_text": "#565656",
+      "color_borders": "#5dd2b4",
+      "color_button_text": "#ffffff",
+      "color_primary": "#7737BD",
+      "color_secondary": "#058677",
+      "color_product_background": "#fff4f6",
+      "color_sale_tag": "#e80970",
+      "color_input": "#f6f6f6",
+      "color_newsletter": "#bde9f2",
+      "color_drawer_background": "#360f5f",
+      "color_drawer_text": "#ffffff",
+      "color_drawer_border": "#50297a",
+      "color_drawer_button": "#7737BD",
+      "color_drawer_button_text": "#ffffff",
+      "color_headings": "#321863",
+      "type_header_family": "quicksand_n7",
+      "type_header_base_size": "38px",
+      "type_header_border_thickness": "1px",
+      "type_accent_family": "roboto_n7",
+      "type_accent_transform": true,
+      "type_accent_spacing": true,
+      "type_accent_subheadings": false,
+      "type_base_family": "helvetica_n4",
+      "type_base_size": "17px",
+      "type_base_italize_titles": false,
+      "cart_type": "page",
+      "cart_notes_enable": true,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_snapchat_link": "",
+      "social_google_plus_link": "",
+      "social_tumblr_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "social_fancy_link": "",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fff4f6",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Roboto",
+      "checkout_accent_color": "#7737BD",
+      "checkout_button_color": "#7737BD",
+      "checkout_error_color": "#f01130",
+      "checkout_banner_background_color": "#fff",
+      "checkout_call_to_action_color": "#a26b25",
+      "checkout_use_header_image": false,
+      "collection_products_grid": "collage",
+      "customer_layout": "customer_area",
+      "favicon_enable": false,
+      "product_vendor_enable": false,
+      "social_sharing_style": "clean",
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "1495823280244": {
+              "type": "slide",
+              "settings": {
+                "slide_text_color": "#ffffff",
+                "slide_button_label_color": "#003B34",
+                "slide_button_background_color": "#84D1B2"
+              }
+            }
+          },
+          "block_order": [
+            "1495823280244"
+          ],
+          "settings": {
+            "hero_home_auto": false,
+            "home_hero_auto_speed": 5
+          }
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "home_featured_products": "frontpage",
+            "collection_products_grid": "collage"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {}
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_max_width": "260",
+            "search": "modal",
+            "main_menu_link_list": "main-menu",
+            "show_announcement": false,
+            "color_bg": "#290c49",
+            "color_text": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {}
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "collection_products_grid": "grid",
+            "collection_tags_enable": false,
+            "product_vendor_enable": false
+          }
+        },
+        "1494860348200": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "right"
+          }
+        },
+        "1494894035034": {
+          "type": "featured-row",
+          "settings": {
+            "layout": "left"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "zoom_enable": false,
+            "social_sharing_products": true,
+            "product_vendor_enable": false
+          }
+        },
+        "1496078102297": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496078102297-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"text-align:center;\">\n<h1 class=\"h1\">Use HTML to format your text so it can be easily read.<\/h1>This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496078102297-0"
+          ],
+          "settings": {}
+        },
+        "1496177901425": {
+          "type": "advanced-content",
+          "blocks": {
+            "1496177901425-0": {
+              "type": "html",
+              "settings": {
+                "code": "<div style=\"width:745px;text-align: center; margin: 0 auto;\">This text can be used to share information about your brand with customers.<\/div>",
+                "width": "100%",
+                "alignment": "top-middle"
+              }
+            }
+          },
+          "block_order": [
+            "1496177901425-0"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "1496177901425",
+        "featured-products",
+        "newsletter",
+        "1496078102297",
+        "1494860348200",
+        "1494894035034"
+      ]
+    }
+  }
+}

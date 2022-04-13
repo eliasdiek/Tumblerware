@@ -1,0 +1,76 @@
+{% comment %}
+  {% if section.blocks.size > 0 %}
+    <section class="lander_slider_text_new slider text_alider">
+      {% for block in section.blocks %}
+        {% if block.settings.title != blank %}
+          <div class="heading_text_new">
+            {{ block.settings.title }}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endif %}
+{% endcomment %}
+
+
+{% if section.blocks.size > 0 %}
+<div class="lander_slider_text_new marquee">
+  <div class="marquee__item">
+    {% for block in section.blocks %}
+      {% if block.settings.title != blank %}
+        <span class="heading_text_new">
+          {{ block.settings.title }}
+        </span>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="marquee__item">
+    {% for block in section.blocks %}
+      {% if block.settings.title != blank %}
+        <span class="heading_text_new">
+          {{ block.settings.title }}
+        </span>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Lander Slider Blocks",
+	"class": "lander_slider_blocks",
+    "settings": [
+	
+	],
+	"blocks": [
+      {
+        "type": "lander",
+        "name": "Lander",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Add Texts Slider",
+			"default": "Heading"
+          }
+        ]
+      }
+    ],
+	"presets": [
+      {
+        "name": "Lander Slider Blocks",
+        "category": "Text",
+		"blocks": [
+          {
+            "type": "lander"
+          },
+		  {
+            "type": "lander"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

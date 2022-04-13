@@ -1,0 +1,11 @@
+@function adaptive-color($color, $percentage) {
+	@if (lightness($color) > 40) {
+		@return #fff; //darken
+	} @else {
+		@return #000;  //lighten
+	}
+}
+
+.test {
+	color: adaptive-color(#fff, 24%);
+}
