@@ -1,4 +1,10 @@
 <style>
+  .site-header {
+    background-color: {{ section.settings.bg_color }};
+  }
+  .header-wrapper {
+    border-color: {{ section.settings.border_color }};
+  }
   .site-header__logo img {
     max-width: {{ section.settings.logo_max_width | escape | default: '180' | remove: 'px' | append: 'px' }};
   }
@@ -956,6 +962,16 @@
         "zh-TW": "文字"
       },
       "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color"
     }
   ]
 }

@@ -1,3 +1,11 @@
+{% if section.settings.bg_color != blank %}
+<style>
+    .index-our_products-section {
+        background-color: {{ section.settings.bg_color }};
+    }
+</style>
+{% endif %}
+
 <div class="our-products-wrapper">
     <div class="section-header">
         <h2 class="heading text-center">{{ section.settings.heading }}</h2>
@@ -29,11 +37,6 @@
         "type": "collection",
         "id": "collection",
         "label": "Select Collection"
-    },
-    {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background Color"
     },
     {
         "type": "select",
@@ -184,6 +187,11 @@
             "zh-CN": "显示产品厂商",
             "zh-TW": "顯示產品廠商"
         }
+    },
+    {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
     }
 ],
 "presets": [

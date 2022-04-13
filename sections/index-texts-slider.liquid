@@ -12,6 +12,13 @@
   {% endif %}
 {% endcomment %}
 
+{% if section.settings.bg_color != blank %}
+<style>
+  .lander_slider_blocks {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
 
 {% if section.blocks.size > 0 %}
 <div class="lander_slider_text_new marquee">
@@ -40,37 +47,41 @@
 {% schema %}
   {
     "name": "Lander Slider Blocks",
-	"class": "lander_slider_blocks",
+	  "class": "lander_slider_blocks",
     "settings": [
-	
-	],
-	"blocks": [
       {
-        "type": "lander",
-        "name": "Lander",
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Add Texts Slider",
-			"default": "Heading"
-          }
-        ]
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
       }
     ],
-	"presets": [
-      {
-        "name": "Lander Slider Blocks",
-        "category": "Text",
-		"blocks": [
-          {
-            "type": "lander"
-          },
-		  {
-            "type": "lander"
-          }
-        ]
-      }
-    ]
+    "blocks": [
+        {
+          "type": "lander",
+          "name": "Lander",
+          "settings": [
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Add Texts Slider",
+        "default": "Heading"
+            }
+          ]
+        }
+      ],
+    "presets": [
+        {
+          "name": "Lander Slider Blocks",
+          "category": "Text",
+      "blocks": [
+            {
+              "type": "lander"
+            },
+        {
+              "type": "lander"
+            }
+          ]
+        }
+      ]
   }
 {% endschema %}

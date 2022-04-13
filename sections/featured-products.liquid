@@ -5,6 +5,11 @@
     width: {{ 100 | divided_by: my_float }}%;
   }
 }
+{% if section.settings.bg_color != blank %}
+#shopify-section-{{section.id}} {
+  background-color: {{ section.settings.bg_color }};
+}
+{% endif %}
 </style>
 <div id="CollectionSection" data-section-id="{{ section.id }}" data-section-type="collection-template" data-grid-type="{{ section.settings.collection_products_grid }}">
   <div class="wrapper">
@@ -196,6 +201,11 @@
       "id": "number_of_products",
       "label": "Number Of Products Per Row",
       "default": 4
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
     }
   ],
   "presets": [

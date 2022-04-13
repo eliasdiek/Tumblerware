@@ -1,3 +1,11 @@
+{% if section.settings.bg_color != blank %}
+<style>
+  #shopify-section-{{section.id}} {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
+
 {% if section.blocks.size > 0 %}
 <div data-section-id="{{ section.id }}" class="trend--{{ section.id }}" id="trending-block" style="background-color: {{section.settings.trending_bg_color}}">
   <div class="wrapper">
@@ -93,12 +101,17 @@
         "label": "Heading",
         "default": "Now Trending"
       },
-	  {
-		"type": "color",
-		"id": "trending_bg_color",
-		"label": "Background Color",
-		"default": "#ffffff"
-	  }
+      {
+        "type": "color",
+        "id": "trending_bg_color",
+        "label": "Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
+      }
     ],
     "presets": [
       {

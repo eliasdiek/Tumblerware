@@ -21,6 +21,12 @@
     }
   }
   {% endif %}
+
+  {% if section.settings.bg_color != blank %}
+  .index-section.index-map-section {
+    background-color: {{ section.settings.bg_color }};
+  }
+  {% endif %}
 </style>
 
 <div id="MapSection--{{ section.id }}"
@@ -725,6 +731,11 @@
           "value": "bottom right"
         }
       ]
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
     }
   ],
   "presets": [

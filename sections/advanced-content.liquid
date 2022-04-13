@@ -1,3 +1,11 @@
+{% if section.settings.bg_color != blank %}
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
+
 <div class="wrapper">
   <div class="custom-content">
   {% for block in section.blocks %}
@@ -72,6 +80,13 @@
     "zh-TW": "自訂 HTML"
   },
   "max_blocks": 9,
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
+    }
+  ],
   "blocks": [
     {
       "type": "html",

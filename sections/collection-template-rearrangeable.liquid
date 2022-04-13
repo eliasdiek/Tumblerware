@@ -3,6 +3,15 @@
   {% include 'collection-template-rearrangeable' %}
 </div>
 
+{% if section.settings.bg_color != blank %}
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
+
+
 {% schema %}
 {
   "name": "Collection pages",
@@ -37,6 +46,11 @@
       "type": "checkbox",
       "id": "product_vendor_enable",
       "label": "Show product vendor"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
     }
   ],
   "blocks" : [

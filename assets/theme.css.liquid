@@ -95,6 +95,8 @@
 
   {%- assign header_family = settings.type_header_family -%}
 
+  {%- assign heading_font_family = "'Futura condensed x-bold',sans-serif" -%}
+
 
   {{ accent_family | font_face }}
 
@@ -4588,7 +4590,7 @@ button.mfp-arrow {
   margin-bottom: 20px; }
 
 .slideshow-main .hero__slide .hero__title {
-  font-family: {{ header_family.family }}, {{ header_family.fallback_families }};
+  font-family: {{ heading_font_family }};
   font-weight: {{ header_family.weight }};
   font-style: {{ header_family.style }};
   font-size: 42px;
@@ -4690,21 +4692,25 @@ button.mfp-arrow {
   width: 50%;
   padding: 35px 40px 0 100px; }
 
-.product_text1_new {
-  font-family: {{ header_family.family }}, {{ header_family.fallback_families }};
+.home-section-heading {
+  font-family: {{ heading_font_family }};
   font-weight: {{ header_family.weight }};
   font-style: {{ header_family.style }};
   font-size: 26px;
   line-height: 30px;
-  color: #262626; }
+  color: #51453f;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
 
 .product_text2_new {
-  font-family: {{ header_family.family }}, {{ header_family.fallback_families }};
+  font-family: {{ heading_font_family }};
   font-weight: {{ header_family.weight }};
   font-style: {{ header_family.style }};
-  font-size: 46px;
+  font-size: 26px;
   line-height: 54px;
-  color: #262626;
+  color: #51453f;
+  text-transform: uppercase;
   padding: 10px 0 0 0; }
 
 .product_desc_new {
@@ -5832,10 +5838,8 @@ button.mfp-arrow {
     width: 100%;
     padding: 40px 0 0 0;
     text-align: center; }
-  .product_text1_new {
-    font-size: 20px; }
   .product_text2_new {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 36px;
     padding: 15px 0 0 0; }
   .product_desc_new {
@@ -6687,4 +6691,20 @@ body.template-product .product-single__form .rc_popup {
 
 body.template-product .product-single__form .single-option-radio label {
     width: calc(100% / 3 - 10px);
+}
+.page-container.password__page .wrapper {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+.lock-icon-svg {
+  width: 17px;
+  height: 20px;
+  display: block;
+  margin-right: 10px;
+}
+.password-page__wrapper a.js-toggle-login-modal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

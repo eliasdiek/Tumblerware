@@ -1,3 +1,11 @@
+{% if section.settings.bg_color != blank %}
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
+
 {% if section.blocks.size > 0 %}
   {% assign current_url = collection.url %}
   <div class="collection_temp_banner_new">
@@ -48,7 +56,11 @@
     "name": "Collection Temp Banner",
 	"class": "collection_temp_banner",
     "settings": [
-
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
+    }
 	],
 	"blocks": [
       {

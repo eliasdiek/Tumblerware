@@ -3,7 +3,13 @@
 {% include 'collection-template' %}
 </div>
 
-
+{% if section.settings.bg_color != blank %}
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
 
 {% schema %}
 {
@@ -208,6 +214,11 @@
       "id": "kits_heading",
       "label": "Kits heading",
       "default": "Kits"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
     }
   ]
 }

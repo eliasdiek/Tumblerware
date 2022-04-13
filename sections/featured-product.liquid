@@ -1,3 +1,11 @@
+{% if section.settings.bg_color != blank %}
+<style>
+  #shopify-section-{{section.id}} {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
+
 {%- assign product = all_products[section.settings.featured_product] -%}
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 
@@ -187,8 +195,6 @@
     {{ product | json }}
   </script>
 {% endunless %}
-
-
 
 {% schema %}
 {
@@ -384,6 +390,11 @@
         "zh-CN": "在“通用”设置中编辑社媒帐户",
         "zh-TW": "前往「一般」設定編輯社群帳號"
       }
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
     }
   ],
   "presets": [

@@ -1,3 +1,11 @@
+{% if section.settings.bg_color != blank %}
+<style>
+  .index-newsletter_signup-section {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
+
 <div class="newsletter-wrapper">
     <div>
         <h3 class="heading">{{ section.settings.heading }}</h3>
@@ -57,6 +65,11 @@
       "id": "show_blocks",
       "label": "Show bottom blocks",
       "default": true
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
     }
   ]
 }

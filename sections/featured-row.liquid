@@ -1,3 +1,11 @@
+{% if section.settings.bg_color != blank %}
+<style>
+  #shopify-section-{{section.id}} {
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+{% endif %}
+
 <div class="power_new" id="power_{{ section.id }}">
     <div class="feature-row">
       {% capture image_layout %}
@@ -60,7 +68,6 @@
       </div>
     </div>
 </div>
-
 
 {% schema %}
 {
@@ -345,6 +352,11 @@
       "id": "button_color",
       "label": "Button color",
       "default": "#262626"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
     }
   ],
   "presets": [

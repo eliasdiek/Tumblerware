@@ -1,4 +1,32 @@
-<div class="wrapper">
+<style>
+  {% if section.settings.image_position == "center" %}
+    .product_image_with_text#shopify-section-{{ section.id }} .product_image_with_text_new {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .product_image_with_text#shopify-section-{{ section.id }} .index_product_left_new {
+      width: 100%;
+      padding-right: 0;
+    }
+    .product_image_with_text#shopify-section-{{ section.id }} .index_product_right_new {
+      width: 100%;
+      padding: 35px 40px;
+      text-align: center;
+      max-width: 768px;
+    }
+    .product_image_with_text#shopify-section-{{ section.id }} {
+      padding: 30px 0;
+    }
+  {% endif %}
+
+  {% if section.settings.bg_color != blank %}
+  .product_image_with_text#shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+  {% endif %}
+</style>
+<div class="wrapper" id="{{ section.settings.image_position }}">
   <div class="page-width feature-row">
     <div class="product_image_with_text_new">
       {% if section.settings.image != blank %}
@@ -47,8 +75,24 @@
 {% schema %}
   {
     "name": "Product Image With Text",
-	"class": "product_image_with_text",
+	  "class": "product_image_with_text",
     "settings": [
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
+    },
 	  {
         "type": "image_picker",
         "id": "image",
@@ -95,6 +139,11 @@
         "id": "btnlink2",
         "label": "Add Text Link",
         "default": "/"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
       }
 	],
 	"presets": [
