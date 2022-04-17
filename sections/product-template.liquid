@@ -1,4 +1,6 @@
 <style>
+.product-single__variants {
+  display: none; }
   .radio-wrapper.js.product-form__item {
     display: flex !important;
   }body.template-product .product-single__form .single-option-radio label {
@@ -61,12 +63,6 @@ span.rc-option__text strong {
     display: inline-block;
     background-size: contain;
     background-repeat: no-repeat;
-  }
-  .product_top_right_new .product-single__price {
-    color: #fff;
-    font-weight: 600!important;
-    font-size: 14px!important;
-    background: transparent !important;
   }
   .power_new .feature-row__text_in {
 	max-width: calc(419px + 126px) !important;
@@ -370,6 +366,7 @@ span.rc-option__text strong {
 
             <h1 class="product-single__title" itemprop="name">{{ product.title }}</h1>
 
+            {% include 'product-price', variant: current_variant %}
 
             <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" style="display: block; margin-bottom:8px">{{ product.metafields.stamped.badge }}</span>
 
@@ -503,7 +500,6 @@ span.rc-option__text strong {
               <div class="product-single__add-to-cart{% if section.settings.add_to_cart_button_size == 'large' %} product-single__add-to-cart--full-width{% endif %}">
                 <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
                   <span class="btn__text">
-                    {% include 'product-price', variant: current_variant %} <span>|</span>
                     {% if current_variant.available %}
                     {{ 'products.product.add_to_cart' | t }}
                     {% else %}

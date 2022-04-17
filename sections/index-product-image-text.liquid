@@ -16,7 +16,7 @@
       max-width: 768px;
     }
     .product_image_with_text#shopify-section-{{ section.id }} {
-      padding: 30px 0;
+      padding: 70px 0;
     }
   {% endif %}
 
@@ -41,7 +41,8 @@
     <div class="product_image_with_text_new">
       {% if section.settings.image != blank %}
         <div class="index_product_left_new">
-          <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}"/>
+          <img src="{{ section.settings.image | img_url: 'master' }}" class="desktop-image" alt="{{ section.settings.image.alt }}"/>
+          <img src="{{ section.settings.mobile_image | img_url: 'master' }}" class="mobile-image" alt="{{ section.settings.mobile_image.alt }}"/>
         </div>
       {% endif %}
       {% if section.settings.text1 != blank or section.settings.text2 != blank or section.settings.text3 != blank or section.settings.btntext1 != blank or section.settings.btntext2 != blank %}
@@ -107,6 +108,11 @@
         "type": "image_picker",
         "id": "image",
         "label": "Add Left Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Add Left Image for Mobile"
       },
 	  {
         "type": "text",
