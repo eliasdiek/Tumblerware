@@ -960,10 +960,10 @@
   }
 
   .drawer__title {
-    font-family: "Georgia Pro", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px/17px0em
+    font-family: {{ heading_font_family }};
+    font-weight: {{ header_family.weight }};
+    font-style: {{ header_family.style }};
+    font-size: 24px;
   }
 
   .collection-grid__item-title {
@@ -1561,9 +1561,9 @@
   }
 
   .btn--secondary:hover {
-    background-color: #a39d26
+    background-color: #cc4e00
   }
-
+  
   .social-sharing {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -5759,7 +5759,6 @@
     display: block;
     text-decoration: none;
     border: none;
-    font-family: "Georgia Pro", serif;
     color: #262626;
   }
 
@@ -6598,6 +6597,7 @@
 
   .product_top_new {
     background: #e5e1dd;
+    overflow: hidden;
   }
 
   #ProductSection--product-template {
@@ -6664,14 +6664,20 @@
   }
 
   .product-single__title {
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
     color: #51453f !important;
     font-family: {{ heading_font_family }};
     font-weight: {{ header_family.weight }};
     font-style: {{ header_family.style }};
-    text-transform: none;
+    text-transform: uppercase;
     letter-spacing: -1px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .product-single__title {
+      line-height: 36px;
+    }
   }
 
   .product-single__price--compare-at {
@@ -7412,15 +7418,16 @@
   .product_type_new {
     width: 100%;
     text-align: center;
-    font-family: "Georgia Pro", serif;
+    font-family: {{ heading_font_family }};
     clear: both;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
-    line-height: 26px;
-    color: #262626;
+    font-weight: {{ header_family.weight }};
+    font-style: {{ header_family.style }};
+    font-size: 26px;
+    line-height: 30px;
+    color: #51453f;
     padding-bottom: 20px;
-    margin-top: 25px
+    margin-top: 0;
+    text-transform: uppercase;
   }
 
   @media (min-width:0px) and (max-width:590px) {
@@ -7779,7 +7786,7 @@
       padding: 15px 20px
     }
     .product_logo_name_new {
-      color: #243269;
+      color: #51453f;
       line-height: 16px
     }
     .product_desc_link_new a {
