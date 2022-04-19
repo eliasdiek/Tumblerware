@@ -7,13 +7,21 @@
     .index-text_with_button_2-section .wrapper {
         max-width: 1280px;
     }
-    .index-text_with_button_2-section h2, .index-text_with_button_2-section p, .index-text_with_button_2-section a {
+    {% if section.settings.heading_color != blank %}
+    .index-text_with_button_2-section h2 {
+        color: {{ section.settings.heading_color }};
+    }
+    {% endif %}
+    {% unless section.settings.txt_color == blank %}
+    .index-text_with_button_2-section p {
         color: {{ section.settings.txt_color }};
     }
+    {% endunless %}
     .index-text_with_button_2-section p {
         font-size: 14px;
         line-height: 24px;
         font-weight: 400;
+        margin-top: 10px;
     }
     .index-text_with_button_2-section .section-header {
         margin-top: 0;
@@ -21,16 +29,20 @@
     .index-text_with_button_2-section .section-footer {
         margin: 10px 0 0 0;
     }
+    {% unless section.settings.button_text_color == blank %}
     .index-text_with_button_2-section .btn_secondary {
-        background: transparent;
-        border-color: {{ section.settings.txt_color }};
-        color: {{ section.settings.txt_color }};
+        border-color: {{ section.settings.button_text_color }};
+        color: {{ section.settings.button_text_color }};
     }
-    .index-text_with_button_2-section .btn_secondary:hover{
-        background: transparent;
-        border-color:#676767;
-        color:#676767;
+    .index-text_with_button_2-section a {
+        color: {{ section.settings.button_text_color }};
     }
+    {% endunless %}
+    {% unless section.settings.button_color == blank %}
+    .index-text_with_button_2-section .btn_secondary {
+        background: {{ sections.settings.button_color }};
+    }
+    {% endunless %}
 </style>
 
 <div class="text_with_button_2-wrapper">
@@ -91,8 +103,23 @@
     },
     {
         "type": "color",
+        "id": "heading_color",
+        "label": "Heading color"
+    },
+    {
+        "type": "color",
         "id": "txt_color",
         "label": "Text Color"
+    },
+    {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button color"
+    },
+    {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Button text color"
     }
 ],
 "presets": [

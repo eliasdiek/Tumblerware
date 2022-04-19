@@ -1,3 +1,6 @@
+{%- assign heading_font_family = "'Futura condensed x-bold',sans-serif" -%}
+{{ header_family | font_face }}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -143,19 +146,15 @@ html {
 	}
 }
 .text-with-image-wrapper .text-block .text-block-wrapper .heading {
-	font-size: 46px;
-	line-height: 52px;
-	color: #262626;
-	margin-bottom: 15px;
-	font-family: "Georgia Pro", serif;
-	font-weight: 400;
-	font-style: normal;
-}
-@media screen and (max-width: 768px) {
-	.text-with-image-wrapper .text-block .text-block-wrapper .heading {
-		font-size: 26px;
-		line-height: 30px;
-	}
+    font-family: {{ heading_font_family }};
+    font-weight: {{ header_family.weight }};
+    font-style: {{ header_family.style }};
+    font-size: 26px;
+    line-height: 30px;
+    color: #51453f;
+    text-transform: uppercase;
+    padding: 10px 0 0 0;
+    letter-spacing: -1px;
 }
 .text-with-image-wrapper .text-block .text-block-wrapper .description {
 	font-size: 14px;
