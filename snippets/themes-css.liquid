@@ -964,6 +964,7 @@
     font-weight: {{ header_family.weight }};
     font-style: {{ header_family.style }};
     font-size: 24px;
+    text-transform: uppercase;
   }
 
   .collection-grid__item-title {
@@ -6540,7 +6541,7 @@
   }
 
   .template-collection .product-single__add-to-cart .grid-product__price-wrap .grid-product__price .product-single__price.on-sale {
-    color: #eeb078;
+    color: #ff6000;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0
@@ -6979,7 +6980,7 @@
     text-align: center;
     width: 100%;
     padding: 0 15px!important;
-    background: #e5e1dd;
+    background: #e2d9d5;
   }
 
   .faq_section_new .h3,
@@ -8713,5 +8714,12 @@ body.template-product .product-single__form .single-option-radio label {
   .mobile-image {
     display: none !important;
   }
+}
+
+.template-page header.section-header h1 {
+  text-transform: capitalize;
+}
+.faq_section_new .h2 a, .faq_section_new h2 a {
+  letter-spacing: -1px;
 }
 </style>

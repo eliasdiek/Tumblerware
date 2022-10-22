@@ -1,7 +1,6 @@
 SHARED: &SHARED
   store: tumblerandco.myshopify.com
-  password: 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
-  theme_id: '132118282487'
+  password: shptka_500531cdb3451ed4d3392f5a845b1228
   bucket_size: 40
   refill_rate: 2
   timeout: 60s
@@ -13,9 +12,9 @@ SHARED: &SHARED
 
 development:
   <<: *SHARED
-  theme_id: '132118282487'
+  theme_id: '136100774135'
 
 production:
   <<: *SHARED
-  readonly: false
+  readonly: true
   theme_id: '132071457015'
