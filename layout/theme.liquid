@@ -108,7 +108,7 @@
 
     <!-- Header hook for plugins ================================================== -->
 
-    {%- if request.host == "thejunecup.myshopify.com" or template contains 'cart' or template contains 'checkout' -%}
+    {%- if request.host == "tumblerandco.myshopify.com" or template contains 'cart' or template contains 'checkout' -%}
       {{ content_for_header }}
     {%- else -%}
       {% capture content_for_header2 %}
