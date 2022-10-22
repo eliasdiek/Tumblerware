@@ -432,7 +432,8 @@ $color-blankstate-background: rgba($colorTextBody, 0.10);
   src: url("https://fonts.shopifycdn.com/georgia_pro/georgiapro_n4.8627e4332da2bd0ce4ceb6f91d3dd90e0888cdbb.woff2?h1=dHVtYmxlcndhcmUuY29t&hmac=8036ff9c0b39345cd6ab1110ffffe92c51d2a3fb5fa1c03e0f66006155f66fd4") format("woff2"),
        url("https://fonts.shopifycdn.com/georgia_pro/georgiapro_n4.a32e7ac200a0d54820187634b1a89d4f8e2ee2ac.woff?h1=dHVtYmxlcndhcmUuY29t&hmac=42ddae463d1195e3a9d526d8049fc92bf0e7bd2e9f1594bd585e5cce160eb3b1") format("woff");
 }
-@font-face {
+
+@font-face {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
@@ -6258,25 +6259,6 @@ text-transform: uppercase;
     }
   }
 }
-.afterpay-paragraph {
-  font-size: 14px;
-  margin-top: 10px !important;
-
-  @media screen and (max-width: 768px) {
-    font-size: 11px;
-  }
-
-  .afterpay-text1 {
-    margin-bottom: 8px;
-    display: inline-block;
-  }
-  .afterpay-instalments {
-    padding: 0 2px 0 5px;
-  }
-  strong {
-    font-weight: 300;
-  }
-}
 .rich-text-section_new {
   .section-header__title {
     font-size: 26px;
@@ -6310,9 +6292,6 @@ text-transform: uppercase;
   &:first-child {
     margin-top: 0;
   }
-}
-.afterpay-link-inner {
-  display: none;
 }
 
 .product_type_new{ width:100%; text-align:center; font-family: "Georgia Pro", serif; clear:both; font-weight: 400; font-style: normal; font-size: 22px; line-height: 26px; color: #262626; padding-bottom:20px; margin-top: 25px; }

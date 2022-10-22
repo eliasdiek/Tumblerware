@@ -5468,20 +5468,6 @@ button.mfp-arrow {
   .article__page .wrapper {
     max-width: 800px; } }
 
-.afterpay-paragraph {
-  font-size: 14px;
-  margin-top: 10px !important; }
-  @media screen and (max-width: 768px) {
-    .afterpay-paragraph {
-      font-size: 11px; } }
-  .afterpay-paragraph .afterpay-text1 {
-    margin-bottom: 8px;
-    display: inline-block; }
-  .afterpay-paragraph .afterpay-instalments {
-    padding: 0 2px 0 5px; }
-  .afterpay-paragraph strong {
-    font-weight: 300; }
-
 .rich-text-section_new .section-header__title {
   font-size: 26px;
   line-height: 32px; }
@@ -5506,9 +5492,6 @@ button.mfp-arrow {
   color: #262626; }
   .field-name:first-child {
     margin-top: 0; }
-
-.afterpay-link-inner {
-  display: none; }
 
 .transit-container {
   position: absolute;
@@ -6598,8 +6581,7 @@ body.template-product .product-single__form .product-form__item {
   order: 1;
 }
 
-body.template-product .product-single__form .product-single__add-to-cart,
-body.template-product .product-single__form .afterpay-paragraph {
+body.template-product .product-single__form .product-single__add-to-cart {
   order: 2;
 }
 
