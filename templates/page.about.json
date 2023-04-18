@@ -7,42 +7,42 @@
           "type": "Text",
           "settings": {
             "heading": "We Believe You Deserve Better",
-            "description": "<p>From the moment we first find blood in our underwear, society tells us that our periods are a problem. They’re our first pain, our first shame, our first unspeakable secret. We’re taught to resist our periods, not respect them. It has to change. And it has to start with us. Here’s how we’re paving the way:<\/p>",
-            "bg_color": "rgba(0,0,0,0)",
-            "image": "shopify:\/\/shop_images\/June_Cup_About_Mission.jpg",
+            "description": "<p>We don’t think you should have to be a knifesmith to own sharp knives.  Get amazing knife sharpening, restoration and repair results within minutes with Tumbler. Sharpen the most unique to your basic everyday household knives. Don't like Tumbler for any reason?  Send it back for a full refund. That's our satisfaction guarantee. <\/p>",
+            "bg_color": "#f2eeec",
+            "image": "shopify:\/\/shop_images\/Tumbler_Rolling_Knife_Sharpener_About.jpg",
             "img_position": "left",
             "img_position_mobile": "top"
           }
         },
         "78278e48-fa03-4c9a-b92e-c355f9a747df": {
           "type": "Text",
+          "disabled": true,
           "settings": {
             "heading": "Safer & Comfier Period Products",
             "description": "<p>For decades, we’ve been told to live with pads and tampons but those just don’t work for a lot of us. That's why we set out to create something different. The results are everything we think period products should be—safer, more comfortable options that make our periods a little easier. <\/p>",
             "bg_color": "rgba(0,0,0,0)",
-            "image": "shopify:\/\/shop_images\/June_Cup_About_Our_Products_2e573543-8918-4ccc-8b65-e0790570ed32.jpg",
             "img_position": "right",
             "img_position_mobile": "top"
           }
         },
         "9b9d5a5a-fccf-4c2e-8ef8-51a813791210": {
           "type": "Text",
+          "disabled": true,
           "settings": {
             "heading": "Prioritizing Access Over Profits",
             "description": "<p>Having a safe and comfy period isn't a luxury, it's an essential. When we realized that most menstrual cups cost $30+, we saw an opportunity to do things differently—selling our cups at cost so that almost everyone can afford to buy one. Now, we’re on a mission to help 100 million menstruators make the switch.<\/p><p>Find out more about our <a href=\"https:\/\/thejunecup.com\/pages\/our-mission\" target=\"_blank\" title=\"https:\/\/thejunecup.com\/pages\/our-mission\"><strong>mission here<\/strong><\/a><\/p>",
             "bg_color": "rgba(0,0,0,0)",
-            "image": "shopify:\/\/shop_images\/June_Cup_Price_Comparison.jpg",
             "img_position": "left",
             "img_position_mobile": "top"
           }
         },
         "5a4cc303-6882-4f57-8843-1e06bd1ac83e": {
           "type": "Text",
+          "disabled": true,
           "settings": {
             "heading": "A Community<br>Where Nothing’s Unspeakable",
             "description": "<p>At JUNE, everything we do is powered by a simple truth we want to see in the world: our biology is not a liability, our periods are not a problem, and nothing about our bodies should remain unspeakable. That’s why we built the JUNE community: a place where thousands of menstruators come together, talk openly about our bodies, and learn from each other’s experiences.<\/p><p>Build by a community of 350k+ menstruators. <a href=\"https:\/\/www.facebook.com\/groups\/205122780829614\" target=\"_blank\" title=\"https:\/\/www.facebook.com\/groups\/205122780829614\"><strong>Join here<\/strong><\/a><\/p>",
             "bg_color": "",
-            "image": "shopify:\/\/shop_images\/June_Cup_Community.jpg",
             "img_position": "right",
             "img_position_mobile": "top"
           }
@@ -58,13 +58,17 @@
     },
     "16294166656257b1cc": {
       "type": "text-with-button-alt",
+      "disabled": true,
       "settings": {
         "heading": "Make the Switch",
         "body": "<p>Try the June Cup for just $6 today.<\/p>",
         "button_link": "shopify:\/\/products\/the-june-menstrual-cup-original",
         "button_text": "Shop now",
         "bg_color": "#f2eeec",
-        "txt_color": "#262626"
+        "heading_color": "",
+        "txt_color": "#262626",
+        "button_color": "",
+        "button_text_color": ""
       }
     }
   },

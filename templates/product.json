@@ -22,22 +22,51 @@
     "faq-title": {
       "type": "faq-title",
       "settings": {
-        "title": "Got more questions? See our FAQs",
-        "title_url": "shopify:\/\/pages\/faq"
+        "title": "Got more questions? <span style=\"color:#ff6000;\">See our FAQ<\/span>",
+        "title_url": "shopify:\/\/pages\/frequently-asked-questions"
       }
     },
     "review-title": {
       "type": "review-title",
       "settings": {
         "title": "Why people love it",
-        "subtitle": "Check out why other customers love The Knife Club."
+        "subtitle": "Check out why other customers love Tumbler."
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "show_product_recommendations": false,
         "heading": "You may also like"
+      }
+    },
+    "16504289011cb7eefd": {
+      "type": "faqs",
+      "disabled": true,
+      "blocks": {
+        "b7ebd10d-21ee-4f0d-9eef-6973411c9df2": {
+          "type": "text",
+          "settings": {
+            "title": "Question",
+            "description": "Answer goes here..."
+          }
+        },
+        "937e7102-86a6-4b5a-ade9-7026542e3538": {
+          "type": "text",
+          "settings": {
+            "title": "Question",
+            "description": "Answer goes here..."
+          }
+        }
+      },
+      "block_order": [
+        "b7ebd10d-21ee-4f0d-9eef-6973411c9df2",
+        "937e7102-86a6-4b5a-ade9-7026542e3538"
+      ],
+      "settings": {
+        "section_header": "Faq",
+        "bg_color": ""
       }
     }
   },
@@ -46,6 +75,7 @@
     "product-below-sections",
     "faq-title",
     "review-title",
-    "product-recommendations"
+    "product-recommendations",
+    "16504289011cb7eefd"
   ]
 }

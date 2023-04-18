@@ -126,8 +126,7 @@
                   <div class="note form-success">{{ 'general.newsletter_form.newsletter_confirmation' | t }}</div>
                 </div>
               {% else %}
-                <label for="Email" class="newsletter__label">JOIN THE MAILING LIST</label>
-                <div class="smart_new">Our newsletter is smart too.</div>
+                <div class="smart_new">Our newsletter is sharp too. Try it!</div>
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter--form">
                   <div class="input-group newsletter_back_new">
@@ -142,15 +141,6 @@
               {% endif %}
             {% endform %}
           </div>
-
-          <div class="follow_new">FOLLOW. SHARE. LEARN</div>
-          {% if settings.social_instagram_link != blank %}
-            <div class="insta_name_new">
-              <a href="{{ settings.social_instagram_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}" target="_blank">
-                @thejunecup
-              </a>
-            </div>
-          {% endif %}
           <div class="footer_social_links">
               <ul class="no-bullets social-icons">
                 {% if settings.social_facebook_link != blank %}
@@ -232,7 +222,7 @@
 
   <div class="copyright">
     <div class="copyright__content-information">
-      <p>&copy; {{ 'My Knife Club' | link_to: shop.url }} {{ 'now' | date: '%Y' }}</p>
+      <p>&copy; {{ shop.name | link_to: shop.url }} {{ 'now' | date: '%Y' }}  <a href="https://www.tumblerware.com/policies/privacy-policy">Privacy</a>   <a href="https://www.tumblerware.com/policies/terms-of-service">Terms of Service</a></p>
     </div>
 
     {% if linklists[section.settings.bottom_leagal_list].links.size > 0 %}
@@ -280,7 +270,7 @@
     {%- endif -%}
     
     <div class="copyright__content-information">
-      <p>&copy; {{ 'My Knife Club' | link_to: shop.url }} {{ 'now' | date: '%Y' }}</p>
+      <p>&copy; {{ shop.name | link_to: shop.url }} {{ 'now' | date: '%Y' }}. Patent pending. Sold in North America only.</p>
     </div>
   </div>
   {% endcomment %}

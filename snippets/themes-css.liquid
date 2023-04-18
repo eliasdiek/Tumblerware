@@ -964,6 +964,7 @@
     font-weight: {{ header_family.weight }};
     font-style: {{ header_family.style }};
     font-size: 24px;
+    text-transform: uppercase;
   }
 
   .collection-grid__item-title {
@@ -6540,7 +6541,7 @@
   }
 
   .template-collection .product-single__add-to-cart .grid-product__price-wrap .grid-product__price .product-single__price.on-sale {
-    color: #eeb078;
+    color: #ff6000;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0
@@ -6979,7 +6980,7 @@
     text-align: center;
     width: 100%;
     padding: 0 15px!important;
-    background: #e5e1dd;
+    background: #e2d9d5;
   }
 
   .faq_section_new .h3,
@@ -7036,30 +7037,6 @@
     }
   }
 
-  .afterpay-paragraph {
-    font-size: 14px;
-    margin-top: 10px!important
-  }
-
-  @media screen and (max-width:768px) {
-    .afterpay-paragraph {
-      font-size: 11px
-    }
-  }
-
-  .afterpay-paragraph .afterpay-text1 {
-    margin-bottom: 8px;
-    display: inline-block
-  }
-
-  .afterpay-paragraph .afterpay-instalments {
-    padding: 0 2px 0 5px
-  }
-
-  .afterpay-paragraph strong {
-    font-weight: 300
-  }
-
   .rich-text-section_new .section-header__title {
     font-size: 26px;
     line-height: 32px
@@ -7094,10 +7071,6 @@
 
   .field-name:first-child {
     margin-top: 0
-  }
-
-  .afterpay-link-inner {
-    display: none
   }
 
   .transit-container {
@@ -8579,17 +8552,11 @@
   .product_top_right_new .product-single__price{
     color: #FD5E0F;
   }
-  .product_top_right_new .afterpay-paragraph{
-    display:none;
-  }
   .product_top_right_new .stamped-badge {
     margin-top: 13px;
   }
   .product_top_right_new .fa-star, .fa-star-checked, .fa-star-half-o, .fa-star-o, .stamped-fa-star, .stamped-fa-star-checked, .stamped-fa-star-half-o, .stamped-fa-star-o {
     color: #f1bb83;
-  }
-  p.afterpay-paragraph {
-    display: none !important;
   }
   .power_new .feature-row__text_in{
     max-width: 515px !important;
@@ -8671,8 +8638,7 @@ body.template-product .product-single__form .product-form__item {
   order: 1;
 }
 
-body.template-product .product-single__form .product-single__add-to-cart,
-body.template-product .product-single__form .afterpay-paragraph {
+body.template-product .product-single__form .product-single__add-to-cart {
   order: 2;
 }
 
@@ -8713,5 +8679,12 @@ body.template-product .product-single__form .single-option-radio label {
   .mobile-image {
     display: none !important;
   }
+}
+
+.template-page header.section-header h1 {
+  text-transform: capitalize;
+}
+.faq_section_new .h2 a, .faq_section_new h2 a {
+  letter-spacing: -1px;
 }
 </style>

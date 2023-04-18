@@ -2,17 +2,13 @@
 <style>
   #shopify-section-{{section.id}} {
     background-color: {{ section.settings.bg_color }};
+    padding: 70px 0px;
   }
 </style>
 {% endif %}
 
 <div class="wrapper">
-  {% if section.settings.heading != blank %}
-    <div class="section-header text-center">
-      <h2 class="h1 section-header__title">{{ section.settings.heading | escape }}</h2>
-      <hr class="hr--small">
-    </div>
-  {% endif %}
+
   <div class="grid">
     <div class="grid__item one-whole">
       <div class="video-wrapper">
@@ -29,8 +25,19 @@
         
         
       </div>
+
+  {% if section.settings.heading != blank %}
+    <div class="section-header text-center">
+      <div class="product_text2_new">{{ section.settings.heading | escape }}</div>
+    </div>
+  {% endif %}
+      
       {% if section.settings.subtext != blank %}
-        	<div class="video_subtext">{{ section.settings.subtext }}</div>
+        	<div class="product_desc_new" style="
+              text-align: center;
+              }">
+              <p>{{ section.settings.subtext }}</p>
+            </div>
         {% endif %}
     </div>
   </div>

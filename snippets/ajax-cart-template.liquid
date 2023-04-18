@@ -117,28 +117,7 @@
       </div>
       {% endunless %}{% raw %}
 
-      <div class="transit-container">
-        <div class="transit-wrapper">
-          <div class="checkbox-wrapper">
-            <label class="switch" id="transit-toggler">
-              <input type="checkbox" id="add-transit" />
-              <span class="slider round"></span>
-            </label>
-          </div>
-          <div class="transit-content">
-            <div class="transit-main-content">
-              <span>Add</span>
-              <span class="transit-logo">
-                <img src="https://cdn.shopify.com/s/files/1/0429/3571/3945/files/Transit_logo_small_f5de3753-6baf-4fea-9a55-fafca6f27722.png?v=1616665445" alt="transit" />
-              </span>
-              <span>shipping protection $0.95</span>
-            </div>
-            <div class="transit-referrence">
-              <a href="#" class="transit-referrence-link" id="transit-referrence-link">More info</a>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       <div class="ajaxcart__footer ajaxcart__footer--fixed">
         <div class="grid--full">
@@ -180,13 +159,6 @@
           {% endraw %}{{ 'cart.general.checkout' | t }}{% raw %} <span class="icon icon-arrow-right" aria-hidden="true"></span>
         </button>
         {% endraw %}
-        {% if settings.show_afterpay_btn == true %}
-        {% raw %}
-        <a href="https://thejunecup.myshopify.com/checkout" class="afterpay-btn">
-          <img src="https://static.afterpay.com/integration/product-page/logo-afterpay-colour@3x.png">
-        </a>
-        {% endraw %}
-        {% endif %}
         
         {% raw %}
       </div>

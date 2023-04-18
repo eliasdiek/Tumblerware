@@ -140,6 +140,27 @@
 </div>
 {% endif %}
 
+{% if product.metafields.global.image_5 != blank and product.metafields.global.text_5 != blank %}
+<div class="product_below_section_thired">
+  <div class="power_new">
+    <div class="feature-row">
+      
+      <div class="feature-row__item">
+        <div class="feature-row__image-wrapper product_desc_img_new">
+          <img class="lazyload" src="{{ product.metafields.global.image_5 }}" alt="image"/>
+        </div>
+      </div>
+      <div class="feature-row__item feature-row__text feature-row__text--left">
+        <div class="feature-row__text_in">
+          {{ product.metafields.global.text_5 }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
 {% schema %}
   {
     "name": "Product Below Sections",

@@ -7,7 +7,7 @@
         "1584765879672": {
           "type": "slide",
           "settings": {
-            "message_text": "To help offset impact of COVID-19 all products sold at cost",
+            "message_text": "The Patent Pending Diamond Rolling Knife Sharpener",
             "button_text": "test",
             "button_link": "shopify:\/\/blogs\/news\/menstrual-cups-are-now-eligible-for-fsa-hsa-hra"
           }
@@ -28,20 +28,20 @@
         "261ae18e-39bd-4aab-9966-90345ad2aba4": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-11_at_10.36.05_AM.png",
-            "mobile_image": "shopify:\/\/shop_images\/Homepage-mobile.jpg",
+            "image": "shopify:\/\/shop_images\/Tumbler_Rolling_Knife_Sharpener_Desktop_cbfbb95b-4bbc-4b95-8458-78d748152e61.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Tumbler_Rolling_Knife_Sharpener_Mobile_177d2947-e057-4e24-83d9-52755262bdf3.jpg",
             "image_position": "center center",
             "image_overlay": true,
-            "image_overlay_opacity": 21,
+            "image_overlay_opacity": 10,
             "text_alignment": "left_middle",
             "text_alignment_mobile": "top_center",
-            "slide_heading": "A RAZOR SHARP<br>KNIFE WITHOUT<br>THE EFFORT",
-            "slide_subheading": "Introducing the most advanced yet intuitive knife sharpener.",
-            "button_label": "TRY IT",
-            "button_link": "shopify:\/\/products\/knife-sharpening",
+            "slide_heading": "KNIFE SHARPENING<br> HAS NEVER BEEN<br>THIS EASY",
+            "slide_subheading": "Sharpen, restore and repair your knife in minutes.",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
             "slide_text_color": "#ffffff",
             "slide_button_label_color": "#1c1d1d",
-            "slide_button_background_color": "#e5e1dd"
+            "slide_button_background_color": "#ffffff"
           }
         }
       },
@@ -56,53 +56,132 @@
     },
     "16291317706bd32811": {
       "type": "text-with-button-alt",
+      "disabled": true,
       "settings": {
-        "heading": "Don't think you have  have to be a knifesmith to sharpen your knives",
+        "heading": "DON'T THINK YOU HAVE TO BE A KNIFESMITH TO OWN SHARP KNIVES",
         "body": "",
         "button_link": "",
         "button_text": "",
         "bg_color": "#ffffff",
-        "txt_color": "#1c1d1d"
+        "heading_color": "#51453f",
+        "txt_color": "#111111",
+        "button_color": "#ff6000",
+        "button_text_color": "#ffffff"
       }
     },
     "1614421552feb24b5b": {
       "type": "index-product-image-text",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-11_at_10.44.54_AM.png",
+        "image_position": "center",
+        "image": "shopify:\/\/shop_images\/Tumbler_Rolling_Knife_Sharpener_Explanation.png",
+        "mobile_image": "shopify:\/\/shop_images\/Tumbler_Rolling_Knife_Sharpener_Explanation.png",
         "text1": "",
-        "text2": "The Smarter Way To Sharpen",
-        "text3": "<p>Stop the hassle and enjoy the pleasure of cutting with razor sharp knives. Tumbler makes it easy for anyone to sharpen their knives and maintain a razor sharp edge.<\/p>",
-        "btntext1": "Shop Now",
-        "btnlink1": "shopify:\/\/collections\/frontpage",
+        "text2": "Roll your way to sharper knives",
+        "text3": "<p>Traditional sharpening takes time to master. With Tumbler Rolling Knife Sharpener, anyone can get factory-sharp knives in minutes.<\/p>",
+        "btntext1": "LEARN MORE",
+        "btnlink1": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
         "btntext2": "",
-        "btnlink2": ""
+        "btnlink2": "",
+        "bg_color": "#e3e2e0",
+        "heading_color": "#51453f",
+        "txt_color": "#111111"
       }
     },
-    "1649699474ee23dcf3": {
-      "type": "text-with-image-companions",
-      "blocks": {
-        "0df27ebb-df54-48ec-9608-989ea01c119a": {
-          "type": "Text",
-          "settings": {
-            "heading": "Love it or your money back",
-            "description": "<p>Don’t like Tumbler for any reason? Send it back for a full refund. That’s our satisfaction guarantee.<\/p>",
-            "bg_color": "#e2d9d5",
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-11_at_10.52.46_AM.png",
-            "img_position": "left",
-            "img_position_mobile": "top"
-          }
-        }
-      },
-      "block_order": [
-        "0df27ebb-df54-48ec-9608-989ea01c119a"
-      ],
-      "settings": {}
+    "1650166204babb0913": {
+      "type": "index-product-image-text",
+      "settings": {
+        "image_position": "center",
+        "image": "shopify:\/\/shop_images\/Tumbler_Sharpen_All_Knives.png",
+        "mobile_image": "shopify:\/\/shop_images\/Tumbler_Sharpen_All_Knives.png",
+        "text1": "",
+        "text2": "SHARPEN WITHOUT LIMITS",
+        "text3": "<p>Sharpen everything from household knives to artisan cutlery in minutes.<\/p>",
+        "btntext1": "SHOP NOW",
+        "btnlink1": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
+        "btntext2": "",
+        "btnlink2": "",
+        "bg_color": "",
+        "heading_color": "",
+        "txt_color": ""
+      }
+    },
+    "16504281196ed88b14": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "heading": "THE TUMBLER DIFFFERENCE",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=DK-nRTb5yUs",
+        "subtext": "See what happened when we tested the Tumbler Rolling Knife Sharpener at the local Farmer's Market.",
+        "bg_color": "#ffffff"
+      }
+    },
+    "164986500157f0b549": {
+      "type": "index-product-image-text",
+      "settings": {
+        "image_position": "center",
+        "image": "shopify:\/\/shop_images\/Tumbler_Rolling_Knife_Sharpener_Helix_Honing_Disc_4faa0302-ba35-418d-9832-0bfd044eba48.png",
+        "mobile_image": "shopify:\/\/shop_images\/Tumbler_Rolling_Knife_Sharpener_Helix_Honing_Disc_4faa0302-ba35-418d-9832-0bfd044eba48.png",
+        "text1": "",
+        "text2": "Love it or get your money back",
+        "text3": "<p>Don't like Tumbler for any reason? Send it back for a full refund. That's our satisfaction guarantee.<\/p>",
+        "btntext1": "<span>LEARN MORE<\/span>",
+        "btnlink1": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
+        "btntext2": "",
+        "btnlink2": "",
+        "bg_color": "#e5dad6",
+        "heading_color": "#51453f",
+        "txt_color": "#111111"
+      }
     },
     "16496988610137bb21": {
       "type": "faqs",
       "disabled": true,
+      "blocks": {
+        "96de14cd-25ca-481c-bf9c-234396353ca7": {
+          "type": "text",
+          "settings": {
+            "title": "Question",
+            "description": "Answer goes here..."
+          }
+        },
+        "4bfe49e9-3303-4d01-8b65-42ec55edf48b": {
+          "type": "text",
+          "settings": {
+            "title": "Question",
+            "description": "Answer goes here..."
+          }
+        }
+      },
+      "block_order": [
+        "96de14cd-25ca-481c-bf9c-234396353ca7",
+        "4bfe49e9-3303-4d01-8b65-42ec55edf48b"
+      ],
       "settings": {
         "section_header": "Faq",
+        "bg_color": ""
+      }
+    },
+    "1650428103f56ebf10": {
+      "type": "how_to-video",
+      "disabled": true,
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/embed\/FcLNC43yFs4",
+        "bg_color": "#f2eeec"
+      }
+    },
+    "165265952824925c86": {
+      "type": "featured-row",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ezgif-2-53e2988861.gif",
+        "layout": "left",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "Button_text": "",
+        "Button_link": "",
+        "button_color": "#262626",
         "bg_color": ""
       }
     }
@@ -112,7 +191,11 @@
     "16150487994661eec4",
     "16291317706bd32811",
     "1614421552feb24b5b",
-    "1649699474ee23dcf3",
-    "16496988610137bb21"
+    "1650166204babb0913",
+    "16504281196ed88b14",
+    "164986500157f0b549",
+    "16496988610137bb21",
+    "1650428103f56ebf10",
+    "165265952824925c86"
   ]
 }

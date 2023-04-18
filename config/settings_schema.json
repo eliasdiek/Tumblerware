@@ -1344,12 +1344,6 @@
         "type": "url",
         "id": "donate_info_page",
         "label": "Donate info page"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_afterpay_btn",
-        "label": "Show afterpay button",
-        "default": true
       }
     ]
   },

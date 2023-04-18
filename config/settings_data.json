@@ -6,7 +6,7 @@
     "color_borders": "#ffffff",
     "color_button_text": "#ffffff",
     "color_primary": "#ff6000",
-    "color_secondary": "#243269",
+    "color_secondary": "#ff6000",
     "color_product_background": "#ffffff",
     "color_sale_tag": "#111111",
     "color_input": "#f6f6f6",
@@ -26,7 +26,7 @@
     "type_base_family": "open_sans_n3",
     "type_base_size": "17px",
     "type_base_italize_titles": false,
-    "cart_type": "page",
+    "cart_type": "drawer",
     "cart_notes_enable": false,
     "transit_product": "transit-shipping-protection",
     "set_transit_optout": false,
@@ -34,16 +34,15 @@
     "set_donate_optout": false,
     "donate_text_in_cart": "",
     "donate_info_page": "",
-    "show_afterpay_btn": true,
     "share_image": "shopify:\/\/shop_images\/June_Cup_Period_Underwear_Facebook_d90a1425-25e3-487b-a134-0f718c6816f5.jpg",
-    "social_facebook_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/tumblerware",
     "social_twitter_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/tumblerusa\/",
     "social_snapchat_link": "",
     "social_google_plus_link": "",
     "social_tumblr_link": "",
-    "social_youtube_link": "",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCsaKLBKaGX86LO5HEiUhAfQ",
     "social_vimeo_link": "",
     "social_fancy_link": "",
     "share_facebook": false,
@@ -51,7 +50,7 @@
     "share_pinterest": false,
     "favicon": "shopify:\/\/shop_images\/Icon_Orange.png",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/June-Watermark-Blue_eb4d8634-1fc6-428c-a9d5-b77f336b6301.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Horizontal_Logo_Orange.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_body_background_image": "",
@@ -78,17 +77,20 @@
         "settings": {
           "sticky_header": false,
           "logo": "shopify:\/\/shop_images\/Icon_Orange.png",
+          "logo-inverted": "shopify:\/\/shop_images\/Icon_Orange.png",
           "logo_max_width": "45",
           "search": "none",
           "main_menu_link_list": "main-menu",
           "drawer_bottom_link_list": "",
           "drawer_search_enable": false,
-          "show_announcement": false,
+          "show_announcement": true,
           "home_page_only": false,
-          "text": "Free knife sharpening with a referral of a friend.",
-          "link": "",
-          "color_bg": "#243269",
-          "color_text": "#ffffff"
+          "text": "<p>24% OFF TODAY | PREORDER NOW<\/p>",
+          "link": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
+          "color_bg": "#c54245",
+          "color_text": "#ffffff",
+          "bg_color": "rgba(0,0,0,0)",
+          "border_color": ""
         }
       },
       "slideshow": {
@@ -127,12 +129,13 @@
         "type": "footer",
         "settings": {
           "logo": "shopify:\/\/shop_images\/Logo_horizontal_white.png",
-          "helps_link_list": "",
-          "pages_link_list": "",
-          "shop_link_list": "",
-          "bottom_leagal_list": "footer",
+          "helps_link_list": "footer",
+          "pages_link_list": "company",
+          "shop_link_list": "shop",
+          "bottom_leagal_list": "",
           "bottom_link_list": "",
-          "show_payment_icons": false
+          "show_payment_icons": false,
+          "bg_color": "#303030"
         }
       },
       "collection-template": {
@@ -735,11 +738,11 @@
           "heading": "Shop All",
           "sub_heading": "A smarter period with comfier, healthier products.",
           "collection": "frontpage",
-          "bg_color": "",
           "collection_products_grid": "grid",
           "collection_sort_enable": false,
           "collection_tags_enable": false,
-          "product_vendor_enable": false
+          "product_vendor_enable": false,
+          "bg_color": ""
         }
       },
       "reviews-hero": {
@@ -969,7 +972,19 @@
       "161440654286b50aee",
       "16144078680e6e5da8",
       "1614982247d89846dc"
-    ]
+    ],
+    "blocks": {
+      "12429728106950981667": {
+        "type": "shopify:\/\/apps\/blocky-fraud-country-blocker\/blocks\/app-embed\/aa25b3bf-c2c5-4359-aa61-7836c225c5a9",
+        "disabled": false,
+        "settings": {}
+      },
+      "1892562240530925112": {
+        "type": "shopify:\/\/apps\/gdpr-ccpa-compliance-manager\/blocks\/app-embed\/e2ac5ac3-1765-477b-ac58-d792f9a65f3a",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Classic": {

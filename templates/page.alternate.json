@@ -7,7 +7,8 @@
           "type": "block",
           "settings": {
             "heading": "Default text",
-            "sub_heading": "Default text"
+            "sub_heading": "Default text",
+            "link": ""
           }
         }
       },
@@ -15,8 +16,8 @@
         "1594929519925"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/June_Cup_Woman_Searching_Internet.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/June_Cup_Woman_Searching_Internet_Mobile.jpg",
+        "image": "shopify:\/\/shop_images\/DS8C0336_2048x_a49dd1c1-f0a9-4241-a9bc-1c2574a0c5d5.jpg",
+        "video": "",
         "show_blocks": false,
         "content_section_bg": "",
         "bottom_section_bg": ""
