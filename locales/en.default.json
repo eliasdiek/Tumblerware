@@ -286,7 +286,8 @@
       "sold_out_html": "Sold<br \/> Out",
       "unavailable": "Unavailable",
       "quantity": "Quantity",
-      "add_to_cart": "Preorder Now",
+      "pre_order": "Preorder Now",
+      "add_to_cart": "Order Now",
       "add": "Add",
       "out": "Out",
       "full_details": "Full details"

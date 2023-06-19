@@ -28,8 +28,8 @@
         "txt_color": ""
       }
     },
-    "text-with-image-companions_careers": {
-      "type": "text-with-image-companions_careers",
+    "text-with-image-companions_wusthof": {
+      "type": "text-with-image-companions_wusthof",
       "blocks": {
         "f1049aff-e653-498e-8d01-8cfaeb9f0ff1": {
           "type": "Text",
@@ -108,7 +108,7 @@
   "order": [
     "cd32bd25-7db0-4e45-9695-a3bcae96f673",
     "6853b68b-0c0f-4947-8c6b-8ddaba95974a",
-    "text-with-image-companions_careers",
+    "text-with-image-companions_wusthof",
     "71a6ff23-5f11-428f-a4bd-b274b5849f37",
     "text-with-button"
   ]

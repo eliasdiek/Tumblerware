@@ -2,10 +2,56 @@
   "sections": {
     "main": {
       "type": "content-page-template",
+      "disabled": true,
+      "settings": {}
+    },
+    "6cd6328e-241e-430b-a008-84df28c5c652": {
+      "type": "index-product-image-text",
+      "settings": {
+        "image_position": "center",
+        "image": "shopify:\/\/shop_images\/Wusthoff.gif",
+        "mobile_image": "shopify:\/\/shop_images\/Wusthoff_2.gif",
+        "text1": "",
+        "text2": "TUMBLE NEW LIFE TO YOUR WUSTHOF KNIVES!",
+        "text3": "<p>Discover the smarter way to sharpen with the Tumbler Rolling Knife Sharpener. Precise, long-lasting, and easy to use - restore your Wusthof knives to factory sharpness in just minutes!<\/p>",
+        "btntext1": "SHOP NOW | GET 24% OFF TODAY",
+        "btnlink1": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
+        "btntext2": "",
+        "btnlink2": "\/",
+        "bg_color": "",
+        "heading_color": "",
+        "txt_color": ""
+      }
+    },
+    "747b3665-b333-4295-a1bd-59f52341a8f0": {
+      "type": "text-with-image-companions",
+      "blocks": {
+        "16f61d54-148f-479e-ae3e-3e73e5e4dfbb": {
+          "type": "Text",
+          "settings": {
+            "heading": "THE IDEAL COMPANION FOR YOUR WUSTHOF KNIVES",
+            "description": "<p>The Tumbler Rolling Knife Sharpener is designed to perfectly complement your Wusthof knives. It respects the high-quality steel of your knives, ensuring they maintain their edge and longevity.<\/p>",
+            "bg_color": "",
+            "image": "shopify:\/\/shop_images\/Ease_a4492b56-b844-4a01-ab5b-a489099b3c52.gif",
+            "img_position": "right",
+            "img_position_mobile": "top"
+          }
+        }
+      },
+      "block_order": [
+        "16f61d54-148f-479e-ae3e-3e73e5e4dfbb"
+      ],
+      "settings": {}
+    },
+    "df5dbc8d-247b-44cf-9fb6-fc79bac303e8": {
+      "type": "text-with-image-companions_careers",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "6cd6328e-241e-430b-a008-84df28c5c652",
+    "747b3665-b333-4295-a1bd-59f52341a8f0",
+    "df5dbc8d-247b-44cf-9fb6-fc79bac303e8"
   ]
 }
