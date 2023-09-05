@@ -77,7 +77,7 @@
     <!-- <link rel="stylesheet" data-href="{{ 'timber.css' | asset_url }}"> -->
     <!-- <link rel="stylesheet" data-href="{{ 'theme.css' | asset_url }}"> -->
     
-    {% if template == 'page.about' or template == 'page.how-to' or template == 'page.careers' or template == 'page.reviews' %}
+    {% if template == 'page.about' or template == 'page.how-to' or template == 'page.careers' or template == 'page.wusthof' or template == 'page.reviews'  or template == 'page.prospecting' or template == 'page.instructions' %}
     {% include 'page-css' %}
     {% endif %}
   
@@ -281,8 +281,8 @@
     $("rc-option__text").html("Subscribe & Save "+shori+"/Knife ");
   });
 </script> -->
+{% include 'adroll' %}
 {% render 'oneclickupsellapp-theme', oneclickupsellapp: oneclickupsellapp %}
 {% assign oneclickupsellapp = true %}
-{% include 'adroll' %}
 </body>
 </html>

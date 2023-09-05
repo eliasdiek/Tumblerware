@@ -14,12 +14,12 @@
       "type": "index-product-image-text",
       "settings": {
         "image_position": "center",
-        "image": "shopify:\/\/shop_images\/Ulu_knife_48c563eb-befc-41fb-b321-2cc35538f144.gif",
-        "mobile_image": "shopify:\/\/shop_images\/Ulu_knife_34f8d35e-e220-4058-bd8a-36f4b26b183b.gif",
+        "image": "shopify:\/\/shop_images\/Wusthoff_2.gif",
+        "mobile_image": "shopify:\/\/shop_images\/Wusthoff_2.gif",
         "text1": "",
-        "text2": "EXPERIENCE THE NEXT LEVEL OF KNIFE SHARPENING!",
-        "text3": "<p>Meet the Tumbler Rolling Knife Sharpener – efficient, durable, and now 24% off. Your search for the perfect knife sharpener ends here!<\/p>",
-        "btntext1": "SHOP TUMBLER | SAVE 24% TODAY",
+        "text2": "BRING NEW LIFE TO YOUR WUSTHOF KNIVES!",
+        "text3": "<p>Discover the smarter way to sharpen with the Tumbler Rolling Knife Sharpener. Precise, long-lasting, and easy to use - restore your Wusthof knives to factory sharpness in just minutes!<\/p>",
+        "btntext1": "SHOP TUMBLER | 24% OFF TODAY",
         "btnlink1": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
         "btntext2": "",
         "btnlink2": "\/",
@@ -28,14 +28,14 @@
         "txt_color": ""
       }
     },
-    "text-with-image-companions_careers": {
-      "type": "text-with-image-companions_careers",
+    "text-with-image-companions_wusthof": {
+      "type": "text-with-image-companions_wusthof",
       "blocks": {
-        "3658f287-65e9-42f2-8ecd-1e5a49a56999": {
+        "2f14a5f7-3821-4103-9dfe-5c541815b0bf": {
           "type": "Text",
           "settings": {
-            "heading": "WHY CHOOSE TUMBLER FOR YOUR KITCHEN KNIVES?",
-            "description": "<p>The right knives are an investment in quality, and they deserve a sharpener that respects that quality. The Tumbler Rolling Knife Sharpener is designed to sharpen effectively without damaging your knives, ensuring they retain their superior cutting performance for years to come.<\/p>",
+            "heading": "WHY CHOOSE TUMBLER FOR YOUR WUSTHOF KNIVES?",
+            "description": "<p>Wusthof knives are an investment in quality, and they deserve a sharpener that respects that quality. The Tumbler Rolling Knife Sharpener is designed to sharpen effectively without damaging your knives, ensuring they retain their superior cutting performance for years to come.<\/p>",
             "bg_color": "",
             "image": "shopify:\/\/shop_images\/ezgif-4-2ec5c5a86f.gif",
             "img_position": "left"
@@ -44,25 +44,26 @@
         "82058a07-91f1-4943-b97b-3c6bf18adc90": {
           "type": "Text",
           "settings": {
-            "heading": "Revolutionize your sharpening with our innovative design",
-            "description": "<p>Not your average tool. With its unique tumbling design, it provides a thorough and even sharpening that traditional sharpeners can't match. It's the cutting-edge technology your kitchen deserves.<\/p>",
+            "heading": "THE IDEAL COMPANION FOR YOUR WUSTHOF KNIVES",
+            "description": "<p>Our sharpener uses a unique tumbling motion to evenly sharpen the entire blade, not just parts of it. This precise sharpening restores your Wusthof knives to their factory sharpness, enhancing their cutting performance.<\/p>",
             "bg_color": "",
-            "image": "shopify:\/\/shop_images\/Tumbler_0a5a3811-bca2-4264-9bd7-8181cab85ced.jpg",
+            "image": "shopify:\/\/shop_images\/ezgif-4-8a5bf7db86.gif",
             "img_position": "left"
           }
         },
         "9228d473-0002-47b2-ab47-acf50d8bffa5": {
           "type": "Text",
           "settings": {
-            "heading": "Anyone can use it",
-            "description": "<p>You don't need to be a professional chef to use the Tumbler Rolling Knife Sharpener. Its easy-to-use design makes sharpening your knives a breeze. Plus, its compact size means it fits easily in any kitchen.<\/p>",
+            "heading": "SAFE AND EASY TO USE – NO EXPERIENCE REQUIRED",
+            "description": "<p>Don't risk damaging your Wusthof knives with incorrect sharpening techniques. The Tumbler Rolling Knife Sharpener is incredibly easy to use, with a safe and simple process that anyone can follow.<\/p>",
             "bg_color": "",
-            "image": "shopify:\/\/shop_images\/ezgif-4-8a5bf7db86.gif",
+            "image": "shopify:\/\/shop_images\/Tumbler_0a5a3811-bca2-4264-9bd7-8181cab85ced.jpg",
             "img_position": "left"
           }
         },
         "d1aff6bd-c762-41e5-845b-b7438f5193a4": {
           "type": "Text",
+          "disabled": true,
           "settings": {
             "heading": "One Sharpener, countless knives",
             "description": "<p>From your finest chef's knife to your sturdy chopping knife, the Tumbler Rolling Knife Sharpener can handle it all. It's suitable for all types of knives, including your Ulu knife, making it the only sharpener you'll ever need.<\/p>",
@@ -74,8 +75,8 @@
         "f1049aff-e653-498e-8d01-8cfaeb9f0ff1": {
           "type": "Text",
           "settings": {
-            "heading": "Build to last with unmatched durability",
-            "description": "<p>Our sharpener has been rigorously tested with over 100,000 rotations to simulate a lifetime of use. Crafted from high-quality materials, it's made to endure and maintain its effectiveness over time.<\/p>",
+            "heading": "LONG-LASTING RESULTS TO PROTECT YOUR INVESTMENT",
+            "description": "<p>Our sharpener doesn't just give your knives a quick fix – it provides a long-lasting sharpness that stands the test of time. This helps to protect your investment in Wusthof knives, ensuring they remain effective for years to come.<\/p>",
             "bg_color": "",
             "image": "shopify:\/\/shop_images\/Sharpness.gif",
             "img_position": "left"
@@ -83,7 +84,7 @@
         }
       },
       "block_order": [
-        "3658f287-65e9-42f2-8ecd-1e5a49a56999",
+        "2f14a5f7-3821-4103-9dfe-5c541815b0bf",
         "82058a07-91f1-4943-b97b-3c6bf18adc90",
         "9228d473-0002-47b2-ab47-acf50d8bffa5",
         "d1aff6bd-c762-41e5-845b-b7438f5193a4",
@@ -111,7 +112,7 @@
         "heading": "Get 24% off when you shop Tumbler today!",
         "sub_heading": "<p>Experience new level of sharpness for your Wusthof knives.<\/p>",
         "button_link": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
-        "button_text": "SHOP TUMBLER | 24% OFF TODAY",
+        "button_text": "SHOP TUMBLER |  24% OFF TODAY",
         "bg_color": ""
       }
     }
@@ -119,7 +120,7 @@
   "order": [
     "cd32bd25-7db0-4e45-9695-a3bcae96f673",
     "6853b68b-0c0f-4947-8c6b-8ddaba95974a",
-    "text-with-image-companions_careers",
+    "text-with-image-companions_wusthof",
     "71a6ff23-5f11-428f-a4bd-b274b5849f37",
     "text-with-button"
   ]
