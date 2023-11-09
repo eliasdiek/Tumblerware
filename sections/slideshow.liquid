@@ -7,10 +7,12 @@
   .slide_review_wrapper {
     margin-bottom: 10px;
     font-size: 14px;
+    font-weight: 400;
   } 
   .optional_text {
     margin-top: 10px;
     font-size: 14px;
+    font-weight: 400;
   }
 </style>
 
@@ -238,7 +240,7 @@
             <div class="hero__text_inner-wrapper">
               <div class="hero__text-align wrapper">
                 <div class="hero__text-content">
-                  {% if block.settings.show_reviews %}
+                  {% if block.settings.show_reviews and block.settings.review_text != blank %}
                     <div class="slide_review_wrapper">
                       <span class="stamped-starrating stamped-badge-starrating" aria-hidden="true"
                         ><i class="stamped-fa stamped-fa-star" aria-hidden="true"></i
