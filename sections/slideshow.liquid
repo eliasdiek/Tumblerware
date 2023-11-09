@@ -3,6 +3,17 @@
 {% endcomment %}
 {% assign hero_parallax = true %}
 
+<style>
+  .slide_review_wrapper {
+    margin-bottom: 10px;
+    font-size: 14px;
+  } 
+  .optional_text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+</style>
+
 {%- if section.settings.home_hero_height == 'adapt' -%}
   {% comment %}
     'min_aspect_ratio' is the minimum aspect ratio of images shown without
@@ -34,108 +45,115 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<div data-section-id="{{ section.id }}"
-     data-section-type="slideshow-section"{% if section.settings.home_hero_height == 'adapt' %} class="hero--adapt"{% endif %}>
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="slideshow-section"
+  {% if section.settings.home_hero_height == 'adapt' %}
+    class="hero--adapt"
+  {% endif %}
+>
   {%- if section.blocks.size > 0 -%}
-    <div class="hero-{{ section.id }} hero hero--color-0 slide-show"
-         aria-label="slideshow"
-         aria-describedby="hero-info"
-         tabindex="-1"
-         role="region"
-         data-autoplay="{{ section.settings.hero_home_auto }}"
-         data-autoplayspeed="{{ section.settings.home_hero_auto_speed | times: 1000 }}"
-         data-adapt="{% if section.settings.home_hero_height == 'adapt' %}true{% else %}false{% endif %}"
-         data-slide-nav-a11y="{{ 'home_page.slideshow.load_slide' | t: slide_number: '[slide_number]' }}"
-         data-slide-nav-active-a11y="{{ 'home_page.slideshow.active_slide' | t: slide_number: '[slide_number]' }}">
+    <div
+      class="hero-{{ section.id }} hero hero--color-0 slide-show"
+      aria-label="slideshow"
+      aria-describedby="hero-info"
+      tabindex="-1"
+      role="region"
+      data-autoplay="{{ section.settings.hero_home_auto }}"
+      data-autoplayspeed="{{ section.settings.home_hero_auto_speed | times: 1000 }}"
+      data-adapt="{% if section.settings.home_hero_height == 'adapt' %}true{% else %}false{% endif %}"
+      data-slide-nav-a11y="{{ 'home_page.slideshow.load_slide' | t: slide_number: '[slide_number]' }}"
+      data-slide-nav-active-a11y="{{ 'home_page.slideshow.active_slide' | t: slide_number: '[slide_number]' }}"
+    >
       {%- for block in section.blocks -%}
         {%- style -%}
-          .hero--color-{{ forloop.index0 }} .hero__pause,
-          .hero--color-{{ forloop.index0 }} .hero__pause .icon:before,
-          .hero--color-{{ forloop.index0 }} .slick-prev .icon:before,
-          .hero--color-{{ forloop.index0 }} .slick-next .icon:before {
-            color: {{ block.settings.slide_text_color }};
-          }
-          .hero--color-{{ forloop.index0 }} .slick-dots li a:before {
-            background: transparent;
-            border-color: {{ block.settings.slide_text_color }};
-          }
-          .hero--color-{{ forloop.index0 }} li.slick-active a:before {
-            background: {{ block.settings.slide_text_color }};
-            border-color: transparent;
-          }
-          .hero--color-{{ forloop.index0 }} .hero__pause .icon {
-            fill: {{ block.settings.slide_text_color }};
-          }
-          .hero__text-align.wrapper {
-            max-width: 100%;
-          }
-          .slide--{{ block.id }} .hero__text-wrap {
-            padding: 2rem 1.275rem 4rem 1.275rem;
-            text-align: center;
-          }
-          .slide--{{ block.id }} .hero__text-content {
-            {% if block.settings.text_alignment_mobile == 'top_center' %}
-              {% assign gradient_dir_mob = 'to top' %}
-              vertical-align: top;
-            {% endif %}
-            {% if block.settings.text_alignment_mobile == 'bottom_center' %}
-              {% assign gradient_dir_mob = 'to bottom' %}
-              vertical-align: bottom;
-            {% endif %}
-          }
-          @media screen and (min-width: 968px) {
+            .hero--color-{{ forloop.index0 }} .hero__pause,
+            .hero--color-{{ forloop.index0 }} .hero__pause .icon:before,
+            .hero--color-{{ forloop.index0 }} .slick-prev .icon:before,
+            .hero--color-{{ forloop.index0 }} .slick-next .icon:before {
+              color: {{ block.settings.slide_text_color }};
+            }
+            .hero--color-{{ forloop.index0 }} .slick-dots li a:before {
+              background: transparent;
+              border-color: {{ block.settings.slide_text_color }};
+            }
+            .hero--color-{{ forloop.index0 }} li.slick-active a:before {
+              background: {{ block.settings.slide_text_color }};
+              border-color: transparent;
+            }
+            .hero--color-{{ forloop.index0 }} .hero__pause .icon {
+              fill: {{ block.settings.slide_text_color }};
+            }
+            .hero__text-align.wrapper {
+              max-width: 100%;
+            }
             .slide--{{ block.id }} .hero__text-wrap {
               padding: 2rem 1.275rem 4rem 1.275rem;
-              {% if block.settings.text_alignment == 'top_center' or block.settings.text_alignment == 'bottom_center' %}
-                text-align: center;
-              {% endif %}
-              {% if block.settings.text_alignment == 'left_middle' %}
-                text-align: left;
-              {% endif %}
-              {% if block.settings.text_alignment == 'right_middle' %}
-                text-align: right;
-              {% endif %}
+              text-align: center;
             }
             .slide--{{ block.id }} .hero__text-content {
-              {% if block.settings.text_alignment == 'top_center' %}
-                {% assign gradient_dir = 'to top' %}
+              {% if block.settings.text_alignment_mobile == 'top_center' %}
+                {% assign gradient_dir_mob = 'to top' %}
                 vertical-align: top;
               {% endif %}
-              {% if block.settings.text_alignment == 'bottom_center' %}
-                {% assign gradient_dir = 'to bottom' %}
+              {% if block.settings.text_alignment_mobile == 'bottom_center' %}
+                {% assign gradient_dir_mob = 'to bottom' %}
                 vertical-align: bottom;
               {% endif %}
-              {% if block.settings.text_alignment == 'left_middle' or block.settings.text_alignment == 'right_middle' %}
-                vertical-align: middle;
-              {% endif %}
             }
-            {% if block.settings.text_alignment == 'top_center' or block.settings.text_alignment == 'bottom_center' %}
-              .slide--{{ block.id }} .hero__text-align {
-                max-width: 100%;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
+            @media screen and (min-width: 968px) {
+              .slide--{{ block.id }} .hero__text-wrap {
+                padding: 2rem 1.275rem 4rem 1.275rem;
+                {% if block.settings.text_alignment == 'top_center' or block.settings.text_alignment == 'bottom_center' %}
+                  text-align: center;
+                {% endif %}
+                {% if block.settings.text_alignment == 'left_middle' %}
+                  text-align: left;
+                {% endif %}
+                {% if block.settings.text_alignment == 'right_middle' %}
+                  text-align: right;
+                {% endif %}
               }
-            {% endif %}
-            {% if block.settings.text_alignment == 'left_middle' %}
-              {% assign gradient_dir = 'to left' %}
-              .slide--{{ block.id }} .hero__text-align {
-                max-width: 660px;
-                margin-left: 0;
-                margin-right: auto;
-                text-align: left;
+              .slide--{{ block.id }} .hero__text-content {
+                {% if block.settings.text_alignment == 'top_center' %}
+                  {% assign gradient_dir = 'to top' %}
+                  vertical-align: top;
+                {% endif %}
+                {% if block.settings.text_alignment == 'bottom_center' %}
+                  {% assign gradient_dir = 'to bottom' %}
+                  vertical-align: bottom;
+                {% endif %}
+                {% if block.settings.text_alignment == 'left_middle' or block.settings.text_alignment == 'right_middle' %}
+                  vertical-align: middle;
+                {% endif %}
               }
-            {% endif %}
-            {% if block.settings.text_alignment == 'right_middle' %}
-              {% assign gradient_dir = 'to right' %}
-              .slide--{{ block.id }} .hero__text-align {
-                max-width: 660px;
-                margin-left: auto;
-                margin-right: 0;
-                text-align: right;
-              }
-            {% endif %}
-        }
+              {% if block.settings.text_alignment == 'top_center' or block.settings.text_alignment == 'bottom_center' %}
+                .slide--{{ block.id }} .hero__text-align {
+                  max-width: 100%;
+                  margin-left: auto;
+                  margin-right: auto;
+                  text-align: center;
+                }
+              {% endif %}
+              {% if block.settings.text_alignment == 'left_middle' %}
+                {% assign gradient_dir = 'to left' %}
+                .slide--{{ block.id }} .hero__text-align {
+                  max-width: 660px;
+                  margin-left: 0;
+                  margin-right: auto;
+                  text-align: left;
+                }
+              {% endif %}
+              {% if block.settings.text_alignment == 'right_middle' %}
+                {% assign gradient_dir = 'to right' %}
+                .slide--{{ block.id }} .hero__text-align {
+                  max-width: 660px;
+                  margin-left: auto;
+                  margin-right: 0;
+                  text-align: right;
+                }
+              {% endif %}
+          }
         {%- endstyle -%}
         {%- comment -%}
           Apply a color overlay on a per-slide basis. The overlay is defined by
@@ -146,28 +164,29 @@
 
           background-color: {{ block.settings.image_overlay }};
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.00 }};
-
         {%- endcomment -%}
         {%- if block.settings.image_overlay -%}
           {%- style -%}
-            {%- assign opacity_alpha = block.settings.image_overlay_opacity | divided_by: 100.00 -%}
-            .slide--{{ block.id }} .slideshow__overlay:before {
-              background-image: linear-gradient({{gradient_dir_mob}},
-                                                {{ '#000' | color_modify: 'alpha', 0 }} 35%,
-                                                {{ '#000' | color_modify: 'alpha', opacity_alpha }} 100%);
+                {%- assign opacity_alpha = block.settings.image_overlay_opacity | divided_by: 100.00 -%}
+                .slide--{{ block.id }} .slideshow__overlay:before {
+                  background-image: linear-gradient({{gradient_dir_mob}},
+                                                    {{ '#000' | color_modify: 'alpha', 0 }} 35%,
+                                                    {{ '#000' | color_modify: 'alpha', opacity_alpha }} 100%);
+                }
+            @media screen and (min-width: 968px) {
+                .slide--{{ block.id }} .slideshow__overlay:before {
+                  background-image: linear-gradient({{gradient_dir}},
+                                                    {{ '#000' | color_modify: 'alpha', 0 }} 35%,
+                                                    {{ '#000' | color_modify: 'alpha', opacity_alpha }} 100%);
+                }
             }
-      		@media screen and (min-width: 968px) {
-            .slide--{{ block.id }} .slideshow__overlay:before {
-              background-image: linear-gradient({{gradient_dir}},
-                                                {{ '#000' | color_modify: 'alpha', 0 }} 35%,
-                                                {{ '#000' | color_modify: 'alpha', opacity_alpha }} 100%);
-            }
-      		}
           {%- endstyle -%}
         {%- endif -%}
-        <div class="hero__slide slide--{{ block.id }}{% if block.settings.image == blank %} slide--placeholder{% endif %}"
-              style="color: {{ block.settings.slide_text_color }};"
-              {{ block.shopify_attributes }}>
+        <div
+          class="hero__slide slide--{{ block.id }}{% if block.settings.image == blank %} slide--placeholder{% endif %}"
+          style="color: {{ block.settings.slide_text_color }};"
+          {{ block.shopify_attributes }}
+        >
           {%- if block.settings.image == blank -%}
             <div class="placeholder-background">
               {%- capture current -%}{% cycle 1, 2 %}{%- endcapture -%}
@@ -176,11 +195,17 @@
           {%- else -%}
             <noscript>
               {%- if forloop.first == true -%}
-                <div class="hero__image-no-js"{% if block.settings.image %} style="background-image: url('{{ block.settings.image | img_url: '2048x' }}');"{% endif %}></div>
+                <div
+                  class="hero__image-no-js"
+                  {% if block.settings.image %}
+                    style="background-image: url('{{ block.settings.image | img_url: '2048x' }}');"
+                  {% endif %}
+                ></div>
               {%- endif -%}
             </noscript>
             {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img class="hero__image hero_image_desk hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
+            <img
+              class="hero__image hero_image_desk hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
                 src="{{ block.settings.image | img_url: '300x' }}"
               {%- endif -%}
@@ -190,10 +215,12 @@
               data-sizes="auto"
               data-parent-fit="cover"
               alt="{{ block.settings.image.alt | escape }}"
-              style="object-position: {{ block.settings.image_position }}">
+              style="object-position: {{ block.settings.image_position }}"
+            >
 
             {%- assign mob_img_url = block.settings.mobile_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img class="hero__image hero_image_mobile hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
+            <img
+              class="hero__image hero_image_mobile hero__image--{{ block.id }} lazyload fade-in{% unless forloop.first == true %} lazypreload{% endunless %}"
               {%- if forloop.first == true -%}
                 src="{{ block.settings.mobile_image | img_url: '300x' }}"
               {%- endif -%}
@@ -203,13 +230,29 @@
               data-sizes="auto"
               data-parent-fit="cover"
               alt="{{ block.settings.mobile_image.alt | escape }}"
-              style="object-position: {{ block.settings.image_position }}">
+              style="object-position: {{ block.settings.image_position }}"
+            >
           {%- endif -%}
 
           <div class="hero__text-wrap{% if block.settings.image_overlay %} slideshow__overlay{% endif %}">
             <div class="hero__text_inner-wrapper">
               <div class="hero__text-align wrapper">
                 <div class="hero__text-content">
+                  {% if block.settings.show_reviews %}
+                    <div class="slide_review_wrapper">
+                      <span class="stamped-starrating stamped-badge-starrating" aria-hidden="true"
+                        ><i class="stamped-fa stamped-fa-star" aria-hidden="true"></i
+                        ><i class="stamped-fa stamped-fa-star" aria-hidden="true"></i
+                        ><i class="stamped-fa stamped-fa-star" aria-hidden="true"></i
+                        ><i class="stamped-fa stamped-fa-star" aria-hidden="true"></i
+                        ><i class="stamped-fa stamped-fa-star" aria-hidden="true"></i
+                      ></span>
+
+                      {% if block.settings.review_text %}
+                        <span class="slide_review_text">{{ block.settings.review_text }}</span>
+                      {% endif %}
+                    </div>
+                  {% endif %}
                   {%- unless block.settings.slide_heading == blank -%}
                     <h1 class="hero__title h1">
                       {{ block.settings.slide_heading }}
@@ -221,10 +264,18 @@
                     </p>
                   {%- endunless -%}
                   {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
-                    <a href="{{ block.settings.button_link }}" style="color: {{ block.settings.slide_button_label_color }}; background-color: {{ block.settings.slide_button_background_color }}" class="btn hero__cta">
+                    <a
+                      href="{{ block.settings.button_link }}"
+                      style="color: {{ block.settings.slide_button_label_color }}; background-color: {{ block.settings.slide_button_background_color }}"
+                      class="btn hero__cta"
+                    >
                       {{ block.settings.button_label | escape }}
                     </a>
                   {%- endif -%}
+
+                  {% if block.settings.description != blank %}
+                    <p class="optional_text">{{ block.settings.description }}</p>
+                  {% endif %}
                 </div>
               </div>
             </div>
@@ -235,7 +286,13 @@
       {%- if section.blocks.size > 1 -%}
         <div class="hero__controls wrapper">
           {%- if section.settings.hero_home_auto -%}
-            <button class="hero__pause" aria-live="polite" aria-label="{{ 'home_page.slideshow.pause' | t }}" data-label-pause="{{ 'home_page.slideshow.pause' | t }}" data-label-play="{{ 'home_page.slideshow.play' | t }}">
+            <button
+              class="hero__pause"
+              aria-live="polite"
+              aria-label="{{ 'home_page.slideshow.pause' | t }}"
+              data-label-pause="{{ 'home_page.slideshow.pause' | t }}"
+              data-label-play="{{ 'home_page.slideshow.play' | t }}"
+            >
               <span class="icon icon-pause" aria-hidden="true"></span>
               <span class="icon icon-play" aria-hidden="true"></span>
             </button>
@@ -975,6 +1032,17 @@
           ]
         },
         {
+          "type": "checkbox",
+          "id": "show_reviews",
+          "label": "Show reviews",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "review_text",
+          "label": "Review text"
+        },
+        {
           "type": "text",
           "id": "slide_heading",
           "label": {
@@ -1136,6 +1204,11 @@
             "zh-CN": "按钮链接",
             "zh-TW": "按鈕連結"
           }
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
         },
         {
           "type": "color",
