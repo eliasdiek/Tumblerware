@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "page-template",
-      "disabled": false,
       "custom_css": [],
       "settings": {}
     }

@@ -15,6 +15,14 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=zy7pqhLPOmI"
           }
         },
+        "c46ec716-3803-4eb3-a733-612b17a0edad": {
+          "type": "text",
+          "settings": {
+            "title": "What is the diamond disc and the stainless steel honing disc for?",
+            "description": "The industrial diamonds used by Tumbler are the optimal material for restoring knife blades of any hardness to an optimal basic sharpness. With the coarse diamond grinding wheel you resharpen your knives in the first step and achieve a very good grinding result. \n\nAfter coarse sharpening with the diamond disc, the cutting edge gets a fine finish with the stainless steel honing wheel and the last burr on the cutting edge is smoothed out. Only a few movements to the front and back are needed here to achieve the desired result.",
+            "video_url": ""
+          }
+        },
         "90f50b6c-93b0-4746-b4c7-be17a9aaa724": {
           "type": "text",
           "settings": {
@@ -71,14 +79,6 @@
             "video_url": ""
           }
         },
-        "415ea33c-d4e8-4dcb-a64f-ae326719dbb7": {
-          "type": "text",
-          "settings": {
-            "title": "How to choose the right sharpening angle for the Tumbler Knife Holder Pro?",
-            "description": "Selecting the appropriate angle depends on the type of knife and its intended use. \n\n10-degree angle: Ideal for very fine and delicate slicing tasks. This angle is suitable for thinly ground knives such as fillet knives, Sashimi knives  and other precision cutting tools.\n\n12-degree angle: Well-suited for a wide range of general kitchen tasks. It's recommended for knives with a tougher steel such as damascus chef's knives and santoku knives.\n\n17-degree angle: Great for versatile everyday use and moderate chopping tasks. This angle works well with chef's knives, utility knives, and carving knives.\n\n25-degree angle: Designed for heavy-duty cutting and tasks that require more durability. This angle is suitable for cleavers and other sturdy knives used for chopping tough ingredients and outdoor knives.",
-            "video_url": ""
-          }
-        },
         "47ecd271-2ba8-446a-bd7b-5828a4c505af": {
           "type": "text",
           "settings": {
@@ -95,17 +95,18 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=7A1CUkoSNJI"
           }
         },
-        "c46ec716-3803-4eb3-a733-612b17a0edad": {
+        "415ea33c-d4e8-4dcb-a64f-ae326719dbb7": {
           "type": "text",
           "settings": {
-            "title": "What is the diamond disc and the stainless steel honing disc for?",
-            "description": "The industrial diamonds used by Tumbler are the optimal material for restoring knife blades of any hardness to an optimal basic sharpness. With the coarse diamond grinding wheel you resharpen your knives in the first step and achieve a very good grinding result. \n\nAfter coarse sharpening with the diamond disc, the cutting edge gets a fine finish with the stainless steel honing wheel and the last burr on the cutting edge is smoothed out. Only a few movements to the front and back are needed here to achieve the desired result.",
+            "title": "How to choose the right sharpening angle for the Tumbler Knife Holder Pro?",
+            "description": "Selecting the appropriate angle depends on the type of knife and its intended use. \n\n10-degree angle: Ideal for very fine and delicate slicing tasks. This angle is suitable for thinly ground knives such as fillet knives, Sashimi knives  and other precision cutting tools.\n\n12-degree angle: Well-suited for a wide range of general kitchen tasks. It's recommended for knives with a tougher steel such as damascus chef's knives and santoku knives.\n\n17-degree angle: Great for versatile everyday use and moderate chopping tasks. This angle works well with chef's knives, utility knives, and carving knives.\n\n25-degree angle: Designed for heavy-duty cutting and tasks that require more durability. This angle is suitable for cleavers and other sturdy knives used for chopping tough ingredients and outdoor knives.",
             "video_url": ""
           }
         }
       },
       "block_order": [
         "e66f4422-39ec-4df1-813a-a2a1ca539d49",
+        "c46ec716-3803-4eb3-a733-612b17a0edad",
         "90f50b6c-93b0-4746-b4c7-be17a9aaa724",
         "0b75ed14-ebb2-4f0e-a687-a91f2ca6043c",
         "de0564c8-5569-430d-baea-4194add0cd2b",
@@ -113,10 +114,9 @@
         "41baa8c2-4854-4d2a-9f50-663efb335171",
         "c520e35d-7b20-419a-ac16-f996b6746d31",
         "a7ab509c-6ade-4920-b1c6-4a74759f3bc6",
-        "415ea33c-d4e8-4dcb-a64f-ae326719dbb7",
         "47ecd271-2ba8-446a-bd7b-5828a4c505af",
         "31196b74-afde-43b8-80cf-dc1a79d3d490",
-        "c46ec716-3803-4eb3-a733-612b17a0edad"
+        "415ea33c-d4e8-4dcb-a64f-ae326719dbb7"
       ],
       "settings": {
         "section_header": "",
