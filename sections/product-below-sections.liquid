@@ -1,171 +1,267 @@
-{% if product.metafields.global.logo_1 != blank and product.metafields.global.logo_1_text != blank and product.metafields.global.logo_2 != blank and product.metafields.global.logo_2_text != blank and product.metafields.global.logo_3 != blank and product.metafields.global.logo_3_text != blank and product.metafields.global.logo_4 != blank and product.metafields.global.logo_4_text !=blank %}
-<div class="product_below_section_first">
-  <div class="wrapper">
-    <div class="page-width">
-      <div class="product_logo_lists_new">
-        <div class="product_logo_img_new">
-          <img src="{{ product.metafields.global.logo_1 }}" alt="image" />
-        </div>
-        <div class="product_logo_name_new">
-          {{ product.metafields.global.logo_1_text }}
-        </div>
-      </div>
-      <div class="product_logo_lists_new">
-        <div class="product_logo_img_new">
-          <img src="{{ product.metafields.global.logo_2 }}" alt="image" />
-        </div>
-        <div class="product_logo_name_new">
-          {{ product.metafields.global.logo_2_text }}
-        </div>
-      </div>
-      <div class="product_logo_lists_new">
-        <div class="product_logo_img_new">
-          <img src="{{ product.metafields.global.logo_3 }}" alt="image" />
-        </div>
-        <div class="product_logo_name_new">
-          {{ product.metafields.global.logo_3_text }}
-        </div>
-      </div>
-      <div class="product_logo_lists_new">
-        <div class="product_logo_img_new">
-          <img src="{{ product.metafields.global.logo_4 }}" alt="image" />
-        </div>
-        <div class="product_logo_name_new">
-          {{ product.metafields.global.logo_4_text }}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
-
-{% if product.metafields.global.banner_image_mobile != blank and product.metafields.global.banner_text != blank %}
-<div class="product_below_section_second">
-  <div class="product_temp_banner_image_mobile">
-  	<img src="{{ product.metafields.global.banner_image_mobile }}" alt="image" />
-  </div>
-  <div class="product_temp_banner_image" style="background:url('{{ product.metafields.global.banner_image_desktop }}') no-repeat top center;  background-size:cover !important;">
+{% if product.metafields.global.logo_1 != blank
+  and product.metafields.global.logo_1_text != blank
+  and product.metafields.global.logo_2 != blank
+  and product.metafields.global.logo_2_text != blank
+  and product.metafields.global.logo_3 != blank
+  and product.metafields.global.logo_3_text != blank
+  and product.metafields.global.logo_4 != blank
+  and product.metafields.global.logo_4_text != blank
+%}
+  <div class="product_below_section_first">
     <div class="wrapper">
       <div class="page-width">
-        <div class="collection_temp_banner_in_image product_banner_in_image">
-          <div class="product_banner_inner_image">
-            {{ product.metafields.global.banner_text }}
+        <div class="product_logo_lists_new">
+          <div class="product_logo_img_new">
+            <img src="{{ product.metafields.global.logo_1 }}" alt="image">
+          </div>
+          <div class="product_logo_name_new">
+            {{ product.metafields.global.logo_1_text }}
+          </div>
+        </div>
+        <div class="product_logo_lists_new">
+          <div class="product_logo_img_new">
+            <img src="{{ product.metafields.global.logo_2 }}" alt="image">
+          </div>
+          <div class="product_logo_name_new">
+            {{ product.metafields.global.logo_2_text }}
+          </div>
+        </div>
+        <div class="product_logo_lists_new">
+          <div class="product_logo_img_new">
+            <img src="{{ product.metafields.global.logo_3 }}" alt="image">
+          </div>
+          <div class="product_logo_name_new">
+            {{ product.metafields.global.logo_3_text }}
+          </div>
+        </div>
+        <div class="product_logo_lists_new">
+          <div class="product_logo_img_new">
+            <img src="{{ product.metafields.global.logo_4 }}" alt="image">
+          </div>
+          <div class="product_logo_name_new">
+            {{ product.metafields.global.logo_4_text }}
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+{% endif %}
+
+{% if product.metafields.global.banner_image_mobile != blank and product.metafields.global.banner_text != blank %}
+  <div class="product_below_section_second">
+    <div class="product_temp_banner_image_mobile">
+      <img src="{{ product.metafields.global.banner_image_mobile }}" alt="image">
+    </div>
+    <div
+      class="product_temp_banner_image"
+      style="background:url('{{ product.metafields.global.banner_image_desktop }}') no-repeat top center;  background-size:cover !important;"
+    >
+      <div class="wrapper">
+        <div class="page-width">
+          <div class="collection_temp_banner_in_image product_banner_in_image">
+            <div class="product_banner_inner_image">
+              {{ product.metafields.global.banner_text }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endif %}
 
 {% if product.metafields.global.image_1 != blank and product.metafields.global.text_1 != blank %}
-<div class="product_below_section_thired">
-  <div class="power_new">
-    <div class="feature-row">
-      
-      <div class="feature-row__item">
-        <div class="feature-row__image-wrapper product_desc_img_new">
-          <img class="lazyload" src="{{ product.metafields.global.image_1 }}" alt="image"/>
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_1 }}" alt="image">
+          </div>
+        </div>
+        <div class="feature-row__item feature-row__text feature-row__text--left">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_1 }}
+          </div>
         </div>
       </div>
-      <div class="feature-row__item feature-row__text feature-row__text--left">
-        <div class="feature-row__text_in">
-          {{ product.metafields.global.text_1 }}
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
 {% endif %}
 
 {% if product.metafields.global.text_2 != blank and product.metafields.global.image_2 != blank %}
-<div class="product_below_section_thired">
-  <div class="power_new">
-    <div class="feature-row">
-      <div class="feature-row__item feature-row__text feature-row__text--right">
-        <div class="feature-row__text_in">
-          {{ product.metafields.global.text_2 }}
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item feature-row__text feature-row__text--right">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_2 }}
+          </div>
+        </div>
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_2 }}" alt="image">
+          </div>
         </div>
       </div>
-	  <div class="feature-row__item">
-        <div class="feature-row__image-wrapper product_desc_img_new">
-          <img class="lazyload" src="{{ product.metafields.global.image_2 }}" alt="image"/>
-        </div>
-      </div>
-      
     </div>
   </div>
-</div>
 {% endif %}
 
 {% if product.metafields.global.image_3 != blank and product.metafields.global.text_3 != blank %}
-<div class="product_below_section_thired">
-  <div class="power_new">
-    <div class="feature-row">
-      
-      <div class="feature-row__item">
-        <div class="feature-row__image-wrapper product_desc_img_new">
-          <img class="lazyload" src="{{ product.metafields.global.image_3 }}" alt="image"/>
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_3 }}" alt="image">
+          </div>
+        </div>
+        <div class="feature-row__item feature-row__text feature-row__text--left">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_3 }}
+          </div>
         </div>
       </div>
-      <div class="feature-row__item feature-row__text feature-row__text--left">
-        <div class="feature-row__text_in">
-          {{ product.metafields.global.text_3 }}
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
 {% endif %}
 
 {% if product.metafields.global.text_4 != blank and product.metafields.global.image_4 != blank %}
-<div class="product_below_section_thired">
-  <div class="power_new">
-    <div class="feature-row">
-      <div class="feature-row__item feature-row__text feature-row__text--right">
-        <div class="feature-row__text_in">
-          {{ product.metafields.global.text_4 }}
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item feature-row__text feature-row__text--right">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_4 }}
+          </div>
+        </div>
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_4 }}" alt="image">
+          </div>
         </div>
       </div>
-	  <div class="feature-row__item">
-        <div class="feature-row__image-wrapper product_desc_img_new">
-          <img class="lazyload" src="{{ product.metafields.global.image_4 }}" alt="image"/>
-        </div>
-      </div>
-      
     </div>
   </div>
-</div>
 {% endif %}
 
 {% if product.metafields.global.image_5 != blank and product.metafields.global.text_5 != blank %}
-<div class="product_below_section_thired">
-  <div class="power_new">
-    <div class="feature-row">
-      
-      <div class="feature-row__item">
-        <div class="feature-row__image-wrapper product_desc_img_new">
-          <img class="lazyload" src="{{ product.metafields.global.image_5 }}" alt="image"/>
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_5 }}" alt="image">
+          </div>
+        </div>
+        <div class="feature-row__item feature-row__text feature-row__text--left">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_5 }}
+          </div>
         </div>
       </div>
-      <div class="feature-row__item feature-row__text feature-row__text--left">
-        <div class="feature-row__text_in">
-          {{ product.metafields.global.text_5 }}
-        </div>
-      </div>
-
     </div>
   </div>
-</div>
+{% endif %}
+
+{% if product.metafields.global.image_6 != blank and product.metafields.global.text_6 != blank %}
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item feature-row__text feature-row__text--right">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_6 }}
+          </div>
+        </div>
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_6 }}" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if product.metafields.global.image_7 != blank and product.metafields.global.text_7 != blank %}
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_7 }}" alt="image">
+          </div>
+        </div>
+        <div class="feature-row__item feature-row__text feature-row__text--left">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_7 }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if product.metafields.global.image_8 != blank and product.metafields.global.text_8 != blank %}
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item feature-row__text feature-row__text--right">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_8 }}
+          </div>
+        </div>
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_8 }}" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if product.metafields.global.image_9 != blank and product.metafields.global.text_9 != blank %}
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_9 }}" alt="image">
+          </div>
+        </div>
+        <div class="feature-row__item feature-row__text feature-row__text--left">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_9 }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if product.metafields.global.image_10 != blank and product.metafields.global.text_10 != blank %}
+  <div class="product_below_section_thired">
+    <div class="power_new">
+      <div class="feature-row">
+        <div class="feature-row__item feature-row__text feature-row__text--right">
+          <div class="feature-row__text_in">
+            {{ product.metafields.global.text_10 }}
+          </div>
+        </div>
+        <div class="feature-row__item">
+          <div class="feature-row__image-wrapper product_desc_img_new">
+            <img class="lazyload" src="{{ product.metafields.global.image_10 }}" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endif %}
 
 {% schema %}
-  {
-    "name": "Product Below Sections",
-    "settings": [
-
-	]
-  }
+{
+  "name": "Product Below Sections",
+  "settings": []
+}
 {% endschema %}
