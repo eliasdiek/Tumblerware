@@ -270,8 +270,6 @@
   });
 </script> -->
 {% include 'adroll' %}
-{% render 'oneclickupsellapp-theme', oneclickupsellapp: oneclickupsellapp %}
-{% assign oneclickupsellapp = true %}
 <!--- Begin: Klaviyo Add to Cart Code --->
 {% if product %}
     <script>
@@ -322,5 +320,7 @@
     </script>
 {% endif %}
 <!--- End:Klaviyo Add to Cart Code --->
+{% render 'oneclickupsellapp-theme', oneclickupsellapp: oneclickupsellapp %}
+{% assign oneclickupsellapp = true %}
 </body>
 </html>
