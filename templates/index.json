@@ -2,7 +2,6 @@
   "sections": {
     "1584351683156": {
       "type": "text-button",
-      "disabled": true,
       "blocks": {
         "1584765879672": {
           "type": "slide",
@@ -16,6 +15,7 @@
       "block_order": [
         "1584765879672"
       ],
+      "disabled": true,
       "settings": {
         "visibility": "both",
         "color_bg": "#122b6c",
@@ -37,7 +37,7 @@
             "text_alignment_mobile": "top_center",
             "slide_heading": "KNIFE SHARPENING<br> HAS NEVER BEEN<br>THIS EASY",
             "slide_subheading": "Sharpen, restore and repair your knife in minutes.",
-            "button_label": "SHOP NOW",
+            "button_label": "GET 24% OFF TODAY",
             "button_link": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
             "slide_text_color": "#ffffff",
             "slide_button_label_color": "#1c1d1d",
@@ -133,22 +133,41 @@
         "txt_color": "#111111"
       }
     },
+    "1898abfd-0920-4e46-a417-93532a46808f": {
+      "type": "index-product-image-text",
+      "settings": {
+        "image_position": "center",
+        "image": "shopify:\/\/shop_images\/Tumbler_Rolling_Knife_Sharpener_Helix_Honing_Disc_ea7c29eb-01a3-47bb-9fb4-9ed4be22c19a.png",
+        "mobile_image": "shopify:\/\/shop_images\/Tumbler_holiday_gift_box_open_soft_shadows.png",
+        "text1": "",
+        "text2": "Limited Edition GIFT Set",
+        "text3": "<p>From the culinary enthusiast to the passionate home, this is the perfect gift for the holiday season.<\/p>",
+        "btntext1": "<span>PREODER NOW<\/span>",
+        "btnlink1": "shopify:\/\/products\/tumbler-rolling-knife-sharpener-holiday-gift-set",
+        "btntext2": "",
+        "btnlink2": "\/",
+        "bg_color": "#e5e1dd",
+        "heading_color": "",
+        "txt_color": ""
+      }
+    },
     "16496988610137bb21": {
       "type": "faqs",
-      "disabled": true,
       "blocks": {
         "96de14cd-25ca-481c-bf9c-234396353ca7": {
           "type": "text",
           "settings": {
             "title": "Question",
-            "description": "Answer goes here..."
+            "description": "Answer goes here...",
+            "video_url": ""
           }
         },
         "4bfe49e9-3303-4d01-8b65-42ec55edf48b": {
           "type": "text",
           "settings": {
             "title": "Question",
-            "description": "Answer goes here..."
+            "description": "Answer goes here...",
+            "video_url": ""
           }
         }
       },
@@ -156,6 +175,7 @@
         "96de14cd-25ca-481c-bf9c-234396353ca7",
         "4bfe49e9-3303-4d01-8b65-42ec55edf48b"
       ],
+      "disabled": true,
       "settings": {
         "section_header": "Faq",
         "bg_color": ""
@@ -194,6 +214,7 @@
     "1650166204babb0913",
     "16504281196ed88b14",
     "164986500157f0b549",
+    "1898abfd-0920-4e46-a417-93532a46808f",
     "16496988610137bb21",
     "1650428103f56ebf10",
     "165265952824925c86"

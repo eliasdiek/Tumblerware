@@ -12,7 +12,7 @@ SHARED: &SHARED
 
 development:
   <<: *SHARED
-  theme_id: '136100774135'
+  theme_id: '137651388663'
 
 production:
   <<: *SHARED

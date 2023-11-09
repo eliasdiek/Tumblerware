@@ -137,7 +137,7 @@ span.rc-option__text strong {
           {% endif %}
 
           {% if product.tags contains 'Selling fast' or product.tags contains 'selling-fast' %}
-          <div class="product__ticker product__ticker--preorder"><span>Selling fast</span></div> 
+          <div class="product__ticker product__ticker--preorder uppercase"><span>Selling fast</span></div> 
           {% endif %}
 
           {% if product.tags contains 'low stock'%}
@@ -369,7 +369,7 @@ span.rc-option__text strong {
 
             {% include 'product-price', variant: current_variant %}
 
-            <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" style="display: block; margin-bottom:8px">{{ product.metafields.stamped.badge }}</span>
+            <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{ product.id }}" style="display: block; margin-bottom:8px"></span>
 
             {% if product.metafields.stamped.reviews_count and product.metafields.stamped.reviews_count != "0" %} 
             <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
@@ -499,12 +499,19 @@ span.rc-option__text strong {
               {% endif %}
 
               <div class="product-single__add-to-cart{% if section.settings.add_to_cart_button_size == 'large' %} product-single__add-to-cart--full-width{% endif %}">
-                <button type="submit" name="add" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                <button type="submit" name="add" data-tag="{{ product.tags | join: ', ' }}" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
                   <span class="btn__text">
-                    {% if current_variant.available %}
-                    {{ 'products.product.add_to_cart' | t }}
+                    {% if product.tags contains 'preorderbutton' %}
+                      {{ 'products.product.pre_order' | t }}
+                    {% elsif product.tags contains 'immediate' %}
+                      {{ 'products.product.add_to_cart' | t }}
                     {% else %}
-                    {{ 'products.product.sold_out' | t }}
+                      {% if current_variant.available %}
+                      
+                        {{ 'products.product.add_to_cart' | t }}
+                      {% else %}
+                      {{ 'products.product.sold_out' | t }}
+                      {% endif %}
                     {% endif %}
                   </span>
                 </button>

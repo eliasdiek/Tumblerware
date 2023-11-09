@@ -1,1 +1,59 @@
-{"sections":{"banner":{"type":"collection-template-banner","blocks":{"4ee4dad1-d070-4531-be05-9a1e8698024e":{"type":"collection_name","settings":{"collection":"frontpage","deskimage":"shopify:\/\/shop_images\/Screen_Shot_2022-04-18_at_8.57.55_PM.png","text":"","text_color":"#ffffff"}}},"block_order":["4ee4dad1-d070-4531-be05-9a1e8698024e"],"settings":{"bg_color":""}},"main":{"type":"collection-template-rearrangeable","blocks":{"c28a2a34-8213-4b15-b34f-12fa36f30727":{"type":"collection_rearrangeable","settings":{"collection":"frontpage","title":"Tumbler"}},"100460d4-ecba-49fe-9dd7-441234cac640":{"type":"collection_rearrangeable","settings":{"collection":"menstrual-discs","title":"Accessories"}}},"block_order":["c28a2a34-8213-4b15-b34f-12fa36f30727","100460d4-ecba-49fe-9dd7-441234cac640"],"settings":{"collection_products_grid":"grid","collection_sort_enable":false,"collection_tags_enable":false,"product_vendor_enable":false,"bg_color":""}}},"order":["banner","main"]}
+{
+  "sections": {
+    "banner": {
+      "type": "collection-template-banner",
+      "blocks": {
+        "4ee4dad1-d070-4531-be05-9a1e8698024e": {
+          "type": "collection_name",
+          "settings": {
+            "collection": "frontpage",
+            "deskimage": "shopify:\/\/shop_images\/Screen_Shot_2022-04-18_at_8.57.55_PM.png",
+            "text": "Test",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "4ee4dad1-d070-4531-be05-9a1e8698024e"
+      ],
+      "settings": {
+        "bg_color": ""
+      }
+    },
+    "main": {
+      "type": "collection-template-rearrangeable",
+      "blocks": {
+        "c28a2a34-8213-4b15-b34f-12fa36f30727": {
+          "type": "collection_rearrangeable",
+          "settings": {
+            "collection": "frontpage",
+            "title": "Tumbler"
+          }
+        },
+        "100460d4-ecba-49fe-9dd7-441234cac640": {
+          "type": "collection_rearrangeable",
+          "disabled": true,
+          "settings": {
+            "collection": "menstrual-discs",
+            "title": "Accessories"
+          }
+        }
+      },
+      "block_order": [
+        "c28a2a34-8213-4b15-b34f-12fa36f30727",
+        "100460d4-ecba-49fe-9dd7-441234cac640"
+      ],
+      "settings": {
+        "collection_products_grid": "grid",
+        "collection_sort_enable": false,
+        "collection_tags_enable": false,
+        "product_vendor_enable": false,
+        "bg_color": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main"
+  ]
+}

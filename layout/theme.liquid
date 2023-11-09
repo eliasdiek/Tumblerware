@@ -8,18 +8,6 @@
     
      <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"56341751"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
     
-    
-    
-	<script>
-		!function (w, d, t) {
-		  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
-		
-		  ttq.load('C3J3IPPM4B6L4J2ECDSG');
-		  ttq.page();
-		}(window, document, 'ttq');
-	</script>
-	
-    
     {% include 'shop-sheriff-amp' %}
 
     {% comment %}
@@ -77,7 +65,7 @@
     <!-- <link rel="stylesheet" data-href="{{ 'timber.css' | asset_url }}"> -->
     <!-- <link rel="stylesheet" data-href="{{ 'theme.css' | asset_url }}"> -->
     
-    {% if template == 'page.about' or template == 'page.how-to' or template == 'page.careers' or template == 'page.reviews' %}
+    {% if template == 'page.about' or template == 'page.how-to' or template == 'page.careers' or template == 'page.wusthof' or template == 'page.reviews'  or template == 'page.prospecting' or template == 'page.instructions' %}
     {% include 'page-css' %}
     {% endif %}
   
@@ -281,8 +269,58 @@
     $("rc-option__text").html("Subscribe & Save "+shori+"/Knife ");
   });
 </script> -->
+{% include 'adroll' %}
 {% render 'oneclickupsellapp-theme', oneclickupsellapp: oneclickupsellapp %}
 {% assign oneclickupsellapp = true %}
-{% include 'adroll' %}
+<!--- Begin: Klaviyo Add to Cart Code --->
+{% if product %}
+    <script>
+        window.addEventListener('load', function() {
+        var _learnq = window._learnq || [];
+        function addedToCart() {
+        fetch(`${window.location.origin}/cart.js`)
+        .then(res => res.clone().json().then(data => {
+            var cart = {
+            total_price: data.total_price/100,
+            $value: data.total_price/100,
+            total_discount: data.total_discount,
+            original_total_price: data.original_total_price/100,
+            items: data.items
+            }
+            if (item !== 'undefined') {
+            cart = Object.assign(cart, item)
+            }
+            if (klAjax) {
+                _learnq.push(['track', 'Added to Cart', cart]);
+                klAjax = false;
+            }
+        }))
+        };
+        (function (ns, fetch) {
+        ns.fetch = function() {
+            const response = fetch.apply(this, arguments);
+            response.then(res => {
+            if (`${window.location.origin}/cart/add.js`
+                .includes(res.url)) {
+                    addedToCart()
+            }
+            });
+            return response
+        }
+        }(window, window.fetch));
+        var klAjax = true;
+        var atcButtons = document.querySelectorAll("form[action*='/cart/add'] button[type='submit']");
+        for (var i = 0; i < atcButtons.length; i++) {
+            atcButtons[i].addEventListener("click", function() {
+            if (klAjax) {
+                _learnq.push(['track', 'Added to Cart', item]);
+                klAjax = false;
+            }
+            })
+        }
+        });
+    </script>
+{% endif %}
+<!--- End:Klaviyo Add to Cart Code --->
 </body>
 </html>

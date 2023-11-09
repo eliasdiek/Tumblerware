@@ -85,9 +85,9 @@
           "drawer_search_enable": false,
           "show_announcement": true,
           "home_page_only": false,
-          "text": "<p>24% OFF TODAY | PREORDER NOW<\/p>",
-          "link": "shopify:\/\/products\/tumbler-rolling-knife-sharpener",
-          "color_bg": "#c54245",
+          "text": "<p>NEW RELEASE: LIMITED EDITION GIFT SET. CLICK HERE<\/p>",
+          "link": "shopify:\/\/products\/tumbler-rolling-knife-sharpener-holiday-gift-set",
+          "color_bg": "#e5554f",
           "color_text": "#ffffff",
           "bg_color": "rgba(0,0,0,0)",
           "border_color": ""
@@ -192,7 +192,6 @@
       },
       "1584351683156": {
         "type": "text-button",
-        "disabled": true,
         "blocks": {
           "1584765879672": {
             "type": "slide",
@@ -206,6 +205,7 @@
         "block_order": [
           "1584765879672"
         ],
+        "disabled": true,
         "settings": {
           "visibility": "both",
           "color_bg": "#122b6c",
@@ -214,7 +214,6 @@
       },
       "1593800078248": {
         "type": "slideshow-video",
-        "disabled": true,
         "blocks": {
           "b8309bb4-fe12-4585-b4fc-33b6ba2c803f": {
             "type": "slide",
@@ -235,6 +234,7 @@
           "b8309bb4-fe12-4585-b4fc-33b6ba2c803f",
           "1594179503686"
         ],
+        "disabled": true,
         "settings": {
           "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0051\/9428\/5091\/files\/JUNE___How_To_Use_A_Menstrual_Cup.mp4?v=1593807296",
           "show_video_desktop": false,
@@ -981,6 +981,21 @@
       },
       "1892562240530925112": {
         "type": "shopify:\/\/apps\/gdpr-ccpa-compliance-manager\/blocks\/app-embed\/e2ac5ac3-1765-477b-ac58-d792f9a65f3a",
+        "disabled": false,
+        "settings": {}
+      },
+      "3667842014806057753": {
+        "type": "shopify:\/\/apps\/one-click-upsell-zipify-ocu\/blocks\/app-embed\/bfe6e378-b73a-4871-b8d3-7d6ede22678e",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "12509190167029697241": {
+        "type": "shopify:\/\/apps\/blotout-edgetag\/blocks\/app-embed\/ae22d985-ba57-41f5-94c5-18d3dd98ea3c",
         "disabled": false,
         "settings": {}
       }

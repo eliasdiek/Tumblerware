@@ -15,6 +15,18 @@
     .index__faq-section:last-child {
         padding-bottom: 50px;
     }
+    .faq-video-container {
+        margin-top: 20px;
+        width: 50%;
+    }
+    .faq-video-container iframe {
+        width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        .faq-video-container {
+            width: 100%;
+        }
+    }
     {% if section.settings.bg_color != blank %}
     .index__faq-section {
         background-color: {{ section.settings.bg_color }};
@@ -46,6 +58,16 @@
                                 <div class="faq-answer-wrapper">
                                     <p>{{ block.settings.description }}</p>
                                 </div>
+                                {% if block.settings.video_url != blank %}
+                                    <div class="faq-video-container">
+                                        {% if block.settings.video_url.type == "youtube" %}
+                                            <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" frameborder="0" allowfullscreen></iframe>
+                                        {% endif %}
+                                        {% if block.settings.video_url.type == "vimeo" %}
+                                            <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?byline=0&portrait=0&badge=0" frameborder="0" allowfullscreen></iframe>
+                                        {% endif %}
+                                    </div>
+                                {% endif %}
                             </div>
                         </div>              
                         {% endfor %}           
@@ -93,7 +115,16 @@
 					"id": "description",
 					"default": "Answer goes here...",
 					"label": "Text"
-				}
+				},
+                {
+                    "type": "video_url",
+                    "id": "video_url",
+                    "label": "Video link",
+                    "accept": [
+                      "youtube",
+                      "vimeo"
+                    ]
+                }
 			]
 		}
     ],
