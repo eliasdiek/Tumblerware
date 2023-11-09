@@ -12,9 +12,9 @@ SHARED: &SHARED
 
 development:
   <<: *SHARED
-  theme_id: '137651388663'
+  theme_id: '136100774135'
 
 production:
   <<: *SHARED
   readonly: true
-  theme_id: '136100774135'
+  theme_id: '137651388663'
