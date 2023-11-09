@@ -16,4 +16,5 @@ development:
 
 production:
   <<: *SHARED
-  theme_id: '136100774135'
+  readonly: true
+  theme_id: '137651388663'

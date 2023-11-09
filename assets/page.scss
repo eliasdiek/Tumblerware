@@ -1,0 +1,380 @@
+html {
+    scroll-behavior: smooth;
+}
+.page\.about__page, .page\.how-to__page, .page\.reviews__page, .page\.careers__page {
+    .main-content {
+        margin-top: 0;
+        padding-top: 61px;
+    
+        @media screen and (min-width: 768px) {
+            padding-top: 13px;
+        }
+    }
+}
+.page\.about__page {
+    .rich-text-section_new {
+        background-color: #fff;
+        margin-top: 0 !important;
+    }
+}
+.page\.how-to__page, .page\.reviews__page {
+    .rich-text-section_new {
+        margin-top: 0 !important;
+    }
+}
+
+.page-hero-wrapper {
+    max-width: 1024px;
+    margin: 48px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 auto;
+    }
+
+    .section-header {
+        margin-top: 0;
+
+        .text-above-heading {
+            font-size: 16px;
+            font-weight: 600;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+    }
+    .section-body {
+        max-width: 676px;
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .section-cta {
+            margin-top: 50px;
+            
+            a {
+                color: #243269;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+    .move-down {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+
+        a {
+            animation: fade .5s linear .5s infinite alternate;
+
+            &:hover {
+                animation-play-state: paused;
+                opacity: 1;
+            }
+
+            span {
+                display: block;
+                width: 0; 
+                height: 0; 
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 32px solid #fff;
+            }
+        }
+    }
+}
+@keyframes fade {
+    0%   { opacity: 1; }
+    100% { opacity: .2; }
+}
+
+.text-with-image-wrapper {
+    padding: 0;
+    display: flex;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+
+    .text-block {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .text-block-wrapper {
+            max-width: 615px;
+            padding: 35px 35px 35px 130px;
+
+            @media screen and (max-width: 768px) {
+                padding: 60px 50px;
+            }
+
+            .heading {
+                font-size: 46px;
+                line-height: 52px;
+                margin-bottom: 15px;
+                font-family: "Georgia Pro", serif;
+                font-weight: 400;
+                font-style: normal;
+    
+                @media screen and (max-width: 768px) {
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+            }
+            .description {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    .image-block {
+        padding: 0;
+        width: 100%;
+
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.text-with-image_alt-wrapper {
+    padding: 50px;
+    max-width: 1264px;
+    margin: 0 auto;
+
+    .section-header {
+        max-width: 664px;
+        margin: 50px auto 0;
+
+        @media screen and (max-width: 768px) {
+            margin: 30px auto;
+        }
+
+        .heading {
+            font-size: 46px;
+            line-height: 52px;
+            margin-bottom: 15px;
+            font-family: "Georgia Pro", serif;
+            font-weight: 400;
+            font-style: normal;
+
+            @media screen and (max-width: 768px) {
+                font-size: 26px;
+                line-height: 30px;
+            }
+        }
+    }
+    .section-body {
+        display: flex;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+
+        .image-block {
+            width: 100%;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: 768px) {
+                padding: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+        .text-block {
+            width: 100%;
+            padding: 50px;
+
+            @media screen and (max-width: 768px) {
+                padding: 0;
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+
+                &:last-child {
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+}
+
+.page-video-wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 75px;
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 20px;
+    }
+
+    .video-wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+
+        @media screen and (max-width: 768px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+.index-our_products-section {
+    margin-top: 50px;
+}
+.our-products-wrapper {
+    max-width: 1264px;
+    margin: 0 auto;
+    padding: 0 0 50px;
+
+    .section-header {
+        max-width: 664px;
+        margin: 0 auto 15px;
+
+        @media screen and (max-width: 768px) {
+            margin: 0 auto;
+        }
+
+        .heading {
+            font-size: 46px;
+            line-height: 52px;
+            margin-bottom: 15px;
+            font-family: "Georgia Pro", serif;
+            font-weight: 400;
+            font-style: normal;
+
+            @media screen and (max-width: 768px) {
+                font-size: 26px;
+                line-height: 30px;
+            }
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    .section-body {
+        .grid-uniform {
+            .grid__item {
+                padding: 0 20px !important;
+            }
+        }
+        .grid-product__wrapper {
+            text-align: left;
+        }
+        .grid-product__title{
+            font-size:12px;
+            font-weight:600;
+            text-transform:uppercase;
+        }
+        .grid-product__meta {
+            position: relative;
+            display: block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            padding: 0;
+            margin: 10px 0 0 0;
+            line-height: 18px;
+        }
+        .product-single__price {
+            color: #eeb078;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0px;
+
+            .product-single__price--compare-at {
+                color: #262626;
+                font-weight: 400;
+                text-decoration: line-through;
+                font-size: 12px;
+                letter-spacing: 0px;
+                padding-right: 3px;
+            }
+        }
+    }
+}
+
+.video_testimonials-wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 75px 75px 45px;
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 20px 20px;
+    }
+
+    .grid-uniform {
+        @media screen and (min-width: 591px) {
+            margin-left: -10px;
+        }
+        .grid__item {
+            margin-bottom: 30px;
+
+            @media screen and (min-width: 591px) {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.text-with-button-wrapper {
+    margin-top: 25px;
+    padding: 50px 20px;
+    text-align: center;
+
+    .section-header {
+        margin: 0 0 20px;
+
+        .heading {
+            font-size: 46px;
+            line-height: 52px;
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-style: normal;
+
+            @media screen and (max-width: 768px) {
+                font-size: 26px;
+                line-height: 30px;
+            }
+        }
+        .sub-heading {
+            font-size: 14px;
+            font-weight: 400;
+    
+            a {
+                color: #243269;
+            }
+        }
+    }
+}
