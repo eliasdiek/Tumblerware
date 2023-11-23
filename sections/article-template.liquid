@@ -5,12 +5,38 @@
   {% assign number_of_comments = article.comments_count | plus: 1 %}
 {% endif %}
 
+<style>
+  .mobile_article_image {
+    display: none;
+  }
+  .desktop_article_image_wrapper {
+    display: block;
+    max-width: 992px;
+    margin: -15px auto 35px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .mobile_article_image {
+      display: block;
+    }
+    .desktop_article_image_wrapper {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .article\.alternate__page .main-content .article-page-wrapper {
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+  }
+</style>
+
 <noscript>
   {{ article.image | img_url: '2048x2048' | img_tag: article.title | escape }}
 </noscript>
 
 {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-<img class="article-image lazyload {{ img_id_class }}"
+<img class="article-image lazyload mobile_article_image {{ img_id_class }}"
   src="{{ article.image | img_url: '300x300' }}"
   data-src="{{ img_url }}"
   data-widths="[180, 360, 590, 720, 900, 1080, 1296, 1512, 1728, 2048]"
@@ -25,6 +51,7 @@
 
     <header class="section-header text-center">
       <h1 class="article-title">{{ article.title }}</h1>
+
       <div class="meta-data">
         <ul class="blog-meta-list">
           <li class="meta-item">{{ article.published_at | date: format: 'date' }}</li>
@@ -33,6 +60,18 @@
           <li>|</li>
           <li class="meta-item">{{ article.author }}</li>
         </ul>
+      </div>
+
+      <div class="desktop_article_image_wrapper">
+        <img class="article-image lazyload desktop_article_image {{ img_id_class }}"
+          src="{{ article.image | img_url: '300x300' }}"
+          data-src="{{ img_url }}"
+          data-widths="[180, 360, 590, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+          data-aspectratio="{{ article.image.aspect_ratio }}"
+          data-sizes="auto"
+          alt="{{ article.image.alt | escape }}"
+          style="width: 100%;"
+        />
       </div>
     </header>
 

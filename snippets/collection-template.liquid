@@ -1,3 +1,18 @@
+<style>
+  .collection_header_new {
+    margin: 25px 0 25px 0 !important;
+  }
+  .collection_header_new .collection_title_new {
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  #CollectionSection .section-header .h2 {
+    margin-bottom: 10px;
+  }
+</style>
 <div class="collection_wrapper">
   {% comment %}
     Collection template, used on collection.liquid and collection.image.liquid
@@ -19,7 +34,6 @@
   <header class="section-header text-center collection_header_new">
 
     <h1 class="h2">{{ collection.title }}</h1>
-    <hr class="hr--small">
 
 
     {% if collection.description != blank %}

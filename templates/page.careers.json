@@ -1,8 +1,40 @@
 {
   "sections": {
+    "42d12351-5beb-4912-bb58-5d15fe082057": {
+      "type": "slideshow",
+      "blocks": {
+        "056f67f1-3671-4c18-9793-649935be98e3": {
+          "type": "slide",
+          "settings": {
+            "image_position": "left top",
+            "image_overlay": true,
+            "image_overlay_opacity": 25,
+            "text_alignment": "left_middle",
+            "text_alignment_mobile": "top_center",
+            "show_reviews": false,
+            "review_text": "",
+            "slide_heading": "Hero Banner",
+            "slide_subheading": "An introductory",
+            "button_label": "Shop now",
+            "button_link": "",
+            "description": "",
+            "slide_text_color": "#ffffff",
+            "slide_button_label_color": "#000000",
+            "slide_button_background_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "056f67f1-3671-4c18-9793-649935be98e3"
+      ],
+      "settings": {
+        "home_hero_height": "full",
+        "hero_home_auto": false,
+        "home_hero_auto_speed": 5
+      }
+    },
     "cd32bd25-7db0-4e45-9695-a3bcae96f673": {
       "type": "how_to-hero",
-      "disabled": true,
       "settings": {
         "heading": "EXPERIENCE THE NEXT LEVEL OF KNIFE SHARPENING!",
         "description": "<p>Meet the Tumbler Rolling Knife Sharpener – efficient, durable, and now with 24% off. Your search for the perfect knife sharpener ends here!<\/p>",
@@ -114,13 +146,154 @@
         "button_text": "SHOP TUMBLER | 24% OFF TODAY",
         "bg_color": ""
       }
+    },
+    "e0792488-8558-4ab0-b9ef-f790bbd74b69": {
+      "type": "featured-product",
+      "settings": {
+        "featured_product": "tumbler-rolling-knife-sharpener-holiday-gift-set",
+        "show_variant_labels": false,
+        "show_vendor": false,
+        "enable_payment_button": false,
+        "show_share_buttons": false,
+        "bg_color": "#e3e2e0"
+      }
+    },
+    "8d102637-8d69-4052-91e8-126490f2e223": {
+      "type": "image-with-text-button",
+      "blocks": {
+        "950fb8cd-598f-4c7e-adcb-8360739d5cb3": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "text": "Default Text",
+            "text_color": "#000000",
+            "button_text": "Shop",
+            "button_link": "",
+            "button_tx_color": "#000000",
+            "button_bg_color": "#ffffff",
+            "alignment": "top_center"
+          }
+        },
+        "3d54921b-4310-43c0-b3ab-9b35a83fdade": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2.jpg",
+            "text": "Default Text",
+            "text_color": "#000000",
+            "button_text": "Shop",
+            "button_link": "",
+            "button_tx_color": "#000000",
+            "button_bg_color": "#ffffff",
+            "alignment": "top_center"
+          }
+        }
+      },
+      "block_order": [
+        "950fb8cd-598f-4c7e-adcb-8360739d5cb3",
+        "3d54921b-4310-43c0-b3ab-9b35a83fdade"
+      ],
+      "disabled": true,
+      "settings": {
+        "head_text": "Now Trending",
+        "trending_bg_color": "#ffffff",
+        "bg_color": ""
+      }
+    },
+    "373109ae-1571-4a62-9a19-6b44cd2571fe": {
+      "type": "index-product-image-text",
+      "settings": {
+        "image_position": "center",
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-11-15_at_4.45.52_PM.png",
+        "mobile_image": "shopify:\/\/shop_images\/Screenshot_2023-11-15_at_4.45.52_PM.png",
+        "text1": "",
+        "text2": "",
+        "text3": "",
+        "btntext1": "",
+        "btnlink1": "\/",
+        "btntext2": "",
+        "btnlink2": "\/",
+        "bg_color": "",
+        "heading_color": "",
+        "txt_color": ""
+      }
+    },
+    "9318b543-71be-430b-904f-b5534bfc6c5f": {
+      "type": "text-with-image-companions",
+      "blocks": {
+        "aacfa0ca-15d6-4764-8ce4-566f705d1c90": {
+          "type": "Text",
+          "settings": {
+            "heading": "PROFESSIONAL GRADE TREATMENT AT A FRACTION OF THE COST",
+            "description": "<p>The same LED technology that dermatologist use, nut<\/p>",
+            "bg_color": "",
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-15_at_4.45.52_PM.png",
+            "img_position": "right",
+            "img_position_mobile": "top"
+          }
+        },
+        "5a057929-e6c3-411b-a48f-b8f7c58cb216": {
+          "type": "Text",
+          "settings": {
+            "heading": "A short sentence describing what someone will receive by heading",
+            "description": "<p>A short sentence describing what someone will receive by description<\/p>",
+            "bg_color": "",
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-15_at_4.46.47_PM.png",
+            "img_position": "left",
+            "img_position_mobile": "top"
+          }
+        }
+      },
+      "block_order": [
+        "aacfa0ca-15d6-4764-8ce4-566f705d1c90",
+        "5a057929-e6c3-411b-a48f-b8f7c58cb216"
+      ],
+      "settings": {}
+    },
+    "d0ad9656-921f-4e36-8241-d686eff0f322": {
+      "type": "text-with-image-columns",
+      "blocks": {
+        "68cbdec4-9140-4651-a9fb-1f907c9b4b3d": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-15_at_4.46.47_PM.png",
+            "heading": "Our Story",
+            "sub_heading": "<p>JUNE is inspired by the belief that quality menstrual care isn't a luxury, it's an essential: We deliver reusable menstrual cups, period undies<\/p>",
+            "button_link": "shopify:\/\/products\/the-tumbler-protective-stand",
+            "button_text": "Make the Switch"
+          }
+        },
+        "02dabb44-74d0-47bc-acd8-2d12c7826bb3": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-11-15_at_4.45.52_PM.png",
+            "heading": "Our Story",
+            "sub_heading": "<p>JUNE is inspired by the belief that quality menstrual care isn't a luxury, it's an essential: We deliver reusable menstrual cups, period undies<\/p>",
+            "button_link": "",
+            "button_text": "Make the Switch"
+          }
+        }
+      },
+      "block_order": [
+        "68cbdec4-9140-4651-a9fb-1f907c9b4b3d",
+        "02dabb44-74d0-47bc-acd8-2d12c7826bb3"
+      ],
+      "settings": {
+        "bg_color": "",
+        "txt_color": ""
+      }
     }
   },
   "order": [
+    "42d12351-5beb-4912-bb58-5d15fe082057",
     "cd32bd25-7db0-4e45-9695-a3bcae96f673",
     "6853b68b-0c0f-4947-8c6b-8ddaba95974a",
     "text-with-image-companions_careers",
     "71a6ff23-5f11-428f-a4bd-b274b5849f37",
-    "text-with-button"
+    "text-with-button",
+    "e0792488-8558-4ab0-b9ef-f790bbd74b69",
+    "8d102637-8d69-4052-91e8-126490f2e223",
+    "373109ae-1571-4a62-9a19-6b44cd2571fe",
+    "9318b543-71be-430b-904f-b5534bfc6c5f",
+    "d0ad9656-921f-4e36-8241-d686eff0f322"
   ]
 }

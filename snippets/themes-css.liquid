@@ -1827,11 +1827,11 @@
     margin-bottom: 0
   }
 
-  @media screen and (max-width:768px) {
+  {% comment %} @media screen and (max-width:768px) {
     .collection__page .main-content {
       padding-top: 74px!important
     }
-  }
+  } {% endcomment %}
 
   #ProductSection--product-template {
     margin-top: 3rem
@@ -6926,7 +6926,9 @@
   .mobile-nav__item a {
     font-size: 20px;
     padding: 10px;
-    line-height: 1.2
+    line-height: 1.2;
+    color: #303030;
+    font-weight: bold;
   }
 
   .mobile-nav__item:after {
