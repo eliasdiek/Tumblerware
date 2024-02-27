@@ -1,5 +1,7 @@
+config.yml
 .idea
 theme.exe
 .fake
 .ionide
 debug.log
+*.yml
