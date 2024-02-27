@@ -148,7 +148,43 @@ span.rc-option__text strong {
           <div class="product__ticker product__ticker--promo"><span>Promo</span></div> 
           {% endif %}
 
-          {% if sold_out %}
+          {% if product.tags contains 'percentage' %}
+            {% assign margin = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | divided_by: 100.0 %}
+            {% assign compareAtPrice = product.selected_or_first_available_variant.compare_at_price | divided_by: 100.0 %}
+            {% assign percentOffVal = margin | divided_by : compareAtPrice | times: 100.0 | round: 0 %}
+
+            <div class="product__ticker product__ticker--preorder"><span>{{ percentOffVal }}% OFF</span></div> 
+          {% endif %}
+
+          {% if product.tags contains '10OFF'%}
+            <div class="product__ticker product__ticker--preorder"><span>10% OFF</span></div> 
+          {% endif %}
+      
+          {% if product.tags contains '20OFF'%}
+            <div class="product__ticker product__ticker--preorder"><span>20% OFF</span></div> 
+          {% endif %}
+      
+          {% if product.tags contains '25OFF'%}
+            <div class="product__ticker product__ticker--preorder"><span>25% OFF</span></div> 
+          {% endif %}
+      
+          {% if product.tags contains '30OFF'%}
+            <div class="product__ticker product__ticker--preorder"><span>30% OFF</span></div> 
+          {% endif %}
+      
+          {% if product.tags contains '35OFF'%}
+            <div class="product__ticker product__ticker--preorder"><span>35% OFF</span></div> 
+          {% endif %}
+      
+          {% if product.tags contains '40OFF'%}
+            <div class="product__ticker product__ticker--preorder"><span>40% OFF</span></div> 
+          {% endif %}
+      
+          {% if product.tags contains '50OFF'%}
+            <div class="product__ticker product__ticker--preorder"><span>50% OFF</span></div> 
+          {% endif %}
+
+          {% if sold_out or product.tags contains 'outofstock' %}
           <div class="product__ticker product__ticker--sold_out">
             <span>Sold Out</span>
           </div>
@@ -499,9 +535,11 @@ span.rc-option__text strong {
               {% endif %}
 
               <div class="product-single__add-to-cart{% if section.settings.add_to_cart_button_size == 'large' %} product-single__add-to-cart--full-width{% endif %}">
-                <button type="submit" name="add" data-tag="{{ product.tags | join: ', ' }}" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% unless current_variant.available %} disabled="disabled"{% endunless %}>
+                <button type="submit" name="add" data-tag="{{ product.tags | join: ', ' }}" id="AddToCart--{{ section.id }}" class="btn btn--add-to-cart{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"{% if current_variant.available == false or product.tags contains 'outofstock' %} disabled="disabled"{% endif %}>
                   <span class="btn__text">
-                    {% if product.tags contains 'preorderbutton' %}
+                    {% if product.tags contains 'outofstock' %}
+                      {{ 'products.product.sold_out' | t }}
+                    {% elsif product.tags contains 'preorderbutton' %}
                       {{ 'products.product.pre_order' | t }}
                     {% elsif product.tags contains 'immediate' %}
                       {{ 'products.product.add_to_cart' | t }}

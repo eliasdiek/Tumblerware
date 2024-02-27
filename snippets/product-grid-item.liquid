@@ -42,7 +42,7 @@
 {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 {% assign current_variant = product.selected_or_first_available_variant %}
 
-<div class="grid__item grid-product {{ grid_item_width }}{% if sold_out %} is-sold-out{% endif %}" data-product-card>
+<div class="grid__item grid-product {{ grid_item_width }}{% if sold_out or product.tags contains 'outofstock' %} is-sold-out{% endif %}" data-product-card>
   <div class="grid-product__wrapper">
     <div class="grid-product__image-wrapper">
       <a class="grid-product__image-link{% unless product.featured_image.src == blank %} grid-product__image-link--loading{% endunless %}" href="{{ product.url | within: collection }}" data-image-link>
@@ -120,6 +120,42 @@
       <div class="product__ticker product__ticker--promo"><span>Promo</span></div> 
     {% endif %}
 
+    {% if product.tags contains 'percentage' %}
+      {% assign margin = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | divided_by: 100.0 %}
+      {% assign compareAtPrice = product.selected_or_first_available_variant.compare_at_price | divided_by: 100.0 %}
+      {% assign percentOffVal = margin | divided_by : compareAtPrice | times: 100.0 | round: 0 %}
+
+      <div class="product__ticker product__ticker--preorder"><span>{{ percentOffVal }}% OFF</span></div> 
+    {% endif %}
+
+    {% if product.tags contains '10OFF'%}
+      <div class="product__ticker product__ticker--preorder"><span>10% OFF</span></div> 
+    {% endif %}
+
+    {% if product.tags contains '20OFF'%}
+      <div class="product__ticker product__ticker--preorder"><span>20% OFF</span></div> 
+    {% endif %}
+
+    {% if product.tags contains '25OFF'%}
+      <div class="product__ticker product__ticker--preorder"><span>25% OFF</span></div> 
+    {% endif %}
+
+    {% if product.tags contains '30OFF'%}
+      <div class="product__ticker product__ticker--preorder"><span>30% OFF</span></div> 
+    {% endif %}
+
+    {% if product.tags contains '35OFF'%}
+      <div class="product__ticker product__ticker--preorder"><span>35% OFF</span></div> 
+    {% endif %}
+
+    {% if product.tags contains '40OFF'%}
+      <div class="product__ticker product__ticker--preorder"><span>40% OFF</span></div> 
+    {% endif %}
+
+    {% if product.tags contains '50OFF'%}
+      <div class="product__ticker product__ticker--preorder"><span>50% OFF</span></div> 
+    {% endif %}
+
     {% if product.tags contains 'show_inventory'%}
     {% capture "inventory_counter_id" %}InventoryCounter--{{ product.id }}{%- endcapture %}
     <div class="product__ticker product__ticker--inventory_count" id={{inventory_counter_id}}>
@@ -129,7 +165,7 @@
     </div>
     {% endif %}
 
-    {% if sold_out %}
+    {% if sold_out or product.tags contains 'outofstock' %}
       <div class="product__ticker product__ticker--sold_out">
         <span>Sold Out</span>
       </div>

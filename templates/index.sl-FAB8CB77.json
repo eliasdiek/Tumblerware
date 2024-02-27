@@ -35,7 +35,7 @@
             "image_overlay_opacity": 10,
             "text_alignment": "left_middle",
             "text_alignment_mobile": "top_center",
-            "show_reviews": false,
+            "show_reviews": true,
             "review_text": "+150k Satisfied Customers",
             "slide_heading": "KNIFE SHARPENING<br>HAS NEVER BEEN<br>THIS EASY",
             "slide_subheading": "Sharpen, restore and repair your knives in minutes.",
