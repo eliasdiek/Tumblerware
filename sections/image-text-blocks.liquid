@@ -1,0 +1,82 @@
+{% if section.blocks.size > 0 %}
+  {% for block in section.blocks %}
+    {% if block.settings.image != blank and block.settings.description != blank %}
+        <div class="product_below_section_thired">
+            <div class="power_new">
+                <div class="feature-row">
+                {% if block.settings.image_alignment == 'Right' %}
+                    <div class="feature-row__item feature-row__text feature-row__text--right">
+                        <div class="feature-row__text_in">
+                            {{ block.settings.description }}
+                        </div>
+                    </div>
+                    <div class="feature-row__item">
+                        <div class="feature-row__image-wrapper product_desc_img_new">
+                            <img
+                                src="{{ block.settings.image | image_url: width: block.settings.icon.width }}"
+                                alt="image"
+                                width=""
+                                height=""
+                            />
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="feature-row__item">
+                        <div class="feature-row__image-wrapper product_desc_img_new">
+                            <img
+                                src="{{ block.settings.image | image_url: width: block.settings.icon.width }}"
+                                alt="image"
+                                width=""
+                                height=""
+                            />
+                        </div>
+                    </div>
+                    <div class="feature-row__item feature-row__text feature-row__text--left">
+                        <div class="feature-row__text_in">
+                            {{ block.settings.description }}
+                        </div>
+                    </div>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Feature list",
+  "max_blocks": 15,
+  "settings": [],
+  "blocks": [
+    {
+      "type": "feature_item",
+      "name": "Feature item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "image_alignment",
+          "label": "Image alignment",
+          "info": "This accepts one of Left or Right."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Feature list"
+    }
+  ]
+}
+{% endschema %}

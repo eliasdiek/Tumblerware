@@ -85,9 +85,9 @@
           "drawer_search_enable": false,
           "show_announcement": true,
           "home_page_only": false,
-          "text": "<p>SHOP EPIC HOLIDAY DEALS<\/p>",
+          "text": "<p>GET 24% OFF TUMBLER TODAY<\/p>",
           "link": "shopify:\/\/collections\/all",
-          "color_bg": "#e5554f",
+          "color_bg": "#ff5454",
           "color_text": "#ffffff",
           "bg_color": "rgba(0,0,0,0)",
           "border_color": ""
@@ -996,6 +996,23 @@
       },
       "12509190167029697241": {
         "type": "shopify:\/\/apps\/blotout-edgetag\/blocks\/app-embed\/ae22d985-ba57-41f5-94c5-18d3dd98ea3c",
+        "disabled": false,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#51453f",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": "Get started below"
+        }
+      },
+      "8171265131012698934": {
+        "type": "shopify:\/\/apps\/orichi-quantity-breaks\/blocks\/orichi-discount\/3f38eaa3-2a3f-4e55-bcc9-df5d3f75e351",
         "disabled": false,
         "settings": {}
       }

@@ -15,21 +15,6 @@
         "add_to_cart_button_size": "small"
       }
     },
-    "1714240121240d5aad": {
-      "type": "apps",
-      "blocks": {
-        "novel_shoppable_video_novel_product_9dt3kQ": {
-          "type": "shopify:\/\/apps\/novel-shoppable-video\/blocks\/novel-product\/67e3531b-60c1-40d3-83d1-8f5aba7081ef",
-          "settings": {
-            "journeyid": "662d37a3f4f8da0008c06f1c"
-          }
-        }
-      },
-      "block_order": [
-        "novel_shoppable_video_novel_product_9dt3kQ"
-      ],
-      "settings": {}
-    },
     "icon_list_XV4frB": {
       "type": "icon-list",
       "blocks": {
@@ -125,7 +110,6 @@
   },
   "order": [
     "main",
-    "1714240121240d5aad",
     "icon_list_XV4frB",
     "image_text_blocks_iirj7V",
     "product-below-sections",

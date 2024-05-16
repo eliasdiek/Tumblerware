@@ -1,6 +1,22 @@
 <!doctype html>
 <html class="no-js" lang="{{ shop.locale }}">
   <head>
+<!-- Start of Shoplift scripts -->
+{% render 'shoplift' %}
+<!-- End of Shoplift scripts -->
+
+<!-- Edgemesh Client Begin -->
+<script type="application/javascript">
+  EDGEMESH = {
+    lite: true
+  }
+</script>
+<script
+  async
+  type="application/javascript"
+  src="https://static.edgeme.sh/client.js">
+</script>
+<!-- Edgemesh Client End -->
     
 <!-- Begin: Northbeam pixel -->
 <script>var r;(n=r=r||{}).A="identify",n.B="trackPageView",n.C="fireEmailCaptureEvent",n.D="fireCustomGoal",n.E="firePurchaseEvent";var n="//j.northbeam.io/ota-sp/4d1d685f-876d-4ffa-80ce-542ccc26c021.js";function t(n){for(var e=[],r=1;r<arguments.length;r++)e[r-1]=arguments[r];a.push({fnName:n,args:e})}var a=[],e=((e={_q:a})[r.A]=function(n,e){return t(r.A,n,e)},e[r.B]=function(){return t(r.B)},e[r.C]=function(n,e){return t(r.C,n,e)},e[r.D]=function(n,e){return t(r.D,n,e)},e[r.E]=function(n){return t(r.E,n)},window.Northbeam=e,document.createElement("script"));e.async=!0,e.src=n,document.head.appendChild(e);</script>
@@ -257,11 +273,6 @@
 
     {{ 'wnw-optimization.js' | asset_url | script_tag }}
   
-
-
-
-<script> function myInit(){ StampedFn.init({ apiKey: 'pubkey-nTa382UGp9uPqer0wmSLnKO04gI250', storeUrl: '108418' }); } </script>
-<script async onload="myInit()" type="text/javascript" src="https://cdn-stamped-io.azureedge.net/files/widget.min.js"> </script>
 <!-- <script>
   $(".single-option-radio label").on('click',function(){
 	var shori = $(this).find('.oo_price span').html().split(" ")[0];
@@ -320,5 +331,7 @@
 {% endif %}
 <!--- End:Klaviyo Add to Cart Code --->
 {% include 'adroll' %}
+<script>function myInit(){ StampedFn.init({ apiKey: 'pubkey-g0smXDHODj1Ax2rM87xyDk6Wl31G5h', sId: '269036' }); }</script>
+<script async onload="myInit()" type="text/javascript" src="https://cdn1.stamped.io/files/widget.min.js"></script>
 </body>
 </html>

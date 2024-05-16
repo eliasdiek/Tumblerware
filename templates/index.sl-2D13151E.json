@@ -35,15 +35,15 @@
             "image_overlay_opacity": 10,
             "text_alignment": "left_middle",
             "text_alignment_mobile": "top_center",
-            "show_reviews": true,
-            "review_text": "+200k Satisfied Customers",
+            "show_reviews": false,
+            "review_text": "+150k Satisfied Customers",
             "slide_heading": "KNIFE SHARPENING<br>HAS NEVER BEEN<br>THIS EASY",
             "slide_subheading": "Sharpen, restore and repair your knives in minutes.",
-            "button_label": "SLICE 24% OFF TUMBLER",
+            "button_label": "SLICE 24% OFF TODAY",
             "button_link": "shopify:\/\/collections\/all",
             "description": "",
             "slide_text_color": "#ffffff",
-            "slide_button_label_color": "#111111",
+            "slide_button_label_color": "#1c1d1d",
             "slide_button_background_color": "#ffffff"
           }
         }
@@ -56,21 +56,6 @@
         "hero_home_auto": false,
         "home_hero_auto_speed": 5
       }
-    },
-    "17142396841947a061": {
-      "type": "apps",
-      "blocks": {
-        "novel_shoppable_video_novel_product_dmbnPC": {
-          "type": "shopify:\/\/apps\/novel-shoppable-video\/blocks\/novel-product\/67e3531b-60c1-40d3-83d1-8f5aba7081ef",
-          "settings": {
-            "journeyid": "662d37a3f4f8da0008c06f1c"
-          }
-        }
-      },
-      "block_order": [
-        "novel_shoppable_video_novel_product_dmbnPC"
-      ],
-      "settings": {}
     },
     "16291317706bd32811": {
       "type": "text-with-button-alt",
@@ -151,47 +136,6 @@
         "txt_color": "#111111"
       }
     },
-    "auto_video_KCa3Bz": {
-      "type": "auto-video",
-      "blocks": {
-        "video_jKmm8K": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/youtu.be\/n-rdWwS13YU"
-          }
-        },
-        "video_icWLBk": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/youtu.be\/nB6KJXDW0nM"
-          }
-        },
-        "video_3n3L9A": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/youtu.be\/BqIeRtYnZak"
-          }
-        },
-        "video_gigyrt": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/youtu.be\/dAb-Y-3WDpM"
-          }
-        }
-      },
-      "block_order": [
-        "video_jKmm8K",
-        "video_icWLBk",
-        "video_3n3L9A",
-        "video_gigyrt"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "How it works",
-        "description": "<p>Don't like Tumbler for any reason? Send it back for a full refund. That's our satisfaction guarantee.<\/p>",
-        "video_height": 480
-      }
-    },
     "1898abfd-0920-4e46-a417-93532a46808f": {
       "type": "index-product-image-text",
       "disabled": true,
@@ -269,13 +213,11 @@
   "order": [
     "1584351683156",
     "16150487994661eec4",
-    "17142396841947a061",
     "16291317706bd32811",
     "1614421552feb24b5b",
     "1650166204babb0913",
     "16504281196ed88b14",
     "164986500157f0b549",
-    "auto_video_KCa3Bz",
     "1898abfd-0920-4e46-a417-93532a46808f",
     "16496988610137bb21",
     "1650428103f56ebf10",

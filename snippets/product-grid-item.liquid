@@ -42,7 +42,7 @@
 {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 {% assign current_variant = product.selected_or_first_available_variant %}
 
-<div class="grid__item grid-product {{ grid_item_width }}{% if sold_out %} is-sold-out{% endif %}" data-product-card>
+<div class="grid__item grid-product {{ grid_item_width }}{% if sold_out or product.tags contains 'outofstock' %} is-sold-out{% endif %}" data-product-card>
   <div class="grid-product__wrapper">
     <div class="grid-product__image-wrapper">
       <a class="grid-product__image-link{% unless product.featured_image.src == blank %} grid-product__image-link--loading{% endunless %}" href="{{ product.url | within: collection }}" data-image-link>
@@ -165,7 +165,7 @@
     </div>
     {% endif %}
 
-    {% if sold_out %}
+    {% if sold_out or product.tags contains 'outofstock' %}
       <div class="product__ticker product__ticker--sold_out">
         <span>Sold Out</span>
       </div>
