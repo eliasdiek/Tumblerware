@@ -1,0 +1,52 @@
+{% if section.blocks.size > 0 %}
+<div class="product_below_section_first">
+<div class="wrapper">
+<div class="page-width">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'icon' %}
+        <div class="product_logo_lists_new">
+            <div class="product_logo_img_new">
+              <img src="{{ block.settings.icon | image_url: width: block.settings.icon.width }}" alt="image" width="" height="" />
+            </div>
+            <div class="product_logo_name_new">
+              {{ block.settings.title }}
+            </div>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+</div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Icon list",
+  "max_blocks": 10,
+  "settings": [],
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon list"
+    }
+  ]
+}
+{% endschema %}
