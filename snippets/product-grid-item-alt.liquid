@@ -96,35 +96,35 @@
       <div class="product__ticker product__ticker--preorder"><span>{{ percentOffVal }}% OFF</span></div> 
     {% endif %}
 
-    {% if product.tags contains '10OFF'%}
+    {% if product.tags contains '10OFF' or product.tags contains '10off' %}
       <div class="product__ticker product__ticker--preorder"><span>10% OFF</span></div> 
     {% endif %}
 
-    {% if product.tags contains '20OFF'%}
+    {% if product.tags contains '20OFF' or product.tags contains '20off' %}
       <div class="product__ticker product__ticker--preorder"><span>20% OFF</span></div> 
     {% endif %}
 
-    {% if product.tags contains '25OFF'%}
+    {% if product.tags contains '25OFF' or product.tags contains '25off' %}
       <div class="product__ticker product__ticker--preorder"><span>25% OFF</span></div> 
     {% endif %}
 
-    {% if product.tags contains '30OFF'%}
+    {% if product.tags contains '30OFF' or product.tags contains '30off' %}
       <div class="product__ticker product__ticker--preorder"><span>30% OFF</span></div> 
     {% endif %}
 
-    {% if product.tags contains '35OFF'%}
+    {% if product.tags contains '35OFF' or product.tags contains '35off' %}
       <div class="product__ticker product__ticker--preorder"><span>35% OFF</span></div> 
     {% endif %}
 
-    {% if product.tags contains '40OFF'%}
+    {% if product.tags contains '40OFF' or product.tags contains '40off' %}
       <div class="product__ticker product__ticker--preorder"><span>40% OFF</span></div> 
     {% endif %}
 
-    {% if product.tags contains '50OFF'%}
+    {% if product.tags contains '50OFF' or product.tags contains '50off' %}
       <div class="product__ticker product__ticker--preorder"><span>50% OFF</span></div> 
     {% endif %}
 
-    {% if product.tags contains 'show_inventory'%}
+    {% if product.tags contains 'show_inventory' or product.tags contains 'SHOW_INVENTORY' %}
     {% capture "inventory_counter_id" %}InventoryCounter--{{ product.id }}{%- endcapture %}
     <div class="product__ticker product__ticker--inventory_count" id={{inventory_counter_id}}>
       {% for variant in product.variants %}
